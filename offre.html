@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packs d'Offres - Samatech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --info: #1abc9c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .packs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .pack {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        
+        .pack:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .pack-header {
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+        
+        .pack-starter .pack-header {
+            background: linear-gradient(135deg, #16a085, #1abc9c);
+        }
+        
+        .pack-business .pack-header {
+            background: linear-gradient(135deg, #2980b9, #3498db);
+        }
+        
+        .pack-premium .pack-header {
+            background: linear-gradient(135deg, #8e44ad, #9b59b6);
+        }
+        
+        .pack-com .pack-header {
+            background: linear-gradient(135deg, #e67e22, #f39c12);
+        }
+        
+        .pack-title {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .pack-icon {
+            margin-right: 10px;
+            font-size: 1.8rem;
+        }
+        
+        .pack-target {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .pack-price {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+            display: inline-block;
+            backdrop-filter: blur(5px);
+        }
+        
+        .pack-body {
+            padding: 20px;
+        }
+        
+        .features-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .features-list li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .features-list li:before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .bonus {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border-left: 4px solid var(--warning);
+        }
+        
+        .bonus-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--warning);
+        }
+        
+        .nfc-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nfc-section:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(90deg, #3498db, #e74c3c, #f39c12, #2ecc71);
+        }
+        
+        .nfc-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .nfc-description {
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        
+        .nfc-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-top: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .tag {
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .packs-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .pack {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+        
+        .pack:nth-child(1) { animation-delay: 0.1s; }
+        .pack:nth-child(2) { animation-delay: 0.2s; }
+        .pack:nth-child(3) { animation-delay: 0.3s; }
+        .pack:nth-child(4) { animation-delay: 0.4s; }
+        
+        /* Tooltip for features */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted var(--dark);
+            cursor: help;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: var(--dark);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-box-open"></i> Packs d'Offres Samatech</h1>
+            <p class="subtitle">Découvrez nos solutions clé en main pour digitaliser et optimiser votre entreprise, adaptées à chaque taille d'entreprise et besoin spécifique.</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="packs-container">
+            <!-- Pack Starter -->
+            <div class="pack pack-starter">
+                <div class="pack-header">
+                    <h2 class="pack-title"><i class="fas fa-seedling pack-icon"></i> Pack Starter</h2>
+                    <p class="pack-target">Pour les TPE & jeunes entreprises</p>
+                    <div class="pack-price">150 000 - 250 000 FCFA</div>
+                    <div class="tag">Populaire</div>
+                </div>
+                <div class="pack-body">
+                    <p><strong>Objectif :</strong> Digitaliser les opérations de base</p>
+                    <ul class="features-list">
+                        <li><span class="tooltip">SamaBitik<span class="tooltiptext">Gestion boutique, stock & caisse</span></span></li>
+                        <li><span class="tooltip">SamaFact<span class="tooltiptext">Facturation électronique</span></span></li>
+                        <li>Mini site web vitrine (1 page défilante)</li>
+                        <li>Création de 2 comptes réseaux sociaux + design de base</li>
+                    </ul>
+                    <div class="bonus">
+                        <div class="bonus-title">Bonus</div>
+                        <p>Hébergement 6 mois offert</p>
+                    </div>
+                    <p style="text-align: center; margin-top: 15px; font-style: italic;">Ou 50 000 FCFA/mois</p>
+                    <div style="text-align: center;">
+                        <a href="#contact" class="btn">Choisir ce pack</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pack Business -->
+            <div class="pack pack-business">
+                <div class="pack-header">
+                    <h2 class="pack-title"><i class="fas fa-chart-line pack-icon"></i> Pack Business</h2>
+                    <p class="pack-target">Pour PME en croissance</p>
+                    <div class="pack-price">350 000 - 600 000 FCFA</div>
+                </div>
+                <div class="pack-body">
+                    <p><strong>Objectif :</strong> Automatiser la gestion interne</p>
+                    <ul class="features-list">
+                        <li><span class="tooltip">SamaRH<span class="tooltiptext">Gestion du personnel + pointage</span></span></li>
+                        <li><span class="tooltip">SamaPaie<span class="tooltiptext">Salaires, bulletins de paie</span></span></li>
+                        <li>SamaBitik (multi-utilisateurs, reporting)</li>
+                        <li>SamaFact (facturation complète)</li>
+                        <li>Site Web professionnel (5 pages)</li>
+                        <li>Gestion Réseaux Sociaux (2 publications/semaine)</li>
+                    </ul>
+                    <div class="bonus">
+                        <div class="bonus-title">Bonus</div>
+                        <p>Formation + support technique 3 mois</p>
+                    </div>
+                    <p style="text-align: center; margin-top: 15px; font-style: italic;">Ou 100 000 FCFA/mois</p>
+                    <div style="text-align: center;">
+                        <a href="#contact" class="btn">Choisir ce pack</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pack Premium -->
+            <div class="pack pack-premium">
+                <div class="pack-header">
+                    <h2 class="pack-title"><i class="fas fa-crown pack-icon"></i> Pack Premium</h2>
+                    <p class="pack-target">Grandes entreprises & institutions</p>
+                    <div class="pack-price">Sur devis (> 1 million FCFA)</div>
+                </div>
+                <div class="pack-body">
+                    <p><strong>Objectif :</strong> Digitalisation complète et image de marque</p>
+                    <ul class="features-list">
+                        <li>SamaRH + SamaPaie + SamaFact + SamaPortfolio</li>
+                        <li>SamaBitik avancé (multi-magasins)</li>
+                        <li>Site Web sur mesure + Blog ou intranet</li>
+                        <li>Réseaux sociaux (5 publications/semaine)</li>
+                        <li>Reporting automatisé + tableau de bord</li>
+                        <li>Hébergement & maintenance annuelle</li>
+                    </ul>
+                    <div class="bonus">
+                        <div class="bonus-title">Bonus</div>
+                        <p>Formation équipe + hotline prioritaire</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="#contact" class="btn">Demander un devis</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pack Communication -->
+            <div class="pack pack-com">
+                <div class="pack-header">
+                    <h2 class="pack-title"><i class="fas fa-bullhorn pack-icon"></i> Pack Communication</h2>
+                    <p class="pack-target">Image de marque</p>
+                    <div class="pack-price">À partir de 200 000 FCFA</div>
+                </div>
+                <div class="pack-body">
+                    <p><strong>Objectif :</strong> Gagner en visibilité et professionnalisme</p>
+                    <ul class="features-list">
+                        <li>Création ou refonte de site web</li>
+                        <li>Charte graphique complète</li>
+                        <li>Création & gestion de réseaux sociaux</li>
+                        <li>Contenus sponsorisés (publicités)</li>
+                        <li>Storytelling de marque</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <a href="#contact" class="btn">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- NFC Cards Section -->
+        <div class="nfc-section">
+            <h2 class="nfc-title"><i class="fas fa-id-card"></i> Cartes de visite NFC</h2>
+            <p class="nfc-description">Option disponible dans tous nos packs - Cartes intelligentes avec technologie NFC + QR Code intégré pour une communication moderne et efficace.</p>
+            <ul class="features-list" style="text-align: left; max-width: 600px; margin: 0 auto 20px;">
+                <li>Infos de contact embarquées : nom, poste, téléphone, email</li>
+                <li>Lien vers votre SamaPortfolio</li>
+                <li>Compatible Android & iPhone (sans application)</li>
+                <li>Design personnalisé selon votre charte graphique</li>
+            </ul>
+            <p class="nfc-price">À partir de 5 000 FCFA / carte (tarif dégressif selon quantité)</p>
+            <a href="#contact" class="btn btn-outline">Commander les cartes NFC</a>
+        </div>
+        
+        <!-- Contact Section -->
+        <div id="contact" style="text-align: center; margin: 50px 0;">
+            <h2 style="margin-bottom: 20px;">Intéressé par nos solutions ?</h2>
+            <p style="max-width: 600px; margin: 0 auto 20px;">Contactez notre équipe commerciale pour discuter de vos besoins et obtenir une offre personnalisée.</p>
+            <a href="mailto:contact@samatech.com" class="btn" style="margin-right: 15px;"><i class="fas fa-envelope"></i> Envoyer un email</a>
+            <a href="tel:+221338765432" class="btn btn-outline"><i class="fas fa-phone"></i> Nous appeler</a>
+        </div>
+    </div>
+    
+    <script>
+        // Simple animation trigger on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to packs
+            const packs = document.querySelectorAll('.pack');
+            
+            packs.forEach(pack => {
+                pack.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = '0 15px 30px rgba(0,0,0,0.15)';
+                });
+                
+                pack.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                });
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
