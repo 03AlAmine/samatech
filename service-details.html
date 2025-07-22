@@ -54,6 +54,7 @@
           <li><a href="index.html">Accueil<br></a></li>
           <li><a href="about.html">A propos</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="packs.html">Packs</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -241,80 +242,80 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <!-- Script JS -->
-<script>
-  const serviceData = {
-    web: {
-      title: "Développement Web",
-      content: "Nous développons des sites modernes, sécurisés et adaptés à tous les écrans.",
-      image: "assets/img/services/web.png"
-    },
-    rh: {
-      title: "Applications RH & ERP",
-      content: "Outils performants pour gérer vos ressources humaines, stock, ventes, etc.",
-      image: "assets/img/services/rh.jpg"
-    },
-    design: {
-      title: "Design UI/UX",
-      content: "Un design moderne et intuitif pour une expérience utilisateur optimale.",
-      image: "assets/img/services/design.png"
-    },
-    security: {
-      title: "Cybersécurité",
-      content: "Audits, tests de vulnérabilité et accompagnement en sécurité des systèmes.",
-      image: "assets/img/services/security.png"
-    },
-    marketing: {
-      title: "Marketing Digital",
-      content: "Stratégie de visibilité, réseaux sociaux, publicités ciblées et plus encore.",
-      image: "assets/img/services/marketing.png"
-    }
-  };
+  <script>
+    const serviceData = {
+      web: {
+        title: "Développement Web",
+        content: "Nous développons des sites modernes, sécurisés et adaptés à tous les écrans.",
+        image: "assets/img/services/web.png"
+      },
+      rh: {
+        title: "Applications RH & ERP",
+        content: "Outils performants pour gérer vos ressources humaines, stock, ventes, etc.",
+        image: "assets/img/services/rh.jpg"
+      },
+      design: {
+        title: "Design UI/UX",
+        content: "Un design moderne et intuitif pour une expérience utilisateur optimale.",
+        image: "assets/img/services/design.png"
+      },
+      security: {
+        title: "Cybersécurité",
+        content: "Audits, tests de vulnérabilité et accompagnement en sécurité des systèmes.",
+        image: "assets/img/services/security.png"
+      },
+      marketing: {
+        title: "Marketing Digital",
+        content: "Stratégie de visibilité, réseaux sociaux, publicités ciblées et plus encore.",
+        image: "assets/img/services/marketing.png"
+      }
+    };
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const contentContainer = document.getElementById("service-content");
-    const imageElement = document.querySelector(".services-img");
+    document.addEventListener("DOMContentLoaded", function () {
+      const contentContainer = document.getElementById("service-content");
+      const imageElement = document.querySelector(".services-img");
 
-    function displayServiceFromHash() {
-      const hash = window.location.hash.replace("#", "");
+      function displayServiceFromHash() {
+        const hash = window.location.hash.replace("#", "");
 
-      if (serviceData[hash]) {
-        const service = serviceData[hash];
+        if (serviceData[hash]) {
+          const service = serviceData[hash];
 
-        // Injecter le contenu dynamique
-        contentContainer.innerHTML = `
+          // Injecter le contenu dynamique
+          contentContainer.innerHTML = `
           <h3>${service.title}</h3>
           <p>${service.content}</p>
         `;
-        imageElement.src = service.image;
+          imageElement.src = service.image;
 
-        // Nettoyer l’URL après affichage (sans recharger)
-        history.replaceState(null, "", window.location.pathname);
+          // Nettoyer l’URL après affichage (sans recharger)
+          history.replaceState(null, "", window.location.pathname);
+        }
       }
-    }
 
-    displayServiceFromHash(); // Appel initial
+      displayServiceFromHash(); // Appel initial
 
-    // Optionnel : gérer les clics dans la page si tu veux que ça change aussi dynamiquement
-    const serviceLinks = document.querySelectorAll(".service-item");
+      // Optionnel : gérer les clics dans la page si tu veux que ça change aussi dynamiquement
+      const serviceLinks = document.querySelectorAll(".service-item");
 
-    serviceLinks.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const key = this.dataset.service;
-        if (serviceData[key]) {
-          contentContainer.innerHTML = `
+      serviceLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const key = this.dataset.service;
+          if (serviceData[key]) {
+            contentContainer.innerHTML = `
             <h3>${serviceData[key].title}</h3>
             <p>${serviceData[key].content}</p>
           `;
-          imageElement.src = serviceData[key].image;
+            imageElement.src = serviceData[key].image;
 
-          // Modifier l’historique sans hash
-          history.replaceState(null, "", window.location.pathname);
-        }
+            // Modifier l’historique sans hash
+            history.replaceState(null, "", window.location.pathname);
+          }
+        });
       });
     });
-  });
-</script>
+  </script>
 
 
 
