@@ -1,1251 +1,2468 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Samatech</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Samatech</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Nova
   * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="index-page">
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="" />
+          <h1 class="sitename">Samatech</h1>
+        </a>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">Samatech</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Accueil<br></a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="packs.html">Packs</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section with Slider Background -->
-    <section id="hero" class="hero section dark-background">
-      <!-- Slider Background -->
-      <div class="hero-slider">
-        <div class="slider-track">
-          <div class="slide active" style="background-image: url('assets/img/hero-bg.jpg');"></div>
-          <div class="slide" style="background-image: url('assets/img/favicon.png');"></div>
-          <div class="slide" style="background-image: url('assets/img/hero-bg.jpg');"></div>
-        </div>
-        <div class="slider-overlay"></div>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html" class="active">Accueil<br /></a>
+            </li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="packs.html">Packs</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
+    </header>
 
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-5 col-lg-7">
-            <h1 data-aos="fade-up" data-aos-delay="100">Révolutionner la Tech au Sénégal et au-delà</h1>
-            <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="150">
-              <p>Découvrez l'espace où l'innovation rencontre l'efficacité. Des solutions digitales sur mesure pour
-                faire grandir votre entreprise.</p>
-            </div>
-            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
-              <a href="#about" class="btn-get-started">Commencer</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video">
-                <i class="bi bi-play-circle"></i> <span>Voir la vidéo</span>
-              </a>
-            </div>
+    <main class="main">
+      <!-- Hero Section with Slider Background -->
+      <section id="hero" class="hero section dark-background">
+        <!-- Slider Background -->
+        <div class="hero-slider">
+          <div class="slider-track">
+            <div
+              class="slide active"
+              style="background-image: url('assets/img/hero-bg.jpg')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('assets/img/favicon.png')"
+            ></div>
+            <div
+              class="slide"
+              style="background-image: url('assets/img/hero-bg.jpg')"
+            ></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nos Services</h2>
-        <p>Des solutions technologiques sur mesure pour propulser votre entreprise vers le succès digital.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <!-- Développement sur mesure -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-code-slash" style="color: #f57813;"></i></div>
-            <div>
-              <h4 class="title">Applications & Logiciels</h4>
-              <p class="description">Conception d’applications web et mobiles, logiciels de gestion et plateformes
-                personnalisées selon vos besoins métier.</p>
-              <a href="#" class="readmore stretched-link"><span>En savoir plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Création de sites web -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-laptop" style="color: #15a04a;"></i></div>
-            <div>
-              <h4 class="title">Sites Web Modernes</h4>
-              <p class="description">Développement de sites vitrines, e-commerce, blogs professionnels et interfaces
-                dynamiques avec design responsive.</p>
-              <a href="#" class="readmore stretched-link"><span>En savoir plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Marketing digital -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart-line" style="color: #d90769;"></i></div>
-            <div>
-              <h4 class="title">Marketing Digital</h4>
-              <p class="description">Optimisation de la présence en ligne, gestion de réseaux sociaux, campagnes
-                sponsorisées, création de contenu visuel.</p>
-              <a href="#" class="readmore stretched-link"><span>En savoir plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Community Management -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-megaphone" style="color: #15bfbc;"></i></div>
-            <div>
-              <h4 class="title">Gestion de Communication</h4>
-              <p class="description">Prise en charge de vos canaux de communication, animation des communautés,
-                amélioration de l’image de marque.</p>
-              <a href="#" class="readmore stretched-link"><span>En savoir plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Formation informatique -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-mortarboard" style="color: #f5cf13;"></i></div>
-            <div>
-              <h4 class="title">Formations IT & Bureautique</h4>
-              <p class="description">Cours en développement web, bureautique, cybersécurité et bien plus, pour débutants
-                et professionnels.</p>
-              <a href="#" class="readmore stretched-link"><span>En savoir plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Conseil et accompagnement -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-lightbulb" style="color: #1335f5;"></i></div>
-            <div>
-              <h4 class="title">Conseil & Stratégie IT</h4>
-              <p class="description">Accompagnement des entreprises dans la mise en place de solutions informatiques
-                innovantes et efficaces.</p>
-              <a href="#" class="readmore stretched-link"><span>En savoir plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
+          <div class="slider-overlay"></div>
         </div>
 
-      </div>
-
-    </section><!-- /Services Section -->
-
-
-    <!-- Why Us Section - Version améliorée -->
-    <section id="why-us" class="why-us section">
-      <div class="container">
-        <!-- En-tête de section ajouté -->
-        <div class="section-header text-center mb-5" data-aos="fade-up">
-          <h2>SamaTech !!!</h2>
-          <p>Decouvrez ce qui fait de nous le partenaire idéal pour votre transformation digitale</p>
-        </div>
-
-        <div class="row g-0 why-us-container">
-          <!-- Image de fond -->
-          <div class="col-lg-6 img-bg" data-aos="fade-right" data-aos-delay="100">
-            <div class="image-wrapper">
-              <img src="assets/img/why-us-bg.jpg" alt="Sama Tech en action" class="main-img">
-              <div class="floating-elements">
-                <div class="floating-element element-1" style="background-image: url('assets/img/log_bg.png');"></div>
-                <div class="floating-element element-2" style="background-image: url('assets/img/log_bg.png');"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slider de contenu -->
-          <div class="col-lg-6 slides" data-aos="fade-left" data-aos-delay="200">
-            <div class="swiper why-us-swiper">
-              <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                  <div class="slide-content">
-                    <div class="slide-icon">
-                      <i class="bi bi-bar-chart-steps"></i>
-                    </div>
-                    <h3>Nous faisons plus que coder</h3>
-                    <h4>Nous comprenons vos enjeux métiers pour créer des solutions utiles, pas juste des outils.</h4>
-                    <p>Chez Sama Tech, nous analysons vos besoins en profondeur pour vous proposer des solutions
-                      informatiques sur mesure, fiables, et évolutives, que ce soit une application, un site web ou une
-                      stratégie digitale complète.</p>
-                    <div class="slide-number">01</div>
-                  </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                  <div class="slide-content">
-                    <div class="slide-icon">
-                      <i class="bi bi-stack"></i>
-                    </div>
-                    <h3>Une expertise polyvalente</h3>
-                    <h4>Développement, cybersécurité, marketing, formation — tout est couvert.</h4>
-                    <p>Notre équipe combine des compétences variées pour offrir un accompagnement global à nos clients :
-                      du développement à la sécurisation de vos données, en passant par la visibilité en ligne et la
-                      montée en compétence de vos équipes.</p>
-                    <div class="slide-number">02</div>
-                  </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                  <div class="slide-content">
-                    <div class="slide-icon">
-                      <i class="bi bi-people-fill"></i>
-                    </div>
-                    <h3>Un partenaire à taille humaine</h3>
-                    <h4>Proximité, réactivité, et écoute permanente de vos besoins.</h4>
-                    <p>Nous mettons un point d'honneur à travailler dans une relation de confiance avec chaque client.
-                      Vous êtes au cœur du projet, du début à la fin. Nous restons disponibles et à l'écoute, même après
-                      la livraison.</p>
-                    <div class="slide-number">03</div>
-                  </div>
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="swiper-slide">
-                  <div class="slide-content">
-                    <div class="slide-icon">
-                      <i class="bi bi-lightbulb-fill"></i>
-                    </div>
-                    <h3>Une vision tournée vers l'avenir</h3>
-                    <h4>Innovation et technologies durables pour un impact réel.</h4>
-                    <p>Sama Tech n'est pas qu'un prestataire, c'est un partenaire de transformation digitale. Nous
-                      veillons à vous faire bénéficier des meilleures pratiques et des outils technologiques les plus
-                      récents pour assurer la pérennité de vos projets.</p>
-                    <div class="slide-number">04</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Contrôles du slider -->
-              <div class="swiper-controls">
-                <div class="swiper-pagination"></div>
-                <div class="swiper-nav">
-                  <div class="swiper-button-prev">
-                    <i class="bi bi-arrow-left"></i>
-                  </div>
-                  <div class="swiper-button-next">
-                    <i class="bi bi-arrow-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="Image de fond Appel à l'action">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center text-white">
-              <h3>Prêt à digitaliser votre entreprise ?</h3>
-              <p>Confiez vos projets à Sama Tech et bénéficiez de solutions modernes, sécurisées et parfaitement
-                adaptées à vos besoins. Sites web, applications, marketing digital ou formations — nous sommes à vos
-                côtés.</p>
-              <a class="cta-btn" href="#contact">Demandez un devis gratuit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="mb-0">Des Fonctionnalités Puissantes</h3>
-            <h3>Pour Accompagner Votre Croissance</h3>
-
-            <div class="row gy-4">
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-lightning-charge" style="color: #ff8b2c;"></i>
-                  <span>Développement rapide et sur-mesure</span>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-shield-lock" style="color: #5578ff;"></i>
-                  <span>Haute sécurité des données</span>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-bar-chart-line" style="color: #e80368;"></i>
-                  <span>Outils d'analyse et reporting</span>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-people" style="color: #ffa76e;"></i>
-                  <span>Accompagnement personnalisé</span>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-globe" style="color: #11dbcf;"></i>
-                  <span>Solutions accessibles en ligne 24/7</span>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-graph-up-arrow" style="color: #4233ff;"></i>
-                  <span>Optimisation du marketing digital</span>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-laptop" style="color: #29cc61;"></i>
-                  <span>Design responsive et moderne</span>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="icon-list d-flex">
-                  <i class="bi bi-journal-code" style="color: #ff5828;"></i>
-                  <span>Formations continues et certifiantes</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
-            <div class="phone-wrap">
-              <img src="assets/img/iphone.png" alt="Application mobile Sama Tech" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="details">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <h4>Une vision innovante pour<br>répondre à vos défis numériques</h4>
-              <p>Chez Sama Tech, nous allions expertise technique et compréhension métier pour vous proposer des
-                solutions efficaces, modernes et évolutives.</p>
-              <a href="#about" class="btn-get-started">En savoir plus</a>
+          <div class="row align-items-center">
+            <div class="col-xl-5 col-lg-7">
+              <h1 data-aos="fade-up" data-aos-delay="100">
+                Révolutionner la Tech au Sénégal et au-delà
+              </h1>
+              <div
+                class="hero-subtitle"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <p>
+                  Découvrez l'espace où l'innovation rencontre l'efficacité. Des
+                  solutions digitales sur mesure pour faire grandir votre
+                  entreprise.
+                </p>
+              </div>
+              <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="#about" class="btn-get-started">Commencer</a>
+                <a
+                  href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                  class="glightbox btn-watch-video"
+                >
+                  <i class="bi bi-play-circle"></i> <span>Voir la vidéo</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-    </section><!-- /Features Section -->
-
-    <!-- Partners Section -->
-    <section id="partenaires" class="partenaires section">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-title text-center mb-5">
-          <h2>Nos Partenaires</h2>
-          <p>Ils nous font confiance pour leurs projets digitaux</p>
-        </div>
-
-        <div class="row justify-content-center align-items-center gy-4">
-
-          <!-- Logo partenaire 1 -->
-          <div class="col-6 col-md-3 col-lg-2 text-center">
-            <img src="assets/img/LIS 3.png" class="img-fluid grayscale" alt="Partenaire 1">
-          </div>
-
-          <!-- Logo partenaire 2 -->
-          <div class="col-6 col-md-3 col-lg-2 text-center">
-            <img src="assets/img/immosen.png" class="img-fluid grayscale" alt="Partenaire 2">
-          </div>
-
-          <!-- Logo partenaire 3 -->
-          <div class="col-6 col-md-3 col-lg-2 text-center">
-            <img src="assets/img/sentouki.png" class="img-fluid grayscale" alt="Partenaire 3">
-          </div>
-
-          <!-- Logo partenaire 4 -->
-          <div class="col-6 col-md-3 col-lg-2 text-center">
-            <img src="assets/img/tandem.png" class="img-fluid grayscale" alt="Partenaire 4">
-          </div>
-
-          <!-- Logo partenaire 5 -->
-          <div class="col-6 col-md-3 col-lg-2 text-center">
-            <img src="assets/img/polaris.png" class="img-fluid grayscale" alt="Partenaire 5">
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-    <!-- /Partners Section -->
-
-    <!-- Results Section - Version améliorée -->
-    <section id="stats" class="stats section">
-      <div class="container">
-        <!-- En-tête de section ajouté -->
-        <div class="section-header text-center mb-5 section-title" data-aos="fade-up">
-          <h2>Chiffres clés</h2>
-          <p>Quelques statistiques qui témoignent de notre expertise et de notre engagement
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Nos Services</h2>
+          <p>
+            Des solutions technologiques sur mesure pour propulser votre
+            entreprise vers le succès digital.
           </p>
         </div>
+        <!-- End Section Title -->
 
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="stats-item">
-              <div class="stats-icon">
-                <i class="bi bi-folder-check"></i>
+        <div class="container">
+          <div class="row gy-5 gx-4">
+            <!-- Développement sur mesure -->
+            <div
+              class="col-lg-4 col-md-6 service-item"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <div
+                    class="icon-background"
+                    style="background-color: rgba(245, 120, 19, 0.1)"
+                  ></div>
+                  <i class="bi bi-laptop" style="color: #f57813"></i>
+                </div>
+                <div class="service-content">
+                  <h4 class="title">Développement Web & Logiciels</h4>
+                  <p class="description">
+                    Création de sites web modernes, d'applications web, mobiles
+                    et de logiciels métiers adaptés à vos besoins spécifiques.
+                  </p>
+                  <div class="service-footer">
+                    <a href="#service-web" class="readmore stretched-link">
+                      <span>En savoir plus</span>
+                      <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-hover-effect"></div>
               </div>
-              <span class="counter" data-target="50">0</span>
-              <p>Projets réalisés</p>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="stats-item">
-              <div class="stats-icon">
-                <i class="bi bi-emoji-smile"></i>
+            <div
+              class="col-lg-4 col-md-6 service-item"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <div
+                    class="icon-background"
+                    style="background-color: rgba(21, 160, 74, 0.1)"
+                  ></div>
+                  <i class="bi bi-palette" style="color: #15a04a"></i>
+                </div>
+                <div class="service-content">
+                  <h4 class="title">Identité Visuelle & Design</h4>
+                  <p class="description">
+                    Création de logos, chartes graphiques, supports
+                    publicitaires et vidéos promotionnelles pour votre marque.
+                  </p>
+                  <div class="service-footer">
+                    <a href="#service-design" class="readmore stretched-link">
+                      <span>En savoir plus</span>
+                      <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-hover-effect"></div>
               </div>
-              <span class="counter" data-target="25">0</span>
-              <p>Clients satisfaits</p>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="stats-item">
-              <div class="stats-icon">
-                <i class="bi bi-people-fill"></i>
+            <!-- Cybersécurité -->
+            <div
+              class="col-lg-4 col-md-6 service-item"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <div
+                    class="icon-background"
+                    style="background-color: rgba(217, 7, 105, 0.1)"
+                  ></div>
+                  <i class="bi bi-shield-lock" style="color: #d90769"></i>
+                </div>
+                <div class="service-content">
+                  <h4 class="title">Cybersécurité & Protection des Données</h4>
+                  <p class="description">
+                    Mise en place de solutions de sécurité pour protéger vos
+                    systèmes, vos données et garantir la continuité de votre
+                    activité.
+                  </p>
+                  <div class="service-footer">
+                    <a href="#service-securite" class="readmore stretched-link">
+                      <span>En savoir plus</span>
+                      <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-hover-effect"></div>
               </div>
-              <span class="counter" data-target="15">0</span>
-              <p>Partenariats stratégiques</p>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="stats-item">
-              <div class="stats-icon">
-                <i class="bi bi-graph-up-arrow"></i>
+            <!-- Communication -->
+            <div
+              class="col-lg-4 col-md-6 service-item"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <div
+                    class="icon-background"
+                    style="background-color: rgba(21, 191, 188, 0.1)"
+                  ></div>
+                  <i class="bi bi-megaphone" style="color: #15bfbc"></i>
+                </div>
+                <div class="service-content">
+                  <h4 class="title">Gestion de Communication</h4>
+                  <p class="description">
+                    Prise en charge de vos canaux de communication, animation
+                    des communautés, amélioration de l'image de marque.
+                  </p>
+                  <div class="service-footer">
+                    <a href="#" class="readmore stretched-link">
+                      <span>En savoir plus</span>
+                      <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-hover-effect"></div>
               </div>
-              <span class="counter" data-target="98">0</span>
-              <p>Taux de satisfaction</p>
+            </div>
+
+            <!-- Formation -->
+            <div
+              class="col-lg-4 col-md-6 service-item"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <div
+                    class="icon-background"
+                    style="background-color: rgba(245, 207, 19, 0.1)"
+                  ></div>
+                  <i class="bi bi-mortarboard" style="color: #f5cf13"></i>
+                </div>
+                <div class="service-content">
+                  <h4 class="title">Formations IT & Bureautique</h4>
+                  <p class="description">
+                    Cours en développement web, bureautique, cybersécurité et
+                    bien plus, pour débutants et professionnels.
+                  </p>
+                  <div class="service-footer">
+                    <a href="#" class="readmore stretched-link">
+                      <span>En savoir plus</span>
+                      <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-hover-effect"></div>
+              </div>
+            </div>
+
+            <!-- Conseil -->
+            <div
+              class="col-lg-4 col-md-6 service-item"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <div
+                    class="icon-background"
+                    style="background-color: rgba(19, 53, 245, 0.1)"
+                  ></div>
+                  <i class="bi bi-lightbulb" style="color: #1335f5"></i>
+                </div>
+                <div class="service-content">
+                  <h4 class="title">Conseil & Stratégie IT</h4>
+                  <p class="description">
+                    Accompagnement des entreprises dans la mise en place de
+                    solutions informatiques innovantes et efficaces.
+                  </p>
+                  <div class="service-footer">
+                    <a href="#" class="readmore stretched-link">
+                      <span>En savoir plus</span>
+                      <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-hover-effect"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- /Services Section -->
 
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="section">
-      <div class="container">
-        <div class="section-header section-title" data-aos="fade-up">
-          <h2>Pourquoi nous choisir</h2>
-          <p>Nous combinons expertise technique et approche client pour des résultats
-            exceptionnels</p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="bi bi-people"></i>
+      <section id="why-us" class="sama-why-us">
+        <div class="sama-why-us__container">
+          <!-- Header -->
+          <div class="sama-why-us__header" data-aos="fade-up">
+            <div class="sama-why-us__title-wrapper">
+              <h2 class="sama-why-us__title">
+                <span class="sama-why-us__title-gradient">SamaTech</span>
+                <span class="sama-why-us__title-excl">!!!</span>
+              </h2>
+              <div class="sama-why-us__underline">
+                <div
+                  class="sama-why-us__underline-bar sama-why-us__underline-bar--left"
+                ></div>
+                <div class="sama-why-us__underline-dot"></div>
+                <div
+                  class="sama-why-us__underline-bar sama-why-us__underline-bar--right"
+                ></div>
               </div>
-              <h3>Équipe qualifiée</h3>
-              <p>Des experts certifiés avec des années d'expérience dans divers domaines technologiques.</p>
+            </div>
+            <p class="sama-why-us__subtitle">
+              Découvrez ce qui fait de nous le partenaire idéal pour votre
+              <span class="sama-why-us__highlight"
+                >transformation digitale</span
+              >
+            </p>
+
+            <!-- Particules -->
+            <div class="sama-why-us__particles">
+              <div class="sama-why-us__particle" style="--sama-delay: 0"></div>
+              <div class="sama-why-us__particle" style="--sama-delay: 1"></div>
+              <div class="sama-why-us__particle" style="--sama-delay: 2"></div>
+              <div class="sama-why-us__particle" style="--sama-delay: 3"></div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="bi bi-shield-check"></i>
+          <!-- Contenu principal -->
+          <div class="sama-why-us__content">
+            <!-- Côté image -->
+            <div
+              class="sama-why-us__image-side"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div class="sama-why-us__image-container">
+                <div class="sama-why-us__image-wrapper">
+                  <img
+                    src="assets/img/why-us-bg.jpg"
+                    alt="SamaTech en action"
+                    class="sama-why-us__main-img"
+                    loading="lazy"
+                  />
+                  <!-- Overlay -->
+                  <div class="sama-why-us__image-overlay"></div>
+
+                  <!-- Formes flottantes -->
+                  <div class="sama-why-us__floating-shapes">
+                    <div
+                      class="sama-why-us__shape sama-why-us__shape--1"
+                      data-sama-speed="0.8"
+                    ></div>
+                    <div
+                      class="sama-why-us__shape sama-why-us__shape--2"
+                      data-sama-speed="1.2"
+                    ></div>
+                    <div
+                      class="sama-why-us__shape sama-why-us__shape--3"
+                      data-sama-speed="0.6"
+                    ></div>
+                  </div>
+
+                  <!-- Badge -->
+                  <div
+                    class="sama-why-us__badge"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <i class="bi bi-award-fill sama-why-us__badge-icon"></i>
+                    <span class="sama-why-us__badge-text"
+                      >Expertise Certifiée</span
+                    >
+                  </div>
+                </div>
               </div>
-              <h3>Sécurité garantie</h3>
-              <p>Protection maximale de vos données avec les dernières technologies de cybersécurité.</p>
+            </div>
+
+            <!-- Côté contenu -->
+            <div
+              class="sama-why-us__content-side"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <div class="sama-why-us__slider-container">
+                <div class="swiper sama-why-us__swiper">
+                  <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                      <article class="sama-why-us__card">
+                        <div class="sama-why-us__card-header">
+                          <div class="sama-why-us__card-icon-wrapper">
+                            <div class="sama-why-us__card-icon">
+                              <i
+                                class="bi bi-bar-chart-steps sama-why-us__card-icon-i"
+                              ></i>
+                              <div class="sama-why-us__card-icon-glow"></div>
+                            </div>
+                            <span class="sama-why-us__card-number">01</span>
+                          </div>
+                          <h3 class="sama-why-us__card-title">
+                            Nous faisons plus que coder
+                          </h3>
+                        </div>
+                        <div class="sama-why-us__card-content">
+                          <h4 class="sama-why-us__card-subtitle">
+                            Nous comprenons vos enjeux métiers pour créer des
+                            solutions utiles
+                          </h4>
+                          <p class="sama-why-us__card-desc">
+                            Chez Sama Tech, nous analysons vos besoins en
+                            profondeur pour vous proposer des solutions
+                            informatiques sur mesure, fiables, et évolutives.
+                          </p>
+                          <ul class="sama-why-us__card-list">
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Analyse approfondie des besoins
+                            </li>
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Solutions sur mesure
+                            </li>
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Accompagnement continu
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sama-why-us__card-hint">
+                          <i
+                            class="bi bi-mouse2 sama-why-us__card-hint-icon"
+                          ></i>
+                          Glissez pour découvrir plus
+                        </div>
+                      </article>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                      <article class="sama-why-us__card">
+                        <div class="sama-why-us__card-header">
+                          <div class="sama-why-us__card-icon-wrapper">
+                            <div class="sama-why-us__card-icon">
+                              <i
+                                class="bi bi-stack sama-why-us__card-icon-i"
+                              ></i>
+                              <div class="sama-why-us__card-icon-glow"></div>
+                            </div>
+                            <span class="sama-why-us__card-number">02</span>
+                          </div>
+                          <h3 class="sama-why-us__card-title">
+                            Une expertise polyvalente
+                          </h3>
+                        </div>
+                        <div class="sama-why-us__card-content">
+                          <h4 class="sama-why-us__card-subtitle">
+                            Développement, cybersécurité, marketing, formation —
+                            tout est couvert
+                          </h4>
+                          <p class="sama-why-us__card-desc">
+                            Notre équipe combine des compétences variées pour
+                            offrir un accompagnement global à nos clients.
+                          </p>
+                          <ul class="sama-why-us__card-list">
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Multi-expertise
+                            </li>
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Approche globale
+                            </li>
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Technologies variées
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sama-why-us__card-hint">
+                          <i
+                            class="bi bi-mouse2 sama-why-us__card-hint-icon"
+                          ></i>
+                          Glissez pour découvrir plus
+                        </div>
+                      </article>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                      <article class="sama-why-us__card">
+                        <div class="sama-why-us__card-header">
+                          <div class="sama-why-us__card-icon-wrapper">
+                            <div class="sama-why-us__card-icon">
+                              <i
+                                class="bi bi-people-fill sama-why-us__card-icon-i"
+                              ></i>
+                              <div class="sama-why-us__card-icon-glow"></div>
+                            </div>
+                            <span class="sama-why-us__card-number">03</span>
+                          </div>
+                          <h3 class="sama-why-us__card-title">
+                            Un partenaire à taille humaine
+                          </h3>
+                        </div>
+                        <div class="sama-why-us__card-content">
+                          <h4 class="sama-why-us__card-subtitle">
+                            Proximité, réactivité, et écoute permanente de vos
+                            besoins
+                          </h4>
+                          <p class="sama-why-us__card-desc">
+                            Nous mettons un point d'honneur à travailler dans
+                            une relation de confiance avec chaque client.
+                          </p>
+                          <ul class="sama-why-us__card-list">
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Relation de confiance
+                            </li>
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Support continu
+                            </li>
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Communication transparente
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sama-why-us__card-hint">
+                          <i
+                            class="bi bi-mouse2 sama-why-us__card-hint-icon"
+                          ></i>
+                          Glissez pour découvrir plus
+                        </div>
+                      </article>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                      <article class="sama-why-us__card">
+                        <div class="sama-why-us__card-header">
+                          <div class="sama-why-us__card-icon-wrapper">
+                            <div class="sama-why-us__card-icon">
+                              <i
+                                class="bi bi-lightbulb-fill sama-why-us__card-icon-i"
+                              ></i>
+                              <div class="sama-why-us__card-icon-glow"></div>
+                            </div>
+                            <span class="sama-why-us__card-number">04</span>
+                          </div>
+                          <h3 class="sama-why-us__card-title">
+                            Une vision tournée vers l'avenir
+                          </h3>
+                        </div>
+                        <div class="sama-why-us__card-content">
+                          <h4 class="sama-why-us__card-subtitle">
+                            Innovation et technologies durables pour un impact
+                            réel
+                          </h4>
+                          <p class="sama-why-us__card-desc">
+                            Sama Tech n'est pas qu'un prestataire, c'est un
+                            partenaire de transformation digitale.
+                          </p>
+                          <ul class="sama-why-us__card-list">
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Innovation constante
+                            </li>
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Technologies durables
+                            </li>
+                            <li class="sama-why-us__card-item">
+                              <i
+                                class="bi bi-check-circle-fill sama-why-us__card-check"
+                              ></i>
+                              Vision long terme
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sama-why-us__card-hint">
+                          <i
+                            class="bi bi-mouse2 sama-why-us__card-hint-icon"
+                          ></i>
+                          Glissez pour découvrir plus
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+
+                  <!-- Navigation -->
+                  <div class="sama-why-us__navigation">
+                    <div class="sama-why-us__nav-btn sama-why-us__nav-prev">
+                      <div class="sama-why-us__nav-circle">
+                        <i class="bi bi-chevron-left sama-why-us__nav-icon"></i>
+                      </div>
+                      <span class="sama-why-us__nav-label">Précédent</span>
+                    </div>
+
+                    <div class="sama-why-us__pagination">
+                      <div class="sama-why-us__pagination-dots"></div>
+                    </div>
+
+                    <div class="sama-why-us__nav-btn sama-why-us__nav-next">
+                      <span class="sama-why-us__nav-label">Suivant</span>
+                      <div class="sama-why-us__nav-circle">
+                        <i
+                          class="bi bi-chevron-right sama-why-us__nav-icon"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="bi bi-lightning-charge"></i>
+          <!-- Statistiques -->
+          <div
+            class="sama-why-us__stats"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="sama-why-us__stats-grid">
+              <div class="sama-why-us__stat-item">
+                <div class="sama-why-us__stat-number" data-sama-count="150">
+                  0
+                </div>
+                <div class="sama-why-us__stat-label">Projets Réalisés</div>
+                <div class="sama-why-us__stat-bar"></div>
               </div>
-              <h3>Solutions rapides</h3>
-              <p>Délais d'exécution optimisés sans compromis sur la qualité du travail.</p>
+              <div class="sama-why-us__stat-item">
+                <div class="sama-why-us__stat-number" data-sama-count="50">
+                  0
+                </div>
+                <div class="sama-why-us__stat-label">Clients Satisfaits</div>
+                <div class="sama-why-us__stat-bar"></div>
+              </div>
+              <div class="sama-why-us__stat-item">
+                <div class="sama-why-us__stat-number" data-sama-count="5">
+                  0
+                </div>
+                <div class="sama-why-us__stat-label">Ans d'Expérience</div>
+                <div class="sama-why-us__stat-bar"></div>
+              </div>
+              <div class="sama-why-us__stat-item">
+                <div class="sama-why-us__stat-number" data-sama-count="24">
+                  0
+                </div>
+                <div class="sama-why-us__stat-label">Support 24/7</div>
+                <div class="sama-why-us__stat-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call To Action Section -->
+      <section
+        id="call-to-action"
+        class="call-to-action section dark-background"
+      >
+        <img src="assets/img/cta-bg.jpg" alt="Image de fond Appel à l'action" />
+
+        <div class="container">
+          <div
+            class="row justify-content-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="col-xl-10">
+              <div class="text-center text-white">
+                <h3>Prêt à digitaliser votre entreprise ?</h3>
+                <p>
+                  Confiez vos projets à Sama Tech et bénéficiez de solutions
+                  modernes, sécurisées et parfaitement adaptées à vos besoins.
+                  Sites web, applications, marketing digital ou formations —
+                  nous sommes à vos côtés.
+                </p>
+                <a class="cta-btn" href="#contact">Demandez un devis gratuit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Call To Action Section -->
+
+      <!-- Features Section -->
+      <section id="features" class="features section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="mb-0">Des Fonctionnalités Puissantes</h3>
+              <h3>Pour Accompagner Votre Croissance</h3>
+
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="icon-list d-flex">
+                    <i
+                      class="bi bi-lightning-charge"
+                      style="color: #ff8b2c"
+                    ></i>
+                    <span>Développement rapide et sur-mesure</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="icon-list d-flex">
+                    <i class="bi bi-shield-lock" style="color: #5578ff"></i>
+                    <span>Haute sécurité des données</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="icon-list d-flex">
+                    <i class="bi bi-bar-chart-line" style="color: #e80368"></i>
+                    <span>Outils d'analyse et reporting</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="icon-list d-flex">
+                    <i class="bi bi-people" style="color: #ffa76e"></i>
+                    <span>Accompagnement personnalisé</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="icon-list d-flex">
+                    <i class="bi bi-globe" style="color: #11dbcf"></i>
+                    <span>Solutions accessibles en ligne 24/7</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="icon-list d-flex">
+                    <i class="bi bi-graph-up-arrow" style="color: #4233ff"></i>
+                    <span>Optimisation du marketing digital</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="icon-list d-flex">
+                    <i class="bi bi-laptop" style="color: #29cc61"></i>
+                    <span>Design responsive et moderne</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="icon-list d-flex">
+                    <i class="bi bi-journal-code" style="color: #ff5828"></i>
+                    <span>Formations continues et certifiantes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-5 position-relative"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <div class="phone-wrap">
+                <img
+                  src="assets/img/iphone.png"
+                  alt="Application mobile Sama Tech"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <h4>
+                  Une vision innovante pour<br />répondre à vos défis numériques
+                </h4>
+                <p>
+                  Chez Sama Tech, nous allions expertise technique et
+                  compréhension métier pour vous proposer des solutions
+                  efficaces, modernes et évolutives.
+                </p>
+                <a href="#about" class="btn-get-started">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Features Section -->
+
+      <!-- Partners Section -->
+      <!-- Partners Section - Version Premium -->
+      <section id="partenaires" class="sama-partenaires">
+        <div class="sama-partenaires__container">
+          <!-- Header avec effet -->
+          <div class="sama-partenaires__header" data-aos="fade-up">
+            <div class="sama-partenaires__title-wrapper">
+              <h2 class="sama-partenaires__title">
+                <span class="sama-partenaires__title-text"
+                  >Nos Partenaires</span
+                >
+                <span class="sama-partenaires__title-dots">
+                  <span class="sama-partenaires__dot"></span>
+                  <span class="sama-partenaires__dot"></span>
+                  <span class="sama-partenaires__dot"></span>
+                </span>
+              </h2>
+              <div class="sama-partenaires__subtitle">
+                Ils nous font confiance pour leurs projets digitaux
+                <div class="sama-partenaires__subtitle-line"></div>
+              </div>
+            </div>
+
+            <!-- Éléments décoratifs -->
+            <div class="sama-partenaires__decorations">
+              <div
+                class="sama-partenaires__decoration sama-partenaires__decoration--1"
+              ></div>
+              <div
+                class="sama-partenaires__decoration sama-partenaires__decoration--2"
+              ></div>
+              <div
+                class="sama-partenaires__decoration sama-partenaires__decoration--3"
+              ></div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="bi bi-currency-exchange"></i>
+          <!-- Logo Grid -->
+          <div
+            class="sama-partenaires__grid"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <!-- Logo 1 -->
+            <div
+              class="sama-partenaires__logo-item"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="sama-partenaires__logo-wrapper">
+                <div class="sama-partenaires__logo-inner">
+                  <img
+                    src="assets/img/LIS 3.png"
+                    class="sama-partenaires__logo-img"
+                    alt="LIS - Partenaire"
+                    loading="lazy"
+                  />
+                  <div class="sama-partenaires__logo-overlay"></div>
+                  <div class="sama-partenaires__logo-hover">
+                    <div class="sama-partenaires__logo-info">
+                      <h4>LIS</h4>
+                      <p>Solutions Immobilières</p>
+                    </div>
+                    <div class="sama-partenaires__logo-sparkles">
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sama-partenaires__logo-border"></div>
               </div>
-              <h3>Rapport qualité/prix</h3>
-              <p>Des tarifs compétitifs pour des solutions haut de gamme adaptées à votre budget.</p>
+            </div>
+
+            <!-- Logo 2 -->
+            <div
+              class="sama-partenaires__logo-item"
+              data-aos="zoom-in"
+              data-aos-delay="250"
+            >
+              <div class="sama-partenaires__logo-wrapper">
+                <div class="sama-partenaires__logo-inner">
+                  <img
+                    src="assets/img/immosen.png"
+                    class="sama-partenaires__logo-img"
+                    alt="ImmoSen - Partenaire"
+                    loading="lazy"
+                  />
+                  <div class="sama-partenaires__logo-overlay"></div>
+                  <div class="sama-partenaires__logo-hover">
+                    <div class="sama-partenaires__logo-info">
+                      <h4>ImmoSen</h4>
+                      <p>Agence Immobilière</p>
+                    </div>
+                    <div class="sama-partenaires__logo-sparkles">
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sama-partenaires__logo-border"></div>
+              </div>
+            </div>
+
+            <!-- Logo 3 -->
+            <div
+              class="sama-partenaires__logo-item"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="sama-partenaires__logo-wrapper">
+                <div class="sama-partenaires__logo-inner">
+                  <img
+                    src="assets/img/sentouki.png"
+                    class="sama-partenaires__logo-img"
+                    alt="Sentouki - Partenaire"
+                    loading="lazy"
+                  />
+                  <div class="sama-partenaires__logo-overlay"></div>
+                  <div class="sama-partenaires__logo-hover">
+                    <div class="sama-partenaires__logo-info">
+                      <h4>Sentouki</h4>
+                      <p>Commerce Digital</p>
+                    </div>
+                    <div class="sama-partenaires__logo-sparkles">
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sama-partenaires__logo-border"></div>
+              </div>
+            </div>
+
+            <!-- Logo 4 -->
+            <div
+              class="sama-partenaires__logo-item"
+              data-aos="zoom-in"
+              data-aos-delay="350"
+            >
+              <div class="sama-partenaires__logo-wrapper">
+                <div class="sama-partenaires__logo-inner">
+                  <img
+                    src="assets/img/tandem.png"
+                    class="sama-partenaires__logo-img"
+                    alt="Tandem - Partenaire"
+                    loading="lazy"
+                  />
+                  <div class="sama-partenaires__logo-overlay"></div>
+                  <div class="sama-partenaires__logo-hover">
+                    <div class="sama-partenaires__logo-info">
+                      <h4>Tandem</h4>
+                      <p>Solutions IT</p>
+                    </div>
+                    <div class="sama-partenaires__logo-sparkles">
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sama-partenaires__logo-border"></div>
+              </div>
+            </div>
+
+            <!-- Logo 5 -->
+            <div
+              class="sama-partenaires__logo-item"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="sama-partenaires__logo-wrapper">
+                <div class="sama-partenaires__logo-inner">
+                  <img
+                    src="assets/img/polaris.png"
+                    class="sama-partenaires__logo-img"
+                    alt="Polaris - Partenaire"
+                    loading="lazy"
+                  />
+                  <div class="sama-partenaires__logo-overlay"></div>
+                  <div class="sama-partenaires__logo-hover">
+                    <div class="sama-partenaires__logo-info">
+                      <h4>Polaris</h4>
+                      <p>Technologie Avancée</p>
+                    </div>
+                    <div class="sama-partenaires__logo-sparkles">
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                      <span class="sama-partenaires__sparkle"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sama-partenaires__logo-border"></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="section-header section-title" data-aos="fade-up">
-          <p>L'excellence au service de votre réussite</p>
 
-        </div>
-      </div>
-    </section>
+          <!-- Stats des partenariats -->
+          <div
+            class="sama-partenaires__stats"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="sama-partenaires__stats-grid">
+              <div class="sama-partenaires__stat-item">
+                <div class="sama-partenaires__stat-number" data-count="15">
+                  0
+                </div>
+                <div class="sama-partenaires__stat-label">
+                  Partenaires Actifs
+                </div>
+                <div class="sama-partenaires__stat-icon">
+                  <i class="bi bi-handshake"></i>
+                </div>
+              </div>
+              <div class="sama-partenaires__stat-item">
+                <div class="sama-partenaires__stat-number" data-count="50">
+                  0
+                </div>
+                <div class="sama-partenaires__stat-label">
+                  Projets Collaboratifs
+                </div>
+                <div class="sama-partenaires__stat-icon">
+                  <i class="bi bi-briefcase"></i>
+                </div>
+              </div>
+              <div class="sama-partenaires__stat-item">
+                <div class="sama-partenaires__stat-number" data-count="3">
+                  0
+                </div>
+                <div class="sama-partenaires__stat-label">
+                  Ans de Collaboration
+                </div>
+                <div class="sama-partenaires__stat-icon">
+                  <i class="bi bi-calendar-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section bg-light">
-      <div class="container">
-        <div class="section-header section-title" data-aos="fade-up">
-          <h2>Nos réalisations</h2>
-          <p>Découvrez nos projets phares</p>
-        </div>
-
-        <div class="portfolio-filter" data-aos="fade-up">
-          <button class="active" data-filter="*">Tous</button>
-          <button data-filter=".web">Sites Web</button>
-          <button data-filter=".app">Applications</button>
-          <button data-filter=".design">Design</button>
-        </div>
-
-        <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="100">
-          <div class="portfolio-item web">
-            <img src="assets/img/portfolio/logo_samafact.png" alt="Projet web">
-            <div class="portfolio-overlay">
-              <h3>Site E-commerce</h3>
-              <p>Plateforme de vente en ligne</p>
-              <a href="portfolio-details.html" class="portfolio-link">
+          <!-- CTA -->
+          <div
+            class="sama-partenaires__cta"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="sama-partenaires__cta-content">
+              <h3>Devenez notre partenaire</h3>
+              <p>
+                Rejoignez notre réseau de partenaires privilégiés et développez
+                votre entreprise avec nous
+              </p>
+              <a href="#contact" class="sama-partenaires__cta-btn">
+                <span>Devenir Partenaire</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-          </div>
-
-          <div class="portfolio-item app">
-            <img src="assets/img/portfolio/logo_samarh.png" alt="Application mobile">
-            <div class="portfolio-overlay">
-              <h3>App Mobile</h3>
-              <p>Solution de gestion</p>
-              <a href="portfolio-details.html" class="portfolio-link">
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio-item web">
-            <img src="assets/img/portfolio/logo_samafact.png" alt="Projet web">
-            <div class="portfolio-overlay">
-              <h3>Site E-commerce</h3>
-              <p>Plateforme de vente en ligne</p>
-              <a href="portfolio-details.html" class="portfolio-link">
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio-item app">
-            <img src="assets/img/portfolio/logo_samarh.png" alt="Application mobile">
-            <div class="portfolio-overlay">
-              <h3>App Mobile</h3>
-              <p>Solution de gestion</p>
-              <a href="portfolio-details.html" class="portfolio-link">
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio-item web">
-            <img src="assets/img/portfolio/logo_samafact.png" alt="Projet web">
-            <div class="portfolio-overlay">
-              <h3>Site E-commerce</h3>
-              <p>Plateforme de vente en ligne</p>
-              <a href="portfolio-details.html" class="portfolio-link">
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio-item app">
-            <img src="assets/img/portfolio/logo_samarh.png" alt="Application mobile">
-            <div class="portfolio-overlay">
-              <h3>App Mobile</h3>
-              <p>Solution de gestion</p>
-              <a href="portfolio-details.html" class="portfolio-link">
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Ajoutez d'autres éléments portfolio ici -->
-        </div>
-
-        <div class="text-center mt-5" data-aos="fade-up">
-          <a href="portfolio.html" class="btn btn-outline-primary">Voir tous les projets</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section id="process" class="process section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Notre Processus</h2>
-        <p>Comment nous travaillons pour garantir votre succès</p>
-      </div>
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6" data-aos="fade-up">
-            <div class="process-step">
-              <div class="step-number">1</div>
-              <h3>Écoute</h3>
-              <p>Analyse approfondie de vos besoins</p>
-              <div class="step-icon"><i class="bi bi-ear"></i></div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="process-step">
-              <div class="step-number">2</div>
-              <h3>Conception</h3>
-              <p>Création d'une solution sur mesure</p>
-              <div class="step-icon"><i class="bi bi-pencil-square"></i></div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="process-step">
-              <div class="step-number">3</div>
-              <h3>Développement</h3>
-              <p>Implémentation technique rigoureuse</p>
-              <div class="step-icon"><i class="bi bi-code-slash"></i></div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="process-step">
-              <div class="step-number">4</div>
-              <h3>Livraison</h3>
-              <p>Suivi et optimisation continue</p>
-              <div class="step-icon"><i class="bi bi-check-circle"></i></div>
+            <div class="sama-partenaires__cta-decoration">
+              <div class="sama-partenaires__cta-orb"></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Process Section -->
+      </section>
+      <!-- /Partners Section -->
 
-
-    <!-- Team Section -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header text-center mb-5">
-          <h2 data-aos="fade-up">Notre équipe</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Rencontrez les experts qui seront à votre écoute</p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-card text-center">
-              <div class="team-img mx-auto mb-4">
-                <img src="assets/img/team/team-1.jpg" alt="Directeur Commercial" class="img-fluid rounded-circle">
-              </div>
-              <h4>Mamadou Diallo</h4>
-              <p class="text-primary mb-3">Directeur Commercial</p>
-              <p>Spécialiste en solutions digitales avec 10 ans d'expérience.</p>
-              <div class="social-links d-flex justify-content-center">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="mailto:m.diallo@samatech.sn"><i class="bi bi-envelope"></i></a>
-              </div>
-            </div>
+      <!-- Results Section - Version améliorée -->
+      <section id="stats" class="stats section">
+        <div class="container">
+          <!-- En-tête de section ajouté -->
+          <div
+            class="section-header text-center mb-5 section-title"
+            data-aos="fade-up"
+          >
+            <h2>Chiffres clés</h2>
+            <p>
+              Quelques statistiques qui témoignent de notre expertise et de
+              notre engagement
+            </p>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-card text-center">
-              <div class="team-img mx-auto mb-4">
-                <img src="assets/img/team/team-1.jpg" alt="Chef de Projet" class="img-fluid rounded-circle">
-              </div>
-              <h4>Aminata Ndiaye</h4>
-              <p class="text-primary mb-3">Chef de Projet</p>
-              <p>Gestion de projets digitaux et accompagnement client.</p>
-              <div class="social-links d-flex justify-content-center">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="mailto:a.ndiaye@samatech.sn"><i class="bi bi-envelope"></i></a>
+          <div class="row gy-4">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="stats-item">
+                <div class="stats-icon">
+                  <i class="bi bi-folder-check"></i>
+                </div>
+                <span class="counter" data-target="50">0</span>
+                <p>Projets réalisés</p>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-card text-center">
-              <div class="team-img mx-auto mb-4">
-                <img src="assets/img/team/team-1.jpg" alt="Support Client" class="img-fluid rounded-circle">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="stats-item">
+                <div class="stats-icon">
+                  <i class="bi bi-emoji-smile"></i>
+                </div>
+                <span class="counter" data-target="25">0</span>
+                <p>Clients satisfaits</p>
               </div>
-              <h4>Ousmane Diop</h4>
-              <p class="text-primary mb-3">Support Client</p>
-              <p>À votre écoute pour toutes questions techniques.</p>
-              <div class="social-links d-flex justify-content-center">
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="mailto:o.diop@samatech.sn"><i class="bi bi-envelope"></i></a>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="stats-item">
+                <div class="stats-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <span class="counter" data-target="15">0</span>
+                <p>Partenariats stratégiques</p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="stats-item">
+                <div class="stats-icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <span class="counter" data-target="98">0</span>
+                <p>Taux de satisfaction</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+      <!-- Why Choose Us Section -->
+      <section id="why-choose-us" class="section">
+        <div class="container">
+          <div class="section-header section-title" data-aos="fade-up">
+            <h2>Pourquoi nous choisir</h2>
+            <p>
+              Nous combinons expertise technique et approche client pour des
+              résultats exceptionnels
+            </p>
+          </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+          <div class="row gy-4">
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3>Équipe qualifiée</h3>
+                <p>
+                  Des experts certifiés avec des années d'expérience dans divers
+                  domaines technologiques.
+                </p>
+              </div>
+            </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>Sécurité garantie</h3>
+                <p>
+                  Protection maximale de vos données avec les dernières
+                  technologies de cybersécurité.
+                </p>
+              </div>
+            </div>
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h3>Solutions rapides</h3>
+                <p>
+                  Délais d'exécution optimisés sans compromis sur la qualité du
+                  travail.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-currency-exchange"></i>
+                </div>
+                <h3>Rapport qualité/prix</h3>
+                <p>
+                  Des tarifs compétitifs pour des solutions haut de gamme
+                  adaptées à votre budget.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-header section-title" data-aos="fade-up">
+            <p>L'excellence au service de votre réussite</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="section bg-light">
+        <div class="container">
+          <div class="section-header section-title" data-aos="fade-up">
+            <h2>Nos réalisations</h2>
+            <p>Découvrez nos projets phares</p>
+          </div>
+
+          <div class="portfolio-filter" data-aos="fade-up">
+            <button class="active" data-filter="*">Tous</button>
+            <button data-filter=".web">Sites Web</button>
+            <button data-filter=".app">Applications</button>
+            <button data-filter=".design">Design</button>
+          </div>
+
+          <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-item web">
+              <img
+                src="assets/img/portfolio/logo_samafact.png"
+                alt="Projet web"
+              />
+              <div class="portfolio-overlay">
+                <h3>Site E-commerce</h3>
+                <p>Plateforme de vente en ligne</p>
+                <a href="portfolio-details.html" class="portfolio-link">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio-item app">
+              <img
+                src="assets/img/portfolio/logo_samarh.png"
+                alt="Application mobile"
+              />
+              <div class="portfolio-overlay">
+                <h3>App Mobile</h3>
+                <p>Solution de gestion</p>
+                <a href="portfolio-details.html" class="portfolio-link">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-item web">
+              <img
+                src="assets/img/portfolio/logo_samafact.png"
+                alt="Projet web"
+              />
+              <div class="portfolio-overlay">
+                <h3>Site E-commerce</h3>
+                <p>Plateforme de vente en ligne</p>
+                <a href="portfolio-details.html" class="portfolio-link">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio-item app">
+              <img
+                src="assets/img/portfolio/logo_samarh.png"
+                alt="Application mobile"
+              />
+              <div class="portfolio-overlay">
+                <h3>App Mobile</h3>
+                <p>Solution de gestion</p>
+                <a href="portfolio-details.html" class="portfolio-link">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-item web">
+              <img
+                src="assets/img/portfolio/logo_samafact.png"
+                alt="Projet web"
+              />
+              <div class="portfolio-overlay">
+                <h3>Site E-commerce</h3>
+                <p>Plateforme de vente en ligne</p>
+                <a href="portfolio-details.html" class="portfolio-link">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio-item app">
+              <img
+                src="assets/img/portfolio/logo_samarh.png"
+                alt="Application mobile"
+              />
+              <div class="portfolio-overlay">
+                <h3>App Mobile</h3>
+                <p>Solution de gestion</p>
+                <a href="portfolio-details.html" class="portfolio-link">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Ajoutez d'autres éléments portfolio ici -->
+          </div>
+
+          <div class="text-center mt-5" data-aos="fade-up">
+            <a href="portfolio.html" class="btn btn-outline-primary"
+              >Voir tous les projets</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section id="process" class="process section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Notre Processus</h2>
+          <p>Comment nous travaillons pour garantir votre succès</p>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up">
+              <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Écoute</h3>
+                <p>Analyse approfondie de vos besoins</p>
+                <div class="step-icon"><i class="bi bi-ear"></i></div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Conception</h3>
+                <p>Création d'une solution sur mesure</p>
+                <div class="step-icon"><i class="bi bi-pencil-square"></i></div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Développement</h3>
+                <p>Implémentation technique rigoureuse</p>
+                <div class="step-icon"><i class="bi bi-code-slash"></i></div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="process-step">
+                <div class="step-number">4</div>
+                <h3>Livraison</h3>
+                <p>Suivi et optimisation continue</p>
+                <div class="step-icon"><i class="bi bi-check-circle"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Process Section -->
+
+      <!-- Team Section
+      <section class="section">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <h2 data-aos="fade-up">Notre équipe</h2>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Rencontrez les experts qui seront à votre écoute
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-card text-center">
+                <div class="team-img mx-auto mb-4">
+                  <img
+                    src="assets/img/team/team-1.jpg"
+                    alt="Directeur Commercial"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <h4>Mamadou Diallo</h4>
+                <p class="text-primary mb-3">Directeur Commercial</p>
+                <p>
+                  Spécialiste en solutions digitales avec 10 ans d'expérience.
+                </p>
+                <div class="social-links d-flex justify-content-center">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="mailto:m.diallo@samatech.sn"
+                    ><i class="bi bi-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-card text-center">
+                <div class="team-img mx-auto mb-4">
+                  <img
+                    src="assets/img/team/team-1.jpg"
+                    alt="Chef de Projet"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <h4>Aminata Ndiaye</h4>
+                <p class="text-primary mb-3">Chef de Projet</p>
+                <p>Gestion de projets digitaux et accompagnement client.</p>
+                <div class="social-links d-flex justify-content-center">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="mailto:a.ndiaye@samatech.sn"
+                    ><i class="bi bi-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-card text-center">
+                <div class="team-img mx-auto mb-4">
+                  <img
+                    src="assets/img/team/team-1.jpg"
+                    alt="Support Client"
+                    class="img-fluid rounded-circle"
+                  />
+                </div>
+                <h4>Ousmane Diop</h4>
+                <p class="text-primary mb-3">Support Client</p>
+                <p>À votre écoute pour toutes questions techniques.</p>
+                <div class="social-links d-flex justify-content-center">
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="mailto:o.diop@samatech.sn"
+                    ><i class="bi bi-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
                 },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum suscipit rhoncus. Accusantium quam,
+                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                    risus at semper.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/testimonials/testimonials-1.jpg"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Saul Goodman</h3>
+                    <h4>Ceo &amp; Founder</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/testimonials/testimonials-2.jpg"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Sara Wilsson</h3>
+                    <h4>Designer</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/testimonials/testimonials-3.jpg"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Jena Karlis</h3>
+                    <h4>Store Owner</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/testimonials/testimonials-4.jpg"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Matt Brandon</h3>
+                    <h4>Freelancer</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure
+                    aliqua veniam tempor noster veniam enim culpa labore duis
+                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                    fore nisi cillum quid.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/testimonials/testimonials-5.jpg"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>John Larson</h3>
+                    <h4>Entrepreneur</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Testimonials Section -->
+
+      <!-- Recent Posts Section -->
+      <section id="recent-posts" class="recent-posts section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Articles Récents</h2>
+          <p>
+            Découvrez nos dernières publications sur l’actualité tech, la
+            sécurité et les tendances numériques
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-5">
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="post-box">
+                <div class="post-img">
+                  <img
+                    src="assets/img/blog/cybersecurity.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="meta">
+                  <span class="post-date">26 Juin 2025</span>
+                  <span class="post-author"> / M. A. Ba</span>
+                </div>
+                <h3 class="post-title">
+                  5 erreurs à éviter pour sécuriser votre application web
+                </h3>
+                <p>
+                  De la mauvaise gestion des mots de passe aux failles XSS,
+                  découvrez les erreurs fréquentes en cybersécurité et comment
+                  les corriger efficacement.
+                </p>
+                <a href="blog-details.html" class="readmore stretched-link"
+                  ><span>Lire plus</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="post-box">
+                <div class="post-img">
+                  <img
+                    src="assets/img/blog/social-media.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="meta">
+                  <span class="post-date">18 Juin 2023</span>
+                  <span class="post-author"> / Maimouna Touré</span>
+                </div>
+                <h3 class="post-title">
+                  Comment booster sa visibilité sur les réseaux sociaux en 2025
+                </h3>
+                <p>
+                  Instagram, TikTok, LinkedIn... Nos conseils pour bâtir une
+                  stratégie digitale percutante et engagée pour votre marque ou
+                  entreprise.
+                </p>
+                <a href="blog-details.html" class="readmore stretched-link"
+                  ><span>Lire plus</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="post-box">
+                <div class="post-img">
+                  <img
+                    src="assets/img/blog/networking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="meta">
+                  <span class="post-date">10 Juin 2022</span>
+                  <span class="post-author"> / A. Khadre Ba</span>
+                </div>
+                <h3 class="post-title">
+                  Les bases du réseau informatique expliquées simplement
+                </h3>
+                <p>
+                  Adresses IP, DNS, routeurs, pare-feux… un guide clair pour
+                  comprendre l’infrastructure qui relie le monde.
+                </p>
+                <a href="blog-details.html" class="readmore stretched-link"
+                  ><span>Lire plus</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="post-box">
+                <div class="post-img">
+                  <img src="assets/img/blog/ai.png" class="img-fluid" alt="" />
+                </div>
+                <div class="meta">
+                  <span class="post-date">01 Juin 2025</span>
+                  <span class="post-author"> / Khadija Sylla</span>
+                </div>
+                <h3 class="post-title">
+                  L’intelligence artificielle au service des entreprises
+                  africaines
+                </h3>
+                <p>
+                  Découvrez comment les PME sénégalaises adoptent l’IA pour
+                  optimiser leurs services et mieux cibler leurs clients.
+                </p>
+                <a href="blog-details.html" class="readmore stretched-link"
+                  ><span>Lire plus</span><i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Recent Posts Section -->
+
+      <a
+        href="https://wa.me/221771234567"
+        class="whatsapp-float"
+        target="_blank"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-text">Contactez-nous</span>
+      </a>
+    </main>
+
+    <footer id="footer" class="footer light-background">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- À propos -->
+            <div class="col-lg-5 col-md-12 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Sama Tech</span>
+              </a>
+              <p>
+                Sama Tech est une entreprise spécialisée dans le développement
+                d'applications, la création de sites web, le marketing digital
+                et la formation informatique. Nous vous accompagnons dans votre
+                transformation numérique.
+              </p>
+              <div class="social-links d-flex mt-4">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            <!-- Liens utiles -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Liens utiles</h4>
+              <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Conditions d’utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+              </ul>
+            </div>
+
+            <!-- Nos services -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Nos services</h4>
+              <ul>
+                <li><a href="#">Développement Web</a></li>
+                <li><a href="#">Applications & Logiciels</a></li>
+                <li><a href="#">Marketing Digital</a></li>
+                <li><a href="#">Formation Informatique</a></li>
+                <li><a href="#">Community Management</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contactez-nous</h4>
+              <p>Dakar, Sénégal</p>
+              <p>Zone de captage, Liberté 6</p>
+              <p>Sama Tech</p>
+              <p class="mt-4">
+                <strong>Téléphone :</strong> <span>+221 77 123 45 67</span>
+              </p>
+              <p><strong>Email :</strong> <span>contact@samatech.sn</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bas de page -->
+      <div class="container copyright text-center">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">SamaTech</strong>
+          <span>- Tous droits réservés</span>
+        </p>
+        <div class="credits">Propulsé avec ❤️ par l'équipe Sama Tech</div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- PureCounter JS -->
+    <script>
+      // Animation des compteurs
+      // Animation au défilement
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".counter");
+
+        function animateCounter(element, target) {
+          let current = 0;
+          const increment = target / 100; // 100 étapes pour l'animation
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              clearInterval(timer);
+              current = target;
+            }
+            element.textContent = Math.floor(current);
+
+            // Ajoute une classe d'animation au changement
+            element.classList.add("counting");
+            setTimeout(() => element.classList.remove("counting"), 500);
+          }, 20);
+        }
+
+        // Observer pour déclencher l'animation lors du scroll
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute("data-target"));
+                animateCounter(counter, target);
+                observer.unobserve(counter);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        counters.forEach((counter) => {
+          observer.observe(counter);
+        });
+
+        // Animation des éléments au scroll
+        AOS.init({
+          duration: 800,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        });
+
+        // Animation du bouton WhatsApp
+        const whatsappBtn = document.querySelector(".whatsapp-float");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            whatsappBtn.style.transform = "translateY(0)";
+            whatsappBtn.style.opacity = "1";
+          } else {
+            whatsappBtn.style.transform = "translateY(100px)";
+            whatsappBtn.style.opacity = "0";
+          }
+        });
+
+        // Filtrage du portfolio
+        const filterButtons = document.querySelectorAll(
+          ".portfolio-filter button"
+        );
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Retire la classe active de tous les boutons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            // Ajoute la classe active au bouton cliqué
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+            const items = document.querySelectorAll(".portfolio-item");
+
+            items.forEach((item) => {
+              if (
+                filterValue === "*" ||
+                item.classList.contains(filterValue.substring(1))
+              ) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Hero Slider Functionality
+        const slides = document.querySelectorAll(".slide");
+        let currentSlide = 0;
+
+        function nextSlide() {
+          slides[currentSlide].classList.remove("active");
+          currentSlide = (currentSlide + 1) % slides.length;
+          slides[currentSlide].classList.add("active");
+        }
+
+        // Change slide every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Initialize AOS animations
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            duration: 800,
+            easing: "ease-in-out",
+            once: true,
+          });
+        }
+
+        // Initialize GLightbox for video
+        if (typeof GLightbox !== "undefined") {
+          const lightbox = GLightbox({
+            selector: ".glightbox",
+          });
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialisation du slider Swiper
+        if (typeof Swiper !== "undefined") {
+          const whyUsSwiper = new Swiper(".why-us-swiper", {
+            loop: true,
+            speed: 800,
+            autoplay: {
+              delay: 7000,
+              disableOnInteraction: false,
+            },
+            effect: "fade",
+            fadeEffect: {
+              crossFade: true,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+
+          // Pause au survol
+          const sliderContainer = document.querySelector(".why-us-swiper");
+          if (sliderContainer) {
+            sliderContainer.addEventListener("mouseenter", () => {
+              whyUsSwiper.autoplay.stop();
+            });
+
+            sliderContainer.addEventListener("mouseleave", () => {
+              whyUsSwiper.autoplay.start();
+            });
+          }
+        }
+      });
+    </script>
+    <script>
+      // Set current year in footer
+      const yearElement = document.getElementById("current-year");
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+      // Animate elements on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 800,
+          easing: "ease-in-out",
+          once: true,
+        });
+
+        // Floating animation for team cards
+        const teamCards = document.querySelectorAll(".team-card");
+        teamCards.forEach((card, index) => {
+          card.style.animation = `float 6s ease-in-out ${
+            index * 0.2
+          }s infinite`;
+        });
+      });
+    </script>
+    <script></script>
+    <script>
+      // Script spécifique corrigé pour la section Why Us
+      (function () {
+        "use strict";
+
+        // Attendre que tout soit chargé
+        window.addEventListener("load", function () {
+          initSamaWhyUs();
+        });
+
+        function initSamaWhyUs() {
+          const whyUsSection = document.querySelector(".sama-why-us");
+          if (!whyUsSection) return;
+
+          // 1. Initialisation du Swiper
+          initSamaSwiper();
+
+          // 2. Initialisation des compteurs
+          initSamaCounters();
+
+          // 3. Initialisation des effets
+          initSamaEffects();
+
+          // 4. Vérifier les images
+          checkImages();
+        }
+
+        function initSamaSwiper() {
+          const swiperEl = document.querySelector(".sama-why-us__swiper");
+          if (!swiperEl || typeof Swiper === "undefined") {
+            console.warn("Swiper non disponible pour la section Why Us");
+            return;
+          }
+
+          try {
+            // Détruire d'abord toute instance existante
+            if (swiperEl.swiper) {
+              swiperEl.swiper.destroy(true, true);
+            }
+
+            const samaSwiper = new Swiper(".sama-why-us__swiper", {
+              loop: true,
+              speed: 600, // Réduit
+              autoplay: {
+                delay: 5000, // Réduit
+                disableOnInteraction: false,
+              },
+              effect: "fade",
+              fadeEffect: {
+                crossFade: true,
+              },
+              pagination: {
+                el: ".sama-why-us__pagination",
+                type: "bullets",
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return `<span class="${className}"></span>`;
+                },
+              },
+              navigation: {
+                nextEl: ".sama-why-us__nav-next",
+                prevEl: ".sama-why-us__nav-prev",
+              },
+              on: {
+                init: function () {
+                  updateSamaActiveCard(this);
+                },
+                slideChange: function () {
+                  updateSamaActiveCard(this);
+                },
+              },
+            });
+
+            function updateSamaActiveCard(swiper) {
+              const activeSlide = swiper.slides[swiper.activeIndex];
+              const cards = document.querySelectorAll(".sama-why-us__card");
+
+              cards.forEach((card) => {
+                card.classList.remove("sama-why-us__card--active");
+              });
+
+              if (activeSlide) {
+                const activeCard =
+                  activeSlide.querySelector(".sama-why-us__card");
+                if (activeCard) {
+                  activeCard.classList.add("sama-why-us__card--active");
                 }
               }
             }
-          </script>
-          <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+            // Pause au survol
+            const sliderContainer = document.querySelector(
+              ".sama-why-us__slider-container"
+            );
+            if (sliderContainer) {
+              sliderContainer.addEventListener("mouseenter", () => {
+                samaSwiper.autoplay.stop();
+              });
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Articles Récents</h2>
-        <p>Découvrez nos dernières publications sur l’actualité tech, la sécurité et les tendances numériques</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row gy-5">
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/cybersecurity.png" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">26 Juin 2025</span>
-                <span class="post-author"> / M. A. Ba</span>
-              </div>
-              <h3 class="post-title">5 erreurs à éviter pour sécuriser votre application web</h3>
-              <p>De la mauvaise gestion des mots de passe aux failles XSS, découvrez les erreurs fréquentes en
-                cybersécurité et comment les corriger efficacement.</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Lire plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/social-media.png" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">18 Juin 2023</span>
-                <span class="post-author"> / Maimouna Touré</span>
-              </div>
-              <h3 class="post-title">Comment booster sa visibilité sur les réseaux sociaux en 2025</h3>
-              <p>Instagram, TikTok, LinkedIn... Nos conseils pour bâtir une stratégie digitale percutante et engagée
-                pour votre marque ou entreprise.</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Lire plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/networking.png" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">10 Juin 2022</span>
-                <span class="post-author"> / A. Khadre Ba</span>
-              </div>
-              <h3 class="post-title">Les bases du réseau informatique expliquées simplement</h3>
-              <p>Adresses IP, DNS, routeurs, pare-feux… un guide clair pour comprendre l’infrastructure qui relie le
-                monde.</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Lire plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/ai.png" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">01 Juin 2025</span>
-                <span class="post-author"> / Khadija Sylla</span>
-              </div>
-              <h3 class="post-title">L’intelligence artificielle au service des entreprises africaines</h3>
-              <p>Découvrez comment les PME sénégalaises adoptent l’IA pour optimiser leurs services et mieux cibler
-                leurs clients.</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Lire plus</span><i
-                  class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- /Recent Posts Section -->
-
-
-
-
-
-    <a href="https://wa.me/221771234567" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-delay="400">
-      <i class="bi bi-whatsapp"></i>
-      <span class="whatsapp-text">Contactez-nous</span>
-    </a>
-
-  </main>
-
-  <footer id="footer" class="footer light-background">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-
-          <!-- À propos -->
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Sama Tech</span>
-            </a>
-            <p>Sama Tech est une entreprise spécialisée dans le développement d'applications, la création de sites web,
-              le marketing digital et la formation informatique. Nous vous accompagnons dans votre transformation
-              numérique.</p>
-            <div class="social-links d-flex mt-4">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-
-          <!-- Liens utiles -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Liens utiles</h4>
-            <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#">Conditions d’utilisation</a></li>
-              <li><a href="#">Politique de confidentialité</a></li>
-            </ul>
-          </div>
-
-          <!-- Nos services -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Nos services</h4>
-            <ul>
-              <li><a href="#">Développement Web</a></li>
-              <li><a href="#">Applications & Logiciels</a></li>
-              <li><a href="#">Marketing Digital</a></li>
-              <li><a href="#">Formation Informatique</a></li>
-              <li><a href="#">Community Management</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact -->
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contactez-nous</h4>
-            <p>Dakar, Sénégal</p>
-            <p>Zone de captage, Liberté 6</p>
-            <p>Sama Tech</p>
-            <p class="mt-4"><strong>Téléphone :</strong> <span>+221 77 123 45 67</span></p>
-            <p><strong>Email :</strong> <span>contact@samatech.sn</span></p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Bas de page -->
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sama Tech</strong> <span>- Tous droits réservés</span>
-      </p>
-      <div class="credits">
-        Propulsé avec ❤️ par l'équipe Sama Tech
-      </div>
-    </div>
-
-  </footer>
-
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <!-- PureCounter JS -->
-  <script>
-    // Animation des compteurs
-    // Animation au défilement
-    document.addEventListener('DOMContentLoaded', function () {
-      const counters = document.querySelectorAll('.counter');
-
-      function animateCounter(element, target) {
-        let current = 0;
-        const increment = target / 100; // 100 étapes pour l'animation
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            clearInterval(timer);
-            current = target;
-          }
-          element.textContent = Math.floor(current);
-
-          // Ajoute une classe d'animation au changement
-          element.classList.add('counting');
-          setTimeout(() => element.classList.remove('counting'), 500);
-        }, 20);
-      }
-
-      // Observer pour déclencher l'animation lors du scroll
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const counter = entry.target;
-            const target = parseInt(counter.getAttribute('data-target'));
-            animateCounter(counter, target);
-            observer.unobserve(counter);
-          }
-        });
-      }, { threshold: 0.5 });
-
-      counters.forEach(counter => {
-        observer.observe(counter);
-      });
-
-      // Animation des éléments au scroll
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      });
-
-      // Animation du bouton WhatsApp
-      const whatsappBtn = document.querySelector('.whatsapp-float');
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 300) {
-          whatsappBtn.style.transform = 'translateY(0)';
-          whatsappBtn.style.opacity = '1';
-        } else {
-          whatsappBtn.style.transform = 'translateY(100px)';
-          whatsappBtn.style.opacity = '0';
-        }
-      });
-
-      // Filtrage du portfolio
-      const filterButtons = document.querySelectorAll('.portfolio-filter button');
-      filterButtons.forEach(button => {
-        button.addEventListener('click', function () {
-          // Retire la classe active de tous les boutons
-          filterButtons.forEach(btn => btn.classList.remove('active'));
-          // Ajoute la classe active au bouton cliqué
-          this.classList.add('active');
-
-          const filterValue = this.getAttribute('data-filter');
-          const items = document.querySelectorAll('.portfolio-item');
-
-          items.forEach(item => {
-            if (filterValue === '*' || item.classList.contains(filterValue.substring(1))) {
-              item.style.display = 'block';
-            } else {
-              item.style.display = 'none';
+              sliderContainer.addEventListener("mouseleave", () => {
+                samaSwiper.autoplay.start();
+              });
             }
-          });
-        });
-      });
-    });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Hero Slider Functionality
-      const slides = document.querySelectorAll('.slide');
-      let currentSlide = 0;
+          } catch (error) {
+            console.error("Erreur Swiper:", error);
+          }
+        }
 
-      function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-      }
+        function initSamaCounters() {
+          const samaStats = document.querySelectorAll(
+            ".sama-why-us__stat-number"
+          );
+          if (samaStats.length === 0) return;
 
-      // Change slide every 5 seconds
-      setInterval(nextSlide, 5000);
+          const observerOptions = {
+            threshold: 0.3,
+            rootMargin: "0px 0px -50px 0px",
+          };
 
-      // Initialize AOS animations
-      if (typeof AOS !== 'undefined') {
-        AOS.init({
-          duration: 800,
-          easing: 'ease-in-out',
-          once: true
-        });
-      }
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const stat = entry.target;
+                const target =
+                  parseInt(stat.getAttribute("data-sama-count")) || 0;
+                animateSamaCounter(stat, target);
+                observer.unobserve(stat);
+              }
+            });
+          }, observerOptions);
 
-      // Initialize GLightbox for video
-      if (typeof GLightbox !== 'undefined') {
-        const lightbox = GLightbox({
-          selector: '.glightbox'
-        });
-      }
-    });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Initialisation du slider Swiper
-      if (typeof Swiper !== 'undefined') {
-        const whyUsSwiper = new Swiper('.why-us-swiper', {
-          loop: true,
-          speed: 800,
-          autoplay: {
-            delay: 7000,
-            disableOnInteraction: false,
-          },
-          effect: 'fade',
-          fadeEffect: {
-            crossFade: true
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-
-        // Pause au survol
-        const sliderContainer = document.querySelector('.why-us-swiper');
-        if (sliderContainer) {
-          sliderContainer.addEventListener('mouseenter', () => {
-            whyUsSwiper.autoplay.stop();
-          });
-
-          sliderContainer.addEventListener('mouseleave', () => {
-            whyUsSwiper.autoplay.start();
+          samaStats.forEach((stat) => {
+            // Réinitialiser à 0
+            stat.textContent = "0";
+            observer.observe(stat);
           });
         }
-      }
-    });
-  </script>
+
+        function animateSamaCounter(element, target) {
+          if (!element || target <= 0) return;
+
+          let current = 0;
+          const increment = target / 50; // 50 étapes
+          const duration = 1500; // 1.5 secondes
+          const stepTime = duration / 50;
+
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              clearInterval(timer);
+              current = target;
+              element.textContent = current;
+
+              // Animation finale
+              element.style.transform = "scale(1.1)";
+              setTimeout(() => {
+                element.style.transform = "scale(1)";
+              }, 300);
+            } else {
+              element.textContent = Math.floor(current);
+            }
+          }, stepTime);
+        }
+
+        function initSamaEffects() {
+          // Animation des formes flottantes
+          const samaShapes = document.querySelectorAll(".sama-why-us__shape");
+          samaShapes.forEach((shape) => {
+            const speed =
+              parseFloat(shape.getAttribute("data-sama-speed")) || 1;
+            shape.style.animationDuration = `${5 / speed}s`; // Réduit
+          });
+
+          // Effet parallaxe simple
+          const samaImageWrapper = document.querySelector(
+            ".sama-why-us__image-wrapper"
+          );
+          if (samaImageWrapper) {
+            samaImageWrapper.addEventListener("mousemove", (e) => {
+              const { left, top, width, height } =
+                samaImageWrapper.getBoundingClientRect();
+              const x = ((e.clientX - left) / width) * 100;
+              const y = ((e.clientY - top) / height) * 100;
+
+              samaImageWrapper.style.setProperty("--sama-mouse-x", `${x}%`);
+              samaImageWrapper.style.setProperty("--sama-mouse-y", `${y}%`);
+            });
+          }
+
+          // Ajoute une classe active au chargement
+          setTimeout(() => {
+            const section = document.querySelector(".sama-why-us");
+            if (section) {
+              section.classList.add("sama-why-us--loaded");
+            }
+          }, 500);
+        }
+
+        function checkImages() {
+          // Vérifier l'image principale
+          const mainImg = document.querySelector(".sama-why-us__main-img");
+          if (mainImg) {
+            mainImg.onerror = function () {
+              console.warn("Image principale Why Us non trouvée:", this.src);
+              // Ajouter une classe pour le style de secours
+              this.style.backgroundColor = "#f0f0f0";
+              this.style.display = "flex";
+              this.style.alignItems = "center";
+              this.style.justifyContent = "center";
+              this.style.color = "#999";
+              this.style.fontSize = "0.9rem";
+              this.textContent = "Image non disponible";
+            };
+          }
+        }
+
+        // Initialiser aussi au DOMContentLoaded pour plus de sécurité
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(initSamaWhyUs, 100);
+        });
+      })();
+    </script>
     <script>
-    // Set current year in footer
-    const yearElement = document.getElementById('current-year');
-    if (yearElement) {
-      yearElement.textContent = new Date().getFullYear();
-    }
-    // Animate elements on scroll
-    document.addEventListener('DOMContentLoaded', function () {
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true
-      });
+      // Script pour la section Partenaires
+      (function () {
+        "use strict";
 
-      // Floating animation for team cards
-      const teamCards = document.querySelectorAll('.team-card');
-      teamCards.forEach((card, index) => {
-        card.style.animation = `float 6s ease-in-out ${index * 0.2}s infinite`;
-      });
-    });
-  </script>
-</body>
+        document.addEventListener("DOMContentLoaded", function () {
+          const partnersSection = document.querySelector(".sama-partenaires");
+          if (!partnersSection) return;
 
+          // Animation des compteurs
+          const statNumbers = partnersSection.querySelectorAll(
+            ".sama-partenaires__stat-number"
+          );
+          if (statNumbers.length > 0) {
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    const stat = entry.target;
+                    const target =
+                      parseInt(stat.getAttribute("data-count")) || 0;
+                    animatePartnerCounter(stat, target);
+                    observer.unobserve(stat);
+                  }
+                });
+              },
+              { threshold: 0.5 }
+            );
+
+            statNumbers.forEach((stat) => observer.observe(stat));
+          }
+
+          // Effet de parallaxe sur les logos
+          const logoItems = partnersSection.querySelectorAll(
+            ".sama-partenaires__logo-item"
+          );
+          logoItems.forEach((item) => {
+            item.addEventListener("mousemove", (e) => {
+              const { left, top, width, height } = item.getBoundingClientRect();
+              const x = ((e.clientX - left) / width) * 100;
+              const y = ((e.clientY - top) / height) * 100;
+
+              const img = item.querySelector(".sama-partenaires__logo-img");
+              if (img) {
+                img.style.transform = `scale(1.1) translate(${
+                  (x - 50) / 20
+                }%, ${(y - 50) / 20}%)`;
+              }
+            });
+
+            item.addEventListener("mouseleave", () => {
+              const img = item.querySelector(".sama-partenaires__logo-img");
+              if (img) {
+                img.style.transform = "scale(1.1)";
+              }
+            });
+          });
+
+          // Initialisation AOS pour cette section
+          if (typeof AOS !== "undefined") {
+            AOS.init({
+              duration: 800,
+              easing: "ease-out-cubic",
+              once: true,
+              offset: 50,
+            });
+          }
+        });
+
+        function animatePartnerCounter(element, target) {
+          let current = 0;
+          const increment = target / 50;
+          const duration = 1500;
+          const stepTime = duration / 50;
+
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              clearInterval(timer);
+              current = target;
+              element.textContent = current;
+
+              // Animation finale
+              element.style.transform = "scale(1.1)";
+              setTimeout(() => {
+                element.style.transform = "scale(1)";
+              }, 300);
+            } else {
+              element.textContent = Math.floor(current);
+            }
+          }, stepTime);
+        }
+      })();
+    </script>
+  </body>
 </html>
