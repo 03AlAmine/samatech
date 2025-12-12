@@ -1,544 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio - Nova Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Nova Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/porfolio.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <body class="portfolio-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="" />
+          <h1 class="sitename">Samatech</h1>
+        </a>
 
-  <!-- =======================================================
-  * Template Name: Nova
-  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="portfolio-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">Samatech</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Accueil<br></a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="packs.html">Packs</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade"
-      style="background-image: url(assets/img/portfolio-page-title-bg.jpg);">
-      <div class="container">
-        <h1>Portfolio</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio</li>
-          </ol>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html">Accueil<br /></a>
+            </li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="packs.html">Packs</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tous</li>
-            <li data-filter=".filter-app">Applications</li>
-            <li data-filter=".filter-site">Sites Web</li>
-            <li data-filter=".filter-outil">Outils</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- Projet : Inventaire SamaTech -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="Inventaire Samatech">
-              <div class="portfolio-info">
-                <h4>Inventaire Samatech</h4>
-                <p>Application de gestion des stocks pour l'entreprise</p>
-                <a href="#portfolio-details" class="details-link" onclick="showPortfolioDetails('inventaire')">
-                  <i class="bi bi-eye"></i>
-                </a>
-
-              </div>
-            </div>
-
-            <!-- Projet : Sama RH -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="Sama RH">
-              <div class="portfolio-info">
-                <h4>Sama RH</h4>
-                <p>Système RH utilisé par Polaris, Immosen, Leader</p>
-                <a href="#portfolio-details" class="details-link" onclick="showPortfolioDetails('sama-rh')">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Projet : Sama Bitik -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="Sama Bitik">
-              <div class="portfolio-info">
-                <h4>Sama Bitik</h4>
-                <p>Système de gestion de vente pour Lastra</p>
-                <a href="#portfolio-details" class="details-link" onclick="showPortfolioDetails('sama-bitik')">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Projet : MentaFact -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="MentaFact">
-              <div class="portfolio-info">
-                <h4>MentaFact</h4>
-                <p>Système de facturation moderne pour PME</p>
-                <a href="#portfolio-details" class="details-link" onclick="showPortfolioDetails('mentafact')">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Projet : SamaQuran -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="SamaQuran">
-              <div class="portfolio-info">
-                <h4>SamaQuran</h4>
-                <p>Lecture et audio du Coran : <a href="https://quran.samatech.tech/"
-                    target="_blank">quran.samatech.tech</a></p>
-                <a href="#portfolio-details" class="details-link" onclick="showPortfolioDetails('sama-quran')">
-                  <i class="bi bi-eye"></i>
-                </a>
-
-                <a href="https://quran.samatech.tech/" target="_blank" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link">
-                  <i class="bi bi-link-45deg"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Projet : Gattal (Réduction URL) -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-outil">
-              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="Gattal">
-              <div class="portfolio-info">
-                <h4>Gattal</h4>
-                <p>Outil de réduction d'URL : <a href="https://quran.samatech.tech/"
-                    target="_blank">quran.samatech.tech</a></p>
-                <a href="#portfolio-details" class="details-link" onclick="showPortfolioDetails('gattal')">
-                  <i class="bi bi-eye"></i>
-                </a>
-                <a href="https://quran.samatech.tech/" target="_blank" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link">
-                  <i class="bi bi-link-45deg"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Portfolio personnel -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="Portfolio personnel">
-              <div class="portfolio-info">
-                <h4>Portfolio personnel</h4>
-                <p>Voir : <a href="https://axb.samatech.tech/" target="_blank">axb.samatech.tech</a></p>
-                <a href="#portfolio-details" class="details-link" onclick="showPortfolioDetails('portfolio-perso')">
-                  <i class="bi bi-eye"></i>
-                </a>
-                <a href="https://axb.samatech.tech/" target="_blank" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link">
-                  <i class="bi bi-link-45deg"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Sites Web RH, Leader, Tandem -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="Sites Web">
-              <div class="portfolio-info">
-                <h4>Sites Web</h4>
-                <p>Sama RH, Leader, Tandem</p>
-                <a href="#portfolio-details" class="details-link" onclick="showPortfolioDetails('sites-web')">
-                  <i class="bi bi-eye"></i>
-                </a>
-                <a href="#" class="details-link">
-                  <i class="bi bi-link-45deg"></i>
-                </a>
-              </div>
-            </div>
-
-          </div><!-- End Portfolio Container -->
-
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background"
+        data-aos="fade"
+        style="background-image: url(assets/img/portfolio-page-title-bg.jpg)"
+      >
+        <div class="container">
+          <h1>Portfolio</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Portfolio</li>
+            </ol>
+          </nav>
         </div>
       </div>
+      <!-- End Page Title -->
 
-    </section><!-- /Portfolio Section -->
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">Tous</li>
+              <li data-filter=".filter-app">Applications</li>
+              <li data-filter=".filter-site">Sites Web</li>
+              <li data-filter=".filter-outil">Outils</li>
+            </ul>
+            <!-- End Portfolio Filters -->
 
-
-
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-              <div class="swiper-wrapper align-items-center" id="portfolio-slides">
-                <!-- Les slides seront ajoutées dynamiquement -->
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <!-- Projet : Inventaire SamaTech -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/portfolio/app-1.jpg"
+                  class="img-fluid"
+                  alt="Inventaire Samatech"
+                />
+                <div class="portfolio-info">
+                  <h4>Inventaire Samatech</h4>
+                  <p>Application de gestion des stocks pour l'entreprise</p>
+                  <a
+                    href="#portfolio-details"
+                    class="details-link"
+                    onclick="showPortfolioDetails('inventaire')"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
               </div>
-              <div class="swiper-pagination"></div>
+
+              <!-- Projet : Sama RH -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/portfolio/app-2.jpg"
+                  class="img-fluid"
+                  alt="Sama RH"
+                />
+                <div class="portfolio-info">
+                  <h4>Sama RH</h4>
+                  <p>Système RH utilisé par Polaris, Immosen, Leader</p>
+                  <a
+                    href="#portfolio-details"
+                    class="details-link"
+                    onclick="showPortfolioDetails('sama-rh')"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Projet : Sama Bitik -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/portfolio/app-3.jpg"
+                  class="img-fluid"
+                  alt="Sama Bitik"
+                />
+                <div class="portfolio-info">
+                  <h4>Sama Bitik</h4>
+                  <p>Système de gestion de vente pour Lastra</p>
+                  <a
+                    href="#portfolio-details"
+                    class="details-link"
+                    onclick="showPortfolioDetails('sama-bitik')"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Projet : MentaFact -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/portfolio/app-3.jpg"
+                  class="img-fluid"
+                  alt="MentaFact"
+                />
+                <div class="portfolio-info">
+                  <h4>MentaFact</h4>
+                  <p>Système de facturation moderne pour PME</p>
+                  <a
+                    href="#portfolio-details"
+                    class="details-link"
+                    onclick="showPortfolioDetails('mentafact')"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Projet : SamaQuran -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/portfolio/app-3.jpg"
+                  class="img-fluid"
+                  alt="SamaQuran"
+                />
+                <div class="portfolio-info">
+                  <h4>SamaQuran</h4>
+                  <p>
+                    Lecture et audio du Coran :
+                    <a href="https://quran.samatech.tech/" target="_blank"
+                      >quran.samatech.tech</a
+                    >
+                  </p>
+                  <a
+                    href="#portfolio-details"
+                    class="details-link"
+                    onclick="showPortfolioDetails('sama-quran')"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </a>
+
+                  <a
+                    href="https://quran.samatech.tech/"
+                    target="_blank"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                  >
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Projet : Gattal (Réduction URL) -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-outil"
+              >
+                <img
+                  src="assets/img/portfolio/app-2.jpg"
+                  class="img-fluid"
+                  alt="Gattal"
+                />
+                <div class="portfolio-info">
+                  <h4>Gattal</h4>
+                  <p>
+                    Outil de réduction d'URL :
+                    <a href="https://quran.samatech.tech/" target="_blank"
+                      >quran.samatech.tech</a
+                    >
+                  </p>
+                  <a
+                    href="#portfolio-details"
+                    class="details-link"
+                    onclick="showPortfolioDetails('gattal')"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a
+                    href="https://quran.samatech.tech/"
+                    target="_blank"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                  >
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Portfolio personnel -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site"
+              >
+                <img
+                  src="assets/img/portfolio/app-3.jpg"
+                  class="img-fluid"
+                  alt="Portfolio personnel"
+                />
+                <div class="portfolio-info">
+                  <h4>Portfolio personnel</h4>
+                  <p>
+                    Voir :
+                    <a href="https://axb.samatech.tech/" target="_blank"
+                      >axb.samatech.tech</a
+                    >
+                  </p>
+                  <a
+                    href="#portfolio-details"
+                    class="details-link"
+                    onclick="showPortfolioDetails('portfolio-perso')"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a
+                    href="https://axb.samatech.tech/"
+                    target="_blank"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                  >
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Sites Web RH, Leader, Tandem -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-site"
+              >
+                <img
+                  src="assets/img/portfolio/app-3.jpg"
+                  class="img-fluid"
+                  alt="Sites Web"
+                />
+                <div class="portfolio-info">
+                  <h4>Sites Web</h4>
+                  <p>Sama RH, Leader, Tandem</p>
+                  <a
+                    href="#portfolio-details"
+                    class="details-link"
+                    onclick="showPortfolioDetails('sites-web')"
+                  >
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="#" class="details-link">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div
+                  class="swiper-wrapper align-items-center"
+                  id="portfolio-slides"
+                >
+                  <!-- Les slides seront ajoutées dynamiquement -->
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="portfolio-info"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3 id="portfolio-title">Détails du projet</h3>
+                <ul id="portfolio-info-list">
+                  <!-- Les infos seront ajoutées dynamiquement -->
+                </ul>
+              </div>
+              <div
+                class="portfolio-description"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h2 id="portfolio-subtitle">Description</h2>
+                <p id="portfolio-description-text">
+                  <!-- La description sera ajoutée dynamiquement -->
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer light-background">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- À propos -->
+            <div class="col-lg-5 col-md-12 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Sama Tech</span>
+              </a>
+              <p>
+                Sama Tech est une entreprise spécialisée dans le développement
+                d'applications, la création de sites web, le marketing digital
+                et la formation informatique. Nous vous accompagnons dans votre
+                transformation numérique.
+              </p>
+              <div class="social-links d-flex mt-4">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3 id="portfolio-title">Détails du projet</h3>
-              <ul id="portfolio-info-list">
-                <!-- Les infos seront ajoutées dynamiquement -->
+            <!-- Liens utiles -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Liens utiles</h4>
+              <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Conditions d’utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
               </ul>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2 id="portfolio-subtitle">Description</h2>
-              <p id="portfolio-description-text">
-                <!-- La description sera ajoutée dynamiquement -->
+
+            <!-- Nos services -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Nos services</h4>
+              <ul>
+                <li><a href="#">Développement Web</a></li>
+                <li><a href="#">Applications & Logiciels</a></li>
+                <li><a href="#">Marketing Digital</a></li>
+                <li><a href="#">Formation Informatique</a></li>
+                <li><a href="#">Community Management</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contactez-nous</h4>
+              <p>Dakar, Sénégal</p>
+              <p>Zone de captage, Liberté 6</p>
+              <p>Sama Tech</p>
+              <p class="mt-4">
+                <strong>Téléphone :</strong> <span>+221 78 260 66 53</span>
               </p>
+              <p><strong>Email :</strong> <span>contact@samatech.sn</span></p>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-  </main>
-  <footer id="footer" class="footer light-background">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-
-          <!-- À propos -->
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Sama Tech</span>
-            </a>
-            <p>Sama Tech est une entreprise spécialisée dans le développement d'applications, la création de sites web,
-              le marketing digital et la formation informatique. Nous vous accompagnons dans votre transformation
-              numérique.</p>
-            <div class="social-links d-flex mt-4">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-
-          <!-- Liens utiles -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Liens utiles</h4>
-            <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#">Conditions d’utilisation</a></li>
-              <li><a href="#">Politique de confidentialité</a></li>
-            </ul>
-          </div>
-
-          <!-- Nos services -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Nos services</h4>
-            <ul>
-              <li><a href="#">Développement Web</a></li>
-              <li><a href="#">Applications & Logiciels</a></li>
-              <li><a href="#">Marketing Digital</a></li>
-              <li><a href="#">Formation Informatique</a></li>
-              <li><a href="#">Community Management</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact -->
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contactez-nous</h4>
-            <p>Dakar, Sénégal</p>
-            <p>Zone de captage, Liberté 6</p>
-            <p>Sama Tech</p>
-            <p class="mt-4"><strong>Téléphone :</strong> <span>+221 77 123 45 67</span></p>
-            <p><strong>Email :</strong> <span>contact@samatech.sn</span></p>
-          </div>
-
-        </div>
+      <!-- Bas de page -->
+      <div class="container copyright text-center">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Sama Tech</strong>
+          <span>- Tous droits réservés</span>
+        </p>
+        <div class="credits">Propulsé avec ❤️ par l'équipe Sama Tech</div>
       </div>
-    </div>
+    </footer>
 
-    <!-- Bas de page -->
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sama Tech</strong> <span>- Tous droits réservés</span>
-      </p>
-      <div class="credits">
-        Propulsé avec ❤️ par l'équipe Sama Tech
-      </div>
-    </div>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  </footer>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script>
+      // Données des projets
+      const portfolioData = {
+        inventaire: {
+          title: "Inventaire Samatech",
+          category: "Application Web",
+          client: "Samatech",
+          date: "Janvier 2023",
+          url: "#",
+          description:
+            "Application complète de gestion des stocks avec suivi en temps réel, alertes de réapprovisionnement et rapports analytiques.",
+          images: [
+            "assets/img/portfolio/product-1.jpg",
+            "assets/img/portfolio/product-2.jpg",
+            "assets/img/portfolio/product-3.jpg",
+          ],
+        },
+        "sama-rh": {
+          title: "Sama RH",
+          category: "Application Web",
+          client: "Polaris, Immosen, Leader",
+          date: "Mars 2022",
+          url: "#",
+          description:
+            "Système de gestion des ressources humaines avec gestion des congés, paie, évaluations et tableaux de bord personnalisés.",
+          images: [
+            "assets/img/portfolio/branding-1.jpg",
+            "assets/img/portfolio/branding-2.jpg",
+            "assets/img/portfolio/branding-3.jpg",
+          ],
+        },
+        "sama-bitik": {
+          title: "Sama Bitik",
+          category: "Application Web",
+          client: "Lastra",
+          date: "Novembre 2022",
+          url: "#",
+          description:
+            "Système complet de gestion des ventes avec suivi des stocks, gestion des clients et reporting analytique.",
+          images: [
+            "assets/img/portfolio/books-1.jpg",
+            "assets/img/portfolio/books-2.jpg",
+            "assets/img/portfolio/books-3.jpg",
+          ],
+        },
+        mentafact: {
+          title: "MentaFact",
+          category: "Application Web",
+          client: "Diverses PME",
+          date: "Juillet 2023",
+          url: "#",
+          description:
+            "Solution moderne de facturation avec gestion des clients, devis, factures et statistiques de vente.",
+          images: [
+            "assets/img/portfolio/mentafact-1.jpg",
+            "assets/img/portfolio/mentafact-2.jpg",
+            "assets/img/portfolio/mentafact-3.jpg",
+          ],
+        },
+        "sama-quran": {
+          title: "SamaQuran",
+          category: "Application Web",
+          client: "Public",
+          date: "Mai 2021",
+          url: "https://quran.samatech.tech/",
+          description:
+            "Plateforme complète de lecture du Coran avec audio, traduction et fonctionnalités de recherche avancée.",
+          images: [
+            "assets/img/portfolio/sama-quran-1.jpg",
+            "assets/img/portfolio/sama-quran-2.jpg",
+            "assets/img/portfolio/sama-quran-3.jpg",
+          ],
+        },
+        gattal: {
+          title: "Gattal",
+          category: "Outil en ligne",
+          client: "Public",
+          date: "Septembre 2022",
+          url: "#",
+          description:
+            "Service de réduction d'URL avec suivi des clics et statistiques d'utilisation.",
+          images: [
+            "assets/img/portfolio/gattal-1.jpg",
+            "assets/img/portfolio/gattal-2.jpg",
+          ],
+        },
+        "portfolio-perso": {
+          title: "Portfolio personnel",
+          category: "Site Web",
+          client: "Personnel",
+          date: "Février 2023",
+          url: "https://axb.samatech.tech/",
+          description:
+            "Portfolio professionnel présentant mes compétences, projets et expériences.",
+          images: [
+            "assets/img/portfolio/portfolio-perso-1.jpg",
+            "assets/img/portfolio/portfolio-perso-2.jpg",
+          ],
+        },
+        "sites-web": {
+          title: "Sites Web",
+          category: "Sites Web",
+          client: "Sama RH, Leader, Tandem",
+          date: "2021-2023",
+          url: "#",
+          description:
+            "Divers sites web institutionnels et vitrines développés pour des clients professionnels.",
+          images: [
+            "assets/img/portfolio/sites-web-1.jpg",
+            "assets/img/portfolio/sites-web-2.jpg",
+            "assets/img/portfolio/sites-web-3.jpg",
+          ],
+        },
+      };
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+      // Fonction pour afficher les détails d'un projet
+      function showPortfolioDetails(projectId) {
+        event.preventDefault();
 
+        const project = portfolioData[projectId];
+        if (!project) return;
 
-  <script>
-    // Données des projets
-    const portfolioData = {
-      'inventaire': {
-        title: "Inventaire Samatech",
-        category: "Application Web",
-        client: "Samatech",
-        date: "Janvier 2023",
-        url: "#",
-        description: "Application complète de gestion des stocks avec suivi en temps réel, alertes de réapprovisionnement et rapports analytiques.",
-        images: [
-          "assets/img/portfolio/product-1.jpg",
-          "assets/img/portfolio/product-2.jpg",
-          "assets/img/portfolio/product-3.jpg"
-        ]
-      },
-      'sama-rh': {
-        title: "Sama RH",
-        category: "Application Web",
-        client: "Polaris, Immosen, Leader",
-        date: "Mars 2022",
-        url: "#",
-        description: "Système de gestion des ressources humaines avec gestion des congés, paie, évaluations et tableaux de bord personnalisés.",
-        images: [
-          "assets/img/portfolio/branding-1.jpg",
-          "assets/img/portfolio/branding-2.jpg",
-          "assets/img/portfolio/branding-3.jpg"
-        ]
-      },
-      'sama-bitik': {
-        title: "Sama Bitik",
-        category: "Application Web",
-        client: "Lastra",
-        date: "Novembre 2022",
-        url: "#",
-        description: "Système complet de gestion des ventes avec suivi des stocks, gestion des clients et reporting analytique.",
-        images: [
-          "assets/img/portfolio/books-1.jpg",
-          "assets/img/portfolio/books-2.jpg",
-          "assets/img/portfolio/books-3.jpg"
-        ]
-      },
-      'mentafact': {
-        title: "MentaFact",
-        category: "Application Web",
-        client: "Diverses PME",
-        date: "Juillet 2023",
-        url: "#",
-        description: "Solution moderne de facturation avec gestion des clients, devis, factures et statistiques de vente.",
-        images: [
-          "assets/img/portfolio/mentafact-1.jpg",
-          "assets/img/portfolio/mentafact-2.jpg",
-          "assets/img/portfolio/mentafact-3.jpg"
-        ]
-      },
-      'sama-quran': {
-        title: "SamaQuran",
-        category: "Application Web",
-        client: "Public",
-        date: "Mai 2021",
-        url: "https://quran.samatech.tech/",
-        description: "Plateforme complète de lecture du Coran avec audio, traduction et fonctionnalités de recherche avancée.",
-        images: [
-          "assets/img/portfolio/sama-quran-1.jpg",
-          "assets/img/portfolio/sama-quran-2.jpg",
-          "assets/img/portfolio/sama-quran-3.jpg"
-        ]
-      },
-      'gattal': {
-        title: "Gattal",
-        category: "Outil en ligne",
-        client: "Public",
-        date: "Septembre 2022",
-        url: "#",
-        description: "Service de réduction d'URL avec suivi des clics et statistiques d'utilisation.",
-        images: [
-          "assets/img/portfolio/gattal-1.jpg",
-          "assets/img/portfolio/gattal-2.jpg"
-        ]
-      },
-      'portfolio-perso': {
-        title: "Portfolio personnel",
-        category: "Site Web",
-        client: "Personnel",
-        date: "Février 2023",
-        url: "https://axb.samatech.tech/",
-        description: "Portfolio professionnel présentant mes compétences, projets et expériences.",
-        images: [
-          "assets/img/portfolio/portfolio-perso-1.jpg",
-          "assets/img/portfolio/portfolio-perso-2.jpg"
-        ]
-      },
-      'sites-web': {
-        title: "Sites Web",
-        category: "Sites Web",
-        client: "Sama RH, Leader, Tandem",
-        date: "2021-2023",
-        url: "#",
-        description: "Divers sites web institutionnels et vitrines développés pour des clients professionnels.",
-        images: [
-          "assets/img/portfolio/sites-web-1.jpg",
-          "assets/img/portfolio/sites-web-2.jpg",
-          "assets/img/portfolio/sites-web-3.jpg"
-        ]
-      }
-    };
+        // Mettre à jour le titre
+        document.getElementById("portfolio-title").textContent = project.title;
 
-    // Fonction pour afficher les détails d'un projet
-    function showPortfolioDetails(projectId) {
-      event.preventDefault();
-
-      const project = portfolioData[projectId];
-      if (!project) return;
-
-      // Mettre à jour le titre
-      document.getElementById('portfolio-title').textContent = project.title;
-
-      // Mettre à jour les informations
-      const infoList = document.getElementById('portfolio-info-list');
-      infoList.innerHTML = `
+        // Mettre à jour les informations
+        const infoList = document.getElementById("portfolio-info-list");
+        infoList.innerHTML = `
     <li><strong>Catégorie</strong>: ${project.category}</li>
     <li><strong>Client</strong>: ${project.client}</li>
     <li><strong>Date</strong>: ${project.date}</li>
     <li><strong>URL</strong>: <a href="${project.url}" target="_blank">Voir le projet</a></li>
   `;
 
-      // Mettre à jour la description
-      document.getElementById('portfolio-subtitle').textContent = project.title;
-      document.getElementById('portfolio-description-text').textContent = project.description;
+        // Mettre à jour la description
+        document.getElementById("portfolio-subtitle").textContent =
+          project.title;
+        document.getElementById("portfolio-description-text").textContent =
+          project.description;
 
-      // Mettre à jour les images du slider
-      const slidesContainer = document.getElementById('portfolio-slides');
-      slidesContainer.innerHTML = '';
+        // Mettre à jour les images du slider
+        const slidesContainer = document.getElementById("portfolio-slides");
+        slidesContainer.innerHTML = "";
 
-      project.images.forEach(image => {
-        slidesContainer.innerHTML += `
+        project.images.forEach((image) => {
+          slidesContainer.innerHTML += `
       <div class="swiper-slide">
         <img src="${image}" alt="${project.title}">
       </div>
     `;
-      });
-
-      // Réinitialiser le swiper
-      if (window.portfolioSwiper) {
-        window.portfolioSwiper.destroy();
-      }
-
-      const swiperEl = document.querySelector('.portfolio-details-slider');
-      const swiperConfig = JSON.parse(swiperEl.querySelector('.swiper-config').textContent);
-      window.portfolioSwiper = new Swiper(swiperEl, swiperConfig);
-
-
-      // Gestion du hash dans l'URL au chargement de la page
-      if (window.location.hash) {
-        const sectionId = window.location.hash.substring(1);
-        activateServiceSection(sectionId);
-      }
-      // Faire défiler jusqu'à la section détails
-      setTimeout(() => {
-        document.getElementById('portfolio-details').scrollIntoView({
-          behavior: 'smooth'
         });
-      }, 100);
-    }
 
-    // Initialisation au chargement de la page
-    document.addEventListener('DOMContentLoaded', function () {
-      // Si hash dans l'URL, afficher le projet correspondant
-      if (window.location.hash === '#portfolio-details') {
-        // Vous pouvez ajouter une logique pour déterminer quel projet afficher
-        // Par exemple, à partir d'un paramètre dans l'URL
-        showPortfolioDetails('inventaire'); // Exemple par défaut
-      }
+        // Réinitialiser le swiper
+        if (window.portfolioSwiper) {
+          window.portfolioSwiper.destroy();
+        }
 
-      // Initialiser le swiper
-      const swiperEl = document.querySelector('.portfolio-details-slider');
-      if (swiperEl) {
-        const swiperConfig = JSON.parse(swiperEl.querySelector('.swiper-config').textContent);
+        const swiperEl = document.querySelector(".portfolio-details-slider");
+        const swiperConfig = JSON.parse(
+          swiperEl.querySelector(".swiper-config").textContent
+        );
         window.portfolioSwiper = new Swiper(swiperEl, swiperConfig);
-      }
-    });
-  </script>
-</body>
 
+        // Gestion du hash dans l'URL au chargement de la page
+        if (window.location.hash) {
+          const sectionId = window.location.hash.substring(1);
+          activateServiceSection(sectionId);
+        }
+        // Faire défiler jusqu'à la section détails
+        setTimeout(() => {
+          document.getElementById("portfolio-details").scrollIntoView({
+            behavior: "smooth",
+          });
+        }, 100);
+      }
+
+      // Initialisation au chargement de la page
+      document.addEventListener("DOMContentLoaded", function () {
+        // Si hash dans l'URL, afficher le projet correspondant
+        if (window.location.hash === "#portfolio-details") {
+          // Vous pouvez ajouter une logique pour déterminer quel projet afficher
+          // Par exemple, à partir d'un paramètre dans l'URL
+          showPortfolioDetails("inventaire"); // Exemple par défaut
+        }
+
+        // Initialiser le swiper
+        const swiperEl = document.querySelector(".portfolio-details-slider");
+        if (swiperEl) {
+          const swiperConfig = JSON.parse(
+            swiperEl.querySelector(".swiper-config").textContent
+          );
+          window.portfolioSwiper = new Swiper(swiperEl, swiperConfig);
+        }
+      });
+    </script>
+  </body>
 </html>

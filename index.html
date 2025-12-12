@@ -36,15 +36,9 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Main CSS File -->
+    <link href="assets/css/porfolio.css" rel="stylesheet" />
+    <link href="assets/css/why-us-part.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Nova
-  * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body class="index-page">
@@ -328,9 +322,38 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- /Services Section -->
 
+        <!-- Système orbital -->
+        <div class="orbital-system">
+          <div class="sun"></div>
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <div class="planet planet-1"></div>
+          <div class="planet planet-2"></div>
+          <div class="planet planet-3"></div>
+          <div class="planet planet-4"></div>
+        </div>
+
+        <!-- Particules flottantes -->
+        <div class="floating-particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+
+        <!-- Anneaux concentriques -->
+        <div class="concentric-rings">
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+        </div>
+      </section>
+
+      <!-- Why Section -->
       <section id="why-us" class="sama-why-us">
         <div class="sama-why-us__container">
           <!-- Header -->
@@ -677,44 +700,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Statistiques -->
-          <div
-            class="sama-why-us__stats"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="sama-why-us__stats-grid">
-              <div class="sama-why-us__stat-item">
-                <div class="sama-why-us__stat-number" data-sama-count="150">
-                  0
-                </div>
-                <div class="sama-why-us__stat-label">Projets Réalisés</div>
-                <div class="sama-why-us__stat-bar"></div>
-              </div>
-              <div class="sama-why-us__stat-item">
-                <div class="sama-why-us__stat-number" data-sama-count="50">
-                  0
-                </div>
-                <div class="sama-why-us__stat-label">Clients Satisfaits</div>
-                <div class="sama-why-us__stat-bar"></div>
-              </div>
-              <div class="sama-why-us__stat-item">
-                <div class="sama-why-us__stat-number" data-sama-count="5">
-                  0
-                </div>
-                <div class="sama-why-us__stat-label">Ans d'Expérience</div>
-                <div class="sama-why-us__stat-bar"></div>
-              </div>
-              <div class="sama-why-us__stat-item">
-                <div class="sama-why-us__stat-number" data-sama-count="24">
-                  0
-                </div>
-                <div class="sama-why-us__stat-label">Support 24/7</div>
-                <div class="sama-why-us__stat-bar"></div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -749,112 +734,188 @@
       <!-- /Call To Action Section -->
 
       <!-- Features Section -->
-      <section id="features" class="features section">
+      <section id="features" class="features features-section section">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="mb-0">Des Fonctionnalités Puissantes</h3>
-              <h3>Pour Accompagner Votre Croissance</h3>
+              <div class="features-header">
+                <h3 class="mb-0">Des fonctionnalités puissantes</h3>
+                <h3>Pour accompagner votre croissance digitale</h3>
+              </div>
 
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i
-                      class="bi bi-lightning-charge"
-                      style="color: #ff8b2c"
-                    ></i>
-                    <span>Développement rapide et sur-mesure</span>
+              <div class="features-grid">
+                <!-- Fonctionnalité 1 -->
+                <div class="feature-card">
+                  <div class="feature-icon" data-icon="lightning">
+                    <i class="bi bi-lightning-charge"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4 class="feature-title">
+                      Développement rapide et sur-mesure
+                    </h4>
+                    <p class="feature-description">
+                      Solutions adaptées à vos besoins spécifiques, déployées
+                      rapidement pour une mise en production accélérée.
+                    </p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-shield-lock" style="color: #5578ff"></i>
-                    <span>Haute sécurité des données</span>
+                <!-- Fonctionnalité 2 -->
+                <div class="feature-card">
+                  <div class="feature-icon" data-icon="shield">
+                    <i class="bi bi-shield-lock"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4 class="feature-title">Haute sécurité des données</h4>
+                    <p class="feature-description">
+                      Protection avancée de vos données sensibles avec
+                      chiffrement et conformité aux normes de sécurité les plus
+                      strictes.
+                    </p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-bar-chart-line" style="color: #e80368"></i>
-                    <span>Outils d'analyse et reporting</span>
+                <!-- Fonctionnalité 3 -->
+                <div class="feature-card">
+                  <div class="feature-icon" data-icon="chart">
+                    <i class="bi bi-bar-chart-line"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4 class="feature-title">Outils d'analyse et reporting</h4>
+                    <p class="feature-description">
+                      Tableaux de bord personnalisés et rapports détaillés pour
+                      suivre vos performances et prendre des décisions
+                      éclairées.
+                    </p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-people" style="color: #ffa76e"></i>
-                    <span>Accompagnement personnalisé</span>
+                <!-- Fonctionnalité 4 -->
+                <div class="feature-card">
+                  <div class="feature-icon" data-icon="people">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4 class="feature-title">Accompagnement personnalisé</h4>
+                    <p class="feature-description">
+                      Équipe dédiée et suivi personnalisé pour garantir le
+                      succès de votre projet à chaque étape.
+                    </p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-globe" style="color: #11dbcf"></i>
-                    <span>Solutions accessibles en ligne 24/7</span>
+                <!-- Fonctionnalité 5 -->
+                <div class="feature-card">
+                  <div class="feature-icon" data-icon="globe">
+                    <i class="bi bi-globe"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4 class="feature-title">
+                      Solutions accessibles en ligne 24/7
+                    </h4>
+                    <p class="feature-description">
+                      Accédez à vos outils depuis n'importe où, à tout moment,
+                      avec une disponibilité garantie à 99,9%.
+                    </p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-graph-up-arrow" style="color: #4233ff"></i>
-                    <span>Optimisation du marketing digital</span>
+                <!-- Fonctionnalité 6 -->
+                <div class="feature-card">
+                  <div class="feature-icon" data-icon="graph">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4 class="feature-title">
+                      Optimisation du marketing digital
+                    </h4>
+                    <p class="feature-description">
+                      Stratégies digitales performantes pour maximiser votre
+                      visibilité et convertir vos prospects en clients fidèles.
+                    </p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-laptop" style="color: #29cc61"></i>
-                    <span>Design responsive et moderne</span>
+                <!-- Fonctionnalité 7 -->
+                <div class="feature-card">
+                  <div class="feature-icon" data-icon="laptop">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4 class="feature-title">Design responsive et moderne</h4>
+                    <p class="feature-description">
+                      Interfaces élégantes et adaptatives qui offrent une
+                      expérience utilisateur optimale sur tous les appareils.
+                    </p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="icon-list d-flex">
-                    <i class="bi bi-journal-code" style="color: #ff5828"></i>
-                    <span>Formations continues et certifiantes</span>
+                <!-- Fonctionnalité 8 -->
+                <div class="feature-card">
+                  <div class="feature-icon" data-icon="code">
+                    <i class="bi bi-journal-code"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4 class="feature-title">
+                      Formations continues et certifiantes
+                    </h4>
+                    <p class="feature-description">
+                      Programme de formation complet pour maîtriser les outils
+                      et technologies les plus récentes du marché.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div
-              class="col-lg-5 position-relative"
-              data-aos="zoom-out"
-              data-aos-delay="200"
-            >
-              <div class="phone-wrap">
-                <img
-                  src="assets/img/iphone.png"
-                  alt="Application mobile Sama Tech"
-                  class="img-fluid"
-                />
+            <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
+              <div class="phone-display">
+                <div class="phone-container">
+                  <div class="phone-frame"></div>
+                  <div class="phone-screen">
+                    <div class="screen-content">
+                      <h4>Sama Tech App</h4>
+                      <p>
+                        Gestion complète de vos projets digitaux depuis votre
+                        mobile
+                      </p>
+                      <a href="#" class="app-button">
+                        <i class="bi bi-download"></i>
+                        Télécharger
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="details">
+        <div class="features-details">
           <div class="container">
-            <div class="row">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <h4>
-                  Une vision innovante pour<br />répondre à vos défis numériques
-                </h4>
-                <p>
-                  Chez Sama Tech, nous allions expertise technique et
-                  compréhension métier pour vous proposer des solutions
-                  efficaces, modernes et évolutives.
-                </p>
-                <a href="#about" class="btn-get-started">En savoir plus</a>
+            <div class="row justify-content-center">
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="vision-card">
+                  <h4>
+                    Une vision innovante pour<br />répondre à vos défis
+                    numériques
+                  </h4>
+                  <p>
+                    Chez Sama Tech, nous allions expertise technique et
+                    compréhension métier pour vous proposer des solutions
+                    efficaces, modernes et évolutives. Notre approche sur-mesure
+                    garantit des résultats concrets et durables.
+                  </p>
+                  <a href="#about" class="cta-button">
+                    En savoir plus
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Features Section -->
-
-      <!-- Partners Section -->
       <!-- Partners Section - Version Premium -->
       <section id="partenaires" class="sama-partenaires">
         <div class="sama-partenaires__container">
@@ -1136,257 +1197,528 @@
             </p>
           </div>
 
-          <div class="row gy-4">
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="stats-item">
-                <div class="stats-icon">
-                  <i class="bi bi-folder-check"></i>
+          <!-- Statistiques -->
+          <div
+            class="sama-why-us__stats"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="sama-why-us__stats-grid">
+              <div class="sama-why-us__stat-item">
+                <div class="sama-why-us__stat-number" data-sama-count="150">
+                  0
                 </div>
-                <span class="counter" data-target="50">0</span>
-                <p>Projets réalisés</p>
+                <div class="sama-why-us__stat-label">Projets Réalisés</div>
+                <div class="sama-why-us__stat-bar"></div>
               </div>
-            </div>
-
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="stats-item">
-                <div class="stats-icon">
-                  <i class="bi bi-emoji-smile"></i>
+              <div class="sama-why-us__stat-item">
+                <div class="sama-why-us__stat-number" data-sama-count="50">
+                  0
                 </div>
-                <span class="counter" data-target="25">0</span>
-                <p>Clients satisfaits</p>
+                <div class="sama-why-us__stat-label">Clients Satisfaits</div>
+                <div class="sama-why-us__stat-bar"></div>
               </div>
-            </div>
-
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="stats-item">
-                <div class="stats-icon">
-                  <i class="bi bi-people-fill"></i>
+              <div class="sama-why-us__stat-item">
+                <div class="sama-why-us__stat-number" data-sama-count="5">
+                  0
                 </div>
-                <span class="counter" data-target="15">0</span>
-                <p>Partenariats stratégiques</p>
+                <div class="sama-why-us__stat-label">Ans d'Expérience</div>
+                <div class="sama-why-us__stat-bar"></div>
               </div>
-            </div>
-
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="stats-item">
-                <div class="stats-icon">
-                  <i class="bi bi-graph-up-arrow"></i>
+              <div class="sama-why-us__stat-item">
+                <div class="sama-why-us__stat-number" data-sama-count="24">
+                  0
                 </div>
-                <span class="counter" data-target="98">0</span>
-                <p>Taux de satisfaction</p>
+                <div class="sama-why-us__stat-label">Support 24/7</div>
+                <div class="sama-why-us__stat-bar"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Why Choose Us Section -->
-      <section id="why-choose-us" class="section">
+      <!-- Portfolio Section XXL -->
+      <section id="portfolio-xxl" class="portfolio-xxl-section">
+        <!-- Effets de particules -->
+        <div class="portfolio-particles" id="particles"></div>
+
+        <!-- Couches de parallaxe -->
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+
         <div class="container">
-          <div class="section-header section-title" data-aos="fade-up">
-            <h2>Pourquoi nous choisir</h2>
-            <p>
-              Nous combinons expertise technique et approche client pour des
-              résultats exceptionnels
-            </p>
+          <!-- Header XXL -->
+          <div
+            class="portfolio-xxl-header"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <div class="section-badge" data-aos="fade-up" data-aos-delay="200">
+              <span class="badge-text">NOS TRAVAUX</span>
+            </div>
+            <h1 class="portfolio-title" data-aos="fade-up" data-aos-delay="300">
+              <span class="title-line">DES RÉALISATIONS</span>
+              <span class="title-line highlight">D'EXCEPTION</span>
+            </h1>
           </div>
 
-          <div class="row gy-4">
+          <!-- Filtres Premium -->
+          <div
+            class="portfolio-xxl-filters"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <button class="filter-btn active" data-filter="*">
+              <span class="filter-text">TOUS LES PROJETS</span>
+              <span class="filter-count">(24)</span>
+            </button>
+            <button class="filter-btn" data-filter=".web">
+              <span class="filter-text">SITES WEB</span>
+              <span class="filter-count">(12)</span>
+            </button>
+            <button class="filter-btn" data-filter=".app">
+              <span class="filter-text">APPLICATIONS</span>
+              <span class="filter-count">(8)</span>
+            </button>
+            <button class="filter-btn" data-filter=".design">
+              <span class="filter-text">UI/UX DESIGN</span>
+              <span class="filter-count">(10)</span>
+            </button>
+            <button class="filter-btn" data-filter=".branding">
+              <span class="filter-text">BRANDING</span>
+              <span class="filter-count">(6)</span>
+            </button>
+          </div>
+
+          <!-- Grille de projets XXL -->
+          <div class="portfolio-xxl-grid">
+            <!-- Projet 1 - Web -->
             <div
-              class="col-md-6 col-lg-3"
+              class="portfolio-xxl-card web"
+              data-category="WEB"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-people"></i>
+              <div class="card-badge">FEATURED</div>
+              <div class="portfolio-xxl-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  alt="Plateforme E-commerce Luxe"
+                  loading="lazy"
+                />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="portfolio-xxl-overlay">
+                <div class="overlay-content">
+                  <div class="category-tag">E-commerce</div>
+                  <h3 class="project-title">Luxe & Prestige</h3>
+                  <p class="project-description">
+                    Plateforme de vente en ligne premium avec expérience
+                    utilisateur immersive et système de paiement sécurisé.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Stripe</span>
+                  </div>
+                  <div class="portfolio-xxl-nav">
+                    <a
+                      href="project-details.html"
+                      class="portfolio-xxl-link"
+                      title="Voir les détails"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span class="tooltip">Détails</span>
+                    </a>
+                    <a
+                      href="https://example.com"
+                      class="portfolio-xxl-link"
+                      title="Visiter le site"
+                      target="_blank"
+                    >
+                      <i class="bi bi-link-45deg"></i>
+                      <span class="tooltip">Visiter</span>
+                    </a>
+                    <a href="#" class="portfolio-xxl-link" title="Voir la démo">
+                      <i class="bi bi-play-circle"></i>
+                      <span class="tooltip">Démo</span>
+                    </a>
+                  </div>
                 </div>
-                <h3>Équipe qualifiée</h3>
-                <p>
-                  Des experts certifiés avec des années d'expérience dans divers
-                  domaines technologiques.
-                </p>
               </div>
             </div>
 
+            <!-- Projet 2 - Application -->
             <div
-              class="col-md-6 col-lg-3"
+              class="portfolio-xxl-card app"
+              data-category="MOBILE"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-shield-check"></i>
+              <div class="portfolio-xxl-image">
+                <img
+                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  alt="Application Fintech"
+                  loading="lazy"
+                />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="portfolio-xxl-overlay">
+                <div class="overlay-content">
+                  <div class="category-tag">FinTech</div>
+                  <h3 class="project-title">WealthManager Pro</h3>
+                  <p class="project-description">
+                    Application mobile de gestion de patrimoine avec tableau de
+                    bord analytique et prévisions intelligentes.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">AI</span>
+                  </div>
+                  <div class="portfolio-xxl-nav">
+                    <a
+                      href="project-details.html"
+                      class="portfolio-xxl-link"
+                      title="Voir les détails"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span class="tooltip">Détails</span>
+                    </a>
+                    <a href="#" class="portfolio-xxl-link" title="Télécharger">
+                      <i class="bi bi-download"></i>
+                      <span class="tooltip">App Store</span>
+                    </a>
+                  </div>
                 </div>
-                <h3>Sécurité garantie</h3>
-                <p>
-                  Protection maximale de vos données avec les dernières
-                  technologies de cybersécurité.
-                </p>
               </div>
             </div>
 
+            <!-- Projet 3 - Design -->
             <div
-              class="col-md-6 col-lg-3"
+              class="portfolio-xxl-card design"
+              data-category="UI/UX"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-lightning-charge"></i>
+              <div class="card-badge">INNOVATION</div>
+              <div class="portfolio-xxl-image">
+                <img
+                  src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  alt="Design System"
+                  loading="lazy"
+                />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="portfolio-xxl-overlay">
+                <div class="overlay-content">
+                  <div class="category-tag">Design System</div>
+                  <h3 class="project-title">Nexus UI</h3>
+                  <p class="project-description">
+                    Système de design complet avec composants modulaires,
+                    guidelines et bibliothèque de patterns.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">Storybook</span>
+                    <span class="tech-tag">Zeroheight</span>
+                  </div>
+                  <div class="portfolio-xxl-nav">
+                    <a
+                      href="project-details.html"
+                      class="portfolio-xxl-link"
+                      title="Voir les détails"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span class="tooltip">Détails</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="portfolio-xxl-link"
+                      title="Voir le prototype"
+                    >
+                      <i class="bi bi-layout-text-window"></i>
+                      <span class="tooltip">Prototype</span>
+                    </a>
+                  </div>
                 </div>
-                <h3>Solutions rapides</h3>
-                <p>
-                  Délais d'exécution optimisés sans compromis sur la qualité du
-                  travail.
-                </p>
               </div>
             </div>
 
+            <!-- Projet 4 - Branding -->
             <div
-              class="col-md-6 col-lg-3"
+              class="portfolio-xxl-card branding"
+              data-category="BRAND"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-currency-exchange"></i>
+              <div class="portfolio-xxl-image">
+                <img
+                  src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  alt="Identité Visuelle"
+                  loading="lazy"
+                />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="portfolio-xxl-overlay">
+                <div class="overlay-content">
+                  <div class="category-tag">Branding</div>
+                  <h3 class="project-title">Aurora Brands</h3>
+                  <p class="project-description">
+                    Identité visuelle complète pour une startup tech incluant
+                    logo, charte graphique et assets marketing.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Illustrator</span>
+                    <span class="tech-tag">After Effects</span>
+                    <span class="tech-tag">Brand Guidelines</span>
+                  </div>
+                  <div class="portfolio-xxl-nav">
+                    <a
+                      href="project-details.html"
+                      class="portfolio-xxl-link"
+                      title="Voir les détails"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span class="tooltip">Détails</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="portfolio-xxl-link"
+                      title="Voir le case study"
+                    >
+                      <i class="bi bi-file-earmark-text"></i>
+                      <span class="tooltip">Case Study</span>
+                    </a>
+                  </div>
                 </div>
-                <h3>Rapport qualité/prix</h3>
-                <p>
-                  Des tarifs compétitifs pour des solutions haut de gamme
-                  adaptées à votre budget.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="section-header section-title" data-aos="fade-up">
-            <p>L'excellence au service de votre réussite</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="section bg-light">
-        <div class="container">
-          <div class="section-header section-title" data-aos="fade-up">
-            <h2>Nos réalisations</h2>
-            <p>Découvrez nos projets phares</p>
-          </div>
-
-          <div class="portfolio-filter" data-aos="fade-up">
-            <button class="active" data-filter="*">Tous</button>
-            <button data-filter=".web">Sites Web</button>
-            <button data-filter=".app">Applications</button>
-            <button data-filter=".design">Design</button>
-          </div>
-
-          <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-item web">
-              <img
-                src="assets/img/portfolio/logo_samafact.png"
-                alt="Projet web"
-              />
-              <div class="portfolio-overlay">
-                <h3>Site E-commerce</h3>
-                <p>Plateforme de vente en ligne</p>
-                <a href="portfolio-details.html" class="portfolio-link">
-                  <i class="bi bi-arrow-right"></i>
-                </a>
               </div>
             </div>
 
-            <div class="portfolio-item app">
-              <img
-                src="assets/img/portfolio/logo_samarh.png"
-                alt="Application mobile"
-              />
-              <div class="portfolio-overlay">
-                <h3>App Mobile</h3>
-                <p>Solution de gestion</p>
-                <a href="portfolio-details.html" class="portfolio-link">
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-item web">
-              <img
-                src="assets/img/portfolio/logo_samafact.png"
-                alt="Projet web"
-              />
-              <div class="portfolio-overlay">
-                <h3>Site E-commerce</h3>
-                <p>Plateforme de vente en ligne</p>
-                <a href="portfolio-details.html" class="portfolio-link">
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio-item app">
-              <img
-                src="assets/img/portfolio/logo_samarh.png"
-                alt="Application mobile"
-              />
-              <div class="portfolio-overlay">
-                <h3>App Mobile</h3>
-                <p>Solution de gestion</p>
-                <a href="portfolio-details.html" class="portfolio-link">
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-item web">
-              <img
-                src="assets/img/portfolio/logo_samafact.png"
-                alt="Projet web"
-              />
-              <div class="portfolio-overlay">
-                <h3>Site E-commerce</h3>
-                <p>Plateforme de vente en ligne</p>
-                <a href="portfolio-details.html" class="portfolio-link">
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio-item app">
-              <img
-                src="assets/img/portfolio/logo_samarh.png"
-                alt="Application mobile"
-              />
-              <div class="portfolio-overlay">
-                <h3>App Mobile</h3>
-                <p>Solution de gestion</p>
-                <a href="portfolio-details.html" class="portfolio-link">
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Ajoutez d'autres éléments portfolio ici -->
-          </div>
-
-          <div class="text-center mt-5" data-aos="fade-up">
-            <a href="portfolio.html" class="btn btn-outline-primary"
-              >Voir tous les projets</a
+            <!-- Projet 5 - Web -->
+            <div
+              class="portfolio-xxl-card web"
+              data-category="WEB"
+              data-aos="fade-up"
+              data-aos-delay="500"
             >
+              <div class="portfolio-xxl-image">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  alt="Dashboard Analytics"
+                  loading="lazy"
+                />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="portfolio-xxl-overlay">
+                <div class="overlay-content">
+                  <div class="category-tag">SaaS</div>
+                  <h3 class="project-title">DataInsight Pro</h3>
+                  <p class="project-description">
+                    Dashboard analytique en temps réel avec visualisations
+                    avancées et rapports automatisés.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">WebSocket</span>
+                  </div>
+                  <div class="portfolio-xxl-nav">
+                    <a
+                      href="project-details.html"
+                      class="portfolio-xxl-link"
+                      title="Voir les détails"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span class="tooltip">Détails</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="portfolio-xxl-link"
+                      title="Essayer la démo"
+                    >
+                      <i class="bi bi-rocket-takeoff"></i>
+                      <span class="tooltip">Démo Live</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet 6 - Application -->
+            <div
+              class="portfolio-xxl-card app"
+              data-category="MOBILE"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="card-badge">POPULAIRE</div>
+              <div class="portfolio-xxl-image">
+                <img
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  alt="Application Fitness"
+                  loading="lazy"
+                />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="portfolio-xxl-overlay">
+                <div class="overlay-content">
+                  <div class="category-tag">Fitness</div>
+                  <h3 class="project-title">FitTrack AI</h3>
+                  <p class="project-description">
+                    Application de fitness avec reconnaissance d'exercices par
+                    IA et plans d'entraînement personnalisés.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">HealthKit</span>
+                  </div>
+                  <div class="portfolio-xxl-nav">
+                    <a
+                      href="project-details.html"
+                      class="portfolio-xxl-link"
+                      title="Voir les détails"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span class="tooltip">Détails</span>
+                    </a>
+                    <a href="#" class="portfolio-xxl-link" title="Télécharger">
+                      <i class="bi bi-phone"></i>
+                      <span class="tooltip">Google Play</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet 7 - Design -->
+            <div
+              class="portfolio-xxl-card design"
+              data-category="UI/UX"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div class="portfolio-xxl-image">
+                <img
+                  src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  alt="Interface AR"
+                  loading="lazy"
+                />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="portfolio-xxl-overlay">
+                <div class="overlay-content">
+                  <div class="category-tag">AR Experience</div>
+                  <h3 class="project-title">VisionAR</h3>
+                  <p class="project-description">
+                    Interface de réalité augmentée pour la visualisation
+                    architecturale et la conception spatiale.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">ARKit</span>
+                    <span class="tech-tag">3D Modeling</span>
+                  </div>
+                  <div class="portfolio-xxl-nav">
+                    <a
+                      href="project-details.html"
+                      class="portfolio-xxl-link"
+                      title="Voir les détails"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span class="tooltip">Détails</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="portfolio-xxl-link"
+                      title="Voir la vidéo"
+                    >
+                      <i class="bi bi-play-btn"></i>
+                      <span class="tooltip">Vidéo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet 8 - Web -->
+            <div
+              class="portfolio-xxl-card web"
+              data-category="WEB"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <div class="card-badge">AWARD WINNING</div>
+              <div class="portfolio-xxl-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  alt="Portfolio Artistique"
+                  loading="lazy"
+                />
+                <div class="image-overlay"></div>
+              </div>
+              <div class="portfolio-xxl-overlay">
+                <div class="overlay-content">
+                  <div class="category-tag">Portfolio</div>
+                  <h3 class="project-title">Artiste Contemporain</h3>
+                  <p class="project-description">
+                    Portfolio immersif pour artiste avec galerie virtuelle,
+                    visites 360° et système de vente d'œuvres.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Three.js</span>
+                    <span class="tech-tag">GSAP</span>
+                    <span class="tech-tag">WebGL</span>
+                  </div>
+                  <div class="portfolio-xxl-nav">
+                    <a
+                      href="project-details.html"
+                      class="portfolio-xxl-link"
+                      title="Voir les détails"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span class="tooltip">Détails</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="portfolio-xxl-link"
+                      title="Visiter le site"
+                    >
+                      <i class="bi bi-globe"></i>
+                      <span class="tooltip">Site Web</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call to Action Premium -->
+          <div
+            class="portfolio-xxl-cta"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+          >
+            <div class="cta-content">
+              <h2 class="cta-title">
+                Prêt à transformer votre vision en réalité ?
+              </h2>
+              <p class="cta-subtitle">
+                Discutons de votre prochain projet et créons ensemble quelque
+                chose d'extraordinaire.
+              </p>
+              <div class="cta-buttons">
+                <a href="#contact" class="cta-btn primary">
+                  <span>DÉMARRER UN PROJET</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="portfolio-full.html" class="cta-btn secondary">
+                  <span>VOIR TOUS LES PROJETS</span>
+                  <i class="bi bi-grid-3x3-gap"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1447,7 +1779,6 @@
           </div>
         </div>
       </section>
-      <!-- Process Section -->
 
       <!-- Team Section
       <section class="section">
@@ -1532,197 +1863,242 @@
       </section> -->
 
       <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials section">
+      <section
+        id="testimonials"
+        class="testimonials testimonials-section section"
+      >
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Testimonials</h2>
+        <div class="container section-title-elegant" data-aos="fade-up">
+          <h2>Témoignages</h2>
           <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+            Ils nous ont fait confiance pour leurs projets digitaux. Découvrez
+            ce que nos clients disent de l'expertise Samatech.
           </p>
         </div>
         <!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 40
+          <div class="position-relative">
+            <!-- Navigation buttons -->
+            <button class="custom-navigation prev">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="custom-navigation next">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+
+            <!-- Swiper -->
+            <div class="swiper init-swiper testimonial-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 7000
                   },
-                  "1200": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 1
+                  "navigation": {
+                    "nextEl": ".custom-navigation.next",
+                    "prevEl": ".custom-navigation.prev"
+                  },
+                  "pagination": {
+                    "el": ".custom-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 30
+                    },
+                    "768": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 30
+                    }
                   }
                 }
-              }
-            </script>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Proin iaculis purus consequat sem cure digni ssim donec
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                    risus at semper.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-1.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                  </div>
-                </div>
-              </div>
-              <!-- End testimonial item -->
+              </script>
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Export tempor illum tamen malis malis eram quae irure esse
-                    labore quem cillum quid cillum eram malis quorum velit fore
-                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                    culpa.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-2.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
+              <div class="swiper-wrapper">
+                <!-- Témoignage 1 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <span class="recommendation-badge">Recommandé</span>
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      Samatech nous a accompagnés dans la digitalisation
+                      complète de notre gestion interne. Les solutions proposées
+                      sont fiables, modernes et parfaitement adaptées à notre
+                      activité. Une équipe professionnelle et très réactive.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-1.jpg"
+                          alt="Mamadou Ndiaye"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Mamadou Ndiaye</h3>
+                        <h4>Directeur Général – Dakar</h4>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- End testimonial item -->
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Enim nisi quem export duis labore cillum quae magna enim
-                    sint quorum nulla quem veniam duis minim tempor labore quem
-                    eram duis noster aute amet eram fore quis sint minim.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-3.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
+                <!-- Témoignage 2 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      Grâce à Samatech, notre image de marque a totalement
+                      changé. Le design, la gestion des réseaux sociaux et le
+                      site web ont considérablement amélioré notre visibilité et
+                      notre crédibilité auprès de nos clients.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-2.jpg"
+                          alt="Aïssatou Fall"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Aïssatou Fall</h3>
+                        <h4>Responsable Communication</h4>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- End testimonial item -->
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                    multos export minim fugiat minim velit minim dolor enim duis
-                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                    illum veniam.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-4.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Matt Brandon</h3>
-                    <h4>Freelancer</h4>
+                <!-- Témoignage 3 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <span class="recommendation-badge">Top Client</span>
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      La solution de gestion proposée par Samatech nous permet
+                      aujourd'hui de suivre nos stocks, nos ventes et nos
+                      factures en temps réel. C'est un véritable gain de temps
+                      et d'efficacité.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-3.jpg"
+                          alt="Ibrahima Diop"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Ibrahima Diop</h3>
+                        <h4>Gérant de PME</h4>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- End testimonial item -->
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
+                <!-- Témoignage 4 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      J'ai suivi une formation en informatique et bureautique
+                      avec Samatech. Le contenu était clair, pratique et adapté
+                      au marché professionnel. Je recommande vivement leurs
+                      formations.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-4.jpg"
+                          alt="Fatou Sow"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Fatou Sow</h3>
+                        <h4>Étudiante & Jeune Professionnelle</h4>
+                      </div>
+                    </div>
                   </div>
-                  <p>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                    fore nisi cillum quid.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-5.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
+                </div>
+
+                <!-- Témoignage 5 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <span class="recommendation-badge">Partenaire</span>
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      Samatech nous a aidés à lancer notre startup avec un site
+                      web moderne, une identité visuelle forte et des conseils
+                      stratégiques très pertinents. Un partenaire digital de
+                      confiance au Sénégal.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-5.jpg"
+                          alt="Cheikh Mbaye"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Cheikh Mbaye</h3>
+                        <h4>Entrepreneur</h4>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- End testimonial item -->
+
+              <!-- Pagination -->
+              <div class="custom-pagination swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
-      <!-- /Testimonials Section -->
 
       <!-- Recent Posts Section -->
-      <section id="recent-posts" class="recent-posts section">
+      <section
+        id="recent-posts"
+        class="recent-posts recent-posts-section section"
+      >
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container posts-title-elegant" data-aos="fade-up">
           <h2>Articles Récents</h2>
           <p>
-            Découvrez nos dernières publications sur l’actualité tech, la
+            Découvrez nos dernières publications sur l'actualité tech, la
             sécurité et les tendances numériques
           </p>
         </div>
@@ -1730,122 +2106,255 @@
 
         <div class="container">
           <div class="row gy-5">
+            <!-- Article 1 -->
             <div
               class="col-xl-3 col-md-6"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div class="post-box">
-                <div class="post-img">
+              <div class="article-card">
+                <span class="category-badge">Cybersécurité</span>
+                <span class="new-badge">Nouveau</span>
+
+                <div class="article-image">
                   <img
                     src="assets/img/blog/cybersecurity.png"
                     class="img-fluid"
-                    alt=""
+                    alt="Cybersécurité"
                   />
                 </div>
-                <div class="meta">
+
+                <div class="article-meta">
                   <span class="post-date">26 Juin 2025</span>
-                  <span class="post-author"> / M. A. Ba</span>
+                  <span class="post-author">M. A. Ba</span>
                 </div>
-                <h3 class="post-title">
-                  5 erreurs à éviter pour sécuriser votre application web
-                </h3>
-                <p>
-                  De la mauvaise gestion des mots de passe aux failles XSS,
-                  découvrez les erreurs fréquentes en cybersécurité et comment
-                  les corriger efficacement.
-                </p>
-                <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Lire plus</span><i class="bi bi-arrow-right"></i
-                ></a>
+
+                <div class="article-title">
+                  <h3>
+                    5 erreurs à éviter pour sécuriser votre application web
+                  </h3>
+                </div>
+
+                <div class="article-excerpt">
+                  <p>
+                    De la mauvaise gestion des mots de passe aux failles XSS,
+                    découvrez les erreurs fréquentes en cybersécurité et comment
+                    les corriger efficacement.
+                  </p>
+                </div>
+
+                <a href="blog-details.html" class="readmore-link">
+                  <span>Lire plus</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <div class="article-overlay">
+                  <div class="overlay-content">
+                    <h3 style="color: white; margin-bottom: 15px">
+                      5 erreurs à éviter pour sécuriser votre application web
+                    </h3>
+                    <p
+                      style="
+                        color: rgba(255, 255, 255, 0.9);
+                        margin-bottom: 20px;
+                      "
+                    >
+                      Sécurisez vos applications contre les menaces les plus
+                      courantes...
+                    </p>
+                    <a href="blog-details.html" class="read-full-article">
+                      Lire l'article complet
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
+            <!-- Article 2 -->
             <div
               class="col-xl-3 col-md-6"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div class="post-box">
-                <div class="post-img">
+              <div class="article-card">
+                <span class="category-badge">Marketing Digital</span>
+
+                <div class="article-image">
                   <img
                     src="assets/img/blog/social-media.png"
                     class="img-fluid"
-                    alt=""
+                    alt="Réseaux sociaux"
                   />
                 </div>
-                <div class="meta">
+
+                <div class="article-meta">
                   <span class="post-date">18 Juin 2023</span>
-                  <span class="post-author"> / Maimouna Touré</span>
+                  <span class="post-author">Maimouna Touré</span>
                 </div>
-                <h3 class="post-title">
-                  Comment booster sa visibilité sur les réseaux sociaux en 2025
-                </h3>
-                <p>
-                  Instagram, TikTok, LinkedIn... Nos conseils pour bâtir une
-                  stratégie digitale percutante et engagée pour votre marque ou
-                  entreprise.
-                </p>
-                <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Lire plus</span><i class="bi bi-arrow-right"></i
-                ></a>
+
+                <div class="article-title">
+                  <h3>
+                    Comment booster sa visibilité sur les réseaux sociaux en
+                    2025
+                  </h3>
+                </div>
+
+                <div class="article-excerpt">
+                  <p>
+                    Instagram, TikTok, LinkedIn... Nos conseils pour bâtir une
+                    stratégie digitale percutante et engagée pour votre marque
+                    ou entreprise.
+                  </p>
+                </div>
+
+                <a href="blog-details.html" class="readmore-link">
+                  <span>Lire plus</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <div class="article-overlay">
+                  <div class="overlay-content">
+                    <h3 style="color: white; margin-bottom: 15px">
+                      Boostez votre présence digitale
+                    </h3>
+                    <p
+                      style="
+                        color: rgba(255, 255, 255, 0.9);
+                        margin-bottom: 20px;
+                      "
+                    >
+                      Stratégies avancées pour dominer les réseaux sociaux...
+                    </p>
+                    <a href="blog-details.html" class="read-full-article">
+                      Lire l'article complet
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
+            <!-- Article 3 -->
             <div
               class="col-xl-3 col-md-6"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <div class="post-box">
-                <div class="post-img">
+              <div class="article-card">
+                <span class="category-badge">Réseaux</span>
+
+                <div class="article-image">
                   <img
                     src="assets/img/blog/networking.png"
                     class="img-fluid"
-                    alt=""
+                    alt="Réseaux informatiques"
                   />
                 </div>
-                <div class="meta">
+
+                <div class="article-meta">
                   <span class="post-date">10 Juin 2022</span>
-                  <span class="post-author"> / A. Khadre Ba</span>
+                  <span class="post-author">A. Khadre Ba</span>
                 </div>
-                <h3 class="post-title">
-                  Les bases du réseau informatique expliquées simplement
-                </h3>
-                <p>
-                  Adresses IP, DNS, routeurs, pare-feux… un guide clair pour
-                  comprendre l’infrastructure qui relie le monde.
-                </p>
-                <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Lire plus</span><i class="bi bi-arrow-right"></i
-                ></a>
+
+                <div class="article-title">
+                  <h3>
+                    Les bases du réseau informatique expliquées simplement
+                  </h3>
+                </div>
+
+                <div class="article-excerpt">
+                  <p>
+                    Adresses IP, DNS, routeurs, pare-feux… un guide clair pour
+                    comprendre l'infrastructure qui relie le monde.
+                  </p>
+                </div>
+
+                <a href="blog-details.html" class="readmore-link">
+                  <span>Lire plus</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <div class="article-overlay">
+                  <div class="overlay-content">
+                    <h3 style="color: white; margin-bottom: 15px">
+                      Comprendre les réseaux
+                    </h3>
+                    <p
+                      style="
+                        color: rgba(255, 255, 255, 0.9);
+                        margin-bottom: 20px;
+                      "
+                    >
+                      Tout ce que vous devez savoir sur les réseaux
+                      informatiques...
+                    </p>
+                    <a href="blog-details.html" class="read-full-article">
+                      Lire l'article complet
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
+            <!-- Article 4 -->
             <div
               class="col-xl-3 col-md-6"
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <div class="post-box">
-                <div class="post-img">
-                  <img src="assets/img/blog/ai.png" class="img-fluid" alt="" />
+              <div class="article-card">
+                <span class="category-badge">Intelligence Artificielle</span>
+                <span class="new-badge">À la une</span>
+
+                <div class="article-image">
+                  <img
+                    src="assets/img/blog/ai.png"
+                    class="img-fluid"
+                    alt="Intelligence Artificielle"
+                  />
                 </div>
-                <div class="meta">
+
+                <div class="article-meta">
                   <span class="post-date">01 Juin 2025</span>
-                  <span class="post-author"> / Khadija Sylla</span>
+                  <span class="post-author">Khadija Sylla</span>
                 </div>
-                <h3 class="post-title">
-                  L’intelligence artificielle au service des entreprises
-                  africaines
-                </h3>
-                <p>
-                  Découvrez comment les PME sénégalaises adoptent l’IA pour
-                  optimiser leurs services et mieux cibler leurs clients.
-                </p>
-                <a href="blog-details.html" class="readmore stretched-link"
-                  ><span>Lire plus</span><i class="bi bi-arrow-right"></i
-                ></a>
+
+                <div class="article-title">
+                  <h3>
+                    L'intelligence artificielle au service des entreprises
+                    africaines
+                  </h3>
+                </div>
+
+                <div class="article-excerpt">
+                  <p>
+                    Découvrez comment les PME sénégalaises adoptent l'IA pour
+                    optimiser leurs services et mieux cibler leurs clients.
+                  </p>
+                </div>
+
+                <a href="blog-details.html" class="readmore-link">
+                  <span>Lire plus</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <div class="article-overlay">
+                  <div class="overlay-content">
+                    <h3 style="color: white; margin-bottom: 15px">
+                      L'IA en Afrique
+                    </h3>
+                    <p
+                      style="
+                        color: rgba(255, 255, 255, 0.9);
+                        margin-bottom: 20px;
+                      "
+                    >
+                      Comment l'IA révolutionne les entreprises africaines...
+                    </p>
+                    <a href="blog-details.html" class="read-full-article">
+                      Lire l'article complet
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1921,7 +2430,7 @@
               <p>Zone de captage, Liberté 6</p>
               <p>Sama Tech</p>
               <p class="mt-4">
-                <strong>Téléphone :</strong> <span>+221 77 123 45 67</span>
+                <strong>Téléphone :</strong> <span>+221 78 260 66 53</span>
               </p>
               <p><strong>Email :</strong> <span>contact@samatech.sn</span></p>
             </div>
@@ -1959,6 +2468,7 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
@@ -2085,6 +2595,8 @@
         }
       });
     </script>
+
+    <!--Why Us-->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Initialisation du slider Swiper
@@ -2124,6 +2636,8 @@
         }
       });
     </script>
+
+    <!--footer-->
     <script>
       // Set current year in footer
       const yearElement = document.getElementById("current-year");
@@ -2147,7 +2661,8 @@
         });
       });
     </script>
-    <script></script>
+
+    <!--Why Us-->
     <script>
       // Script spécifique corrigé pour la section Why Us
       (function () {
@@ -2370,6 +2885,8 @@
         });
       })();
     </script>
+
+    <!--Partenaire-->
     <script>
       // Script pour la section Partenaires
       (function () {
@@ -2463,6 +2980,263 @@
           }, stepTime);
         }
       })();
+    </script>
+
+    <!---Porfolio-->
+    <script>
+      // Initialiser AOS
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+
+      // Initialiser les particules
+      function initParticles() {
+        const container = document.getElementById("particles");
+        if (!container) return;
+
+        for (let i = 0; i < 50; i++) {
+          const particle = document.createElement("div");
+          particle.className = "particle";
+
+          // Position aléatoire
+          const xStart = Math.random() * 100;
+          const xEnd = xStart + (Math.random() * 40 - 20);
+
+          particle.style.setProperty("--x-start", `${xStart}vw`);
+          particle.style.setProperty("--x-end", `${xEnd}vw`);
+
+          // Animation delay
+          particle.style.animationDelay = `${Math.random() * 20}s`;
+
+          // Taille et opacité variables
+          const size = Math.random() * 3 + 1;
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+          particle.style.opacity = Math.random() * 0.5 + 0.1;
+
+          container.appendChild(particle);
+        }
+      }
+
+      // Filtrage des projets
+      function initPortfolioFilter() {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const portfolioItems = document.querySelectorAll(".portfolio-xxl-card");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Retirer la classe active de tous les boutons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            // Ajouter la classe active au bouton cliqué
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+
+            portfolioItems.forEach((item) => {
+              if (
+                filterValue === "*" ||
+                item.classList.contains(filterValue.substring(1))
+              ) {
+                item.style.display = "block";
+                // Animation d'apparition
+                item.style.animation = "fadeIn 0.6s ease forwards";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+        });
+      }
+
+      // Animations des statistiques
+      function animateStats() {
+        const stats = document.querySelectorAll(".stat-number");
+
+        stats.forEach((stat) => {
+          const target = parseInt(stat.getAttribute("data-count"));
+          const duration = 2000; // 2 secondes
+          const step = target / (duration / 16); // 60fps
+          let current = 0;
+
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              stat.textContent = target;
+              clearInterval(timer);
+            } else {
+              stat.textContent = Math.floor(current);
+            }
+          }, 16);
+        });
+      }
+
+      // Observer pour animer les stats quand elles deviennent visibles
+      const statsObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateStats();
+              statsObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      // Navigation entre projets
+      function initProjectNavigation() {
+        const prevBtn = document.querySelector(".nav-btn.prev");
+        const nextBtn = document.querySelector(".nav-btn.next");
+        const cards = document.querySelectorAll(".portfolio-xxl-card");
+        let currentIndex = 0;
+
+        function showProject(index) {
+          // Cacher toutes les cartes
+          cards.forEach((card) => {
+            card.style.opacity = "0.3";
+            card.style.transform = "scale(0.95)";
+          });
+
+          // Afficher la carte actuelle
+          if (cards[index]) {
+            cards[index].style.opacity = "1";
+            cards[index].style.transform = "scale(1)";
+          }
+
+          currentIndex = index;
+        }
+
+        prevBtn?.addEventListener("click", () => {
+          let newIndex = currentIndex - 1;
+          if (newIndex < 0) newIndex = cards.length - 1;
+          showProject(newIndex);
+        });
+
+        nextBtn?.addEventListener("click", () => {
+          let newIndex = currentIndex + 1;
+          if (newIndex >= cards.length) newIndex = 0;
+          showProject(newIndex);
+        });
+
+        // Initialiser avec le premier projet
+        showProject(0);
+      }
+
+      // Effet de parallaxe
+      function initParallax() {
+        window.addEventListener("scroll", () => {
+          const scrolled = window.pageYOffset;
+          const layers = document.querySelectorAll(".parallax-layer");
+
+          layers.forEach((layer, index) => {
+            const speed = 0.5 * (index + 1);
+            const yPos = -(scrolled * speed);
+            layer.style.transform = `translateY(${yPos}px)`;
+          });
+        });
+      }
+
+      // Modal de projet
+      function initProjectModal() {
+        const modal = document.getElementById("projectModal");
+        const closeBtn = modal?.querySelector(".modal-close");
+        const cards = document.querySelectorAll(".portfolio-xxl-card");
+
+        cards.forEach((card) => {
+          card.addEventListener("click", (e) => {
+            if (!e.target.closest(".portfolio-xxl-link")) {
+              // Charger les détails du projet ici
+              modal.style.display = "flex";
+              document.body.style.overflow = "hidden";
+            }
+          });
+        });
+
+        closeBtn?.addEventListener("click", () => {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+        });
+
+        // Fermer la modal en cliquant à l'extérieur
+        modal?.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+          }
+        });
+      }
+
+      // Initialiser tout quand le DOM est chargé
+      document.addEventListener("DOMContentLoaded", () => {
+        initParticles();
+        initPortfolioFilter();
+        initProjectNavigation();
+        initParallax();
+        initProjectModal();
+
+        // Observer les stats
+        const statsSection = document.querySelector(".portfolio-stats");
+        if (statsSection) {
+          statsObserver.observe(statsSection);
+        }
+      });
+
+      // Animation CSS pour le fadeIn
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    `;
+      document.head.appendChild(style);
+    </script>
+
+    <script>
+      // Initialisation du swiper avec configuration centrée
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiperEl = document.querySelector(".testimonial-swiper");
+        if (swiperEl) {
+          const swiperConfig = JSON.parse(
+            swiperEl.querySelector(".swiper-config").textContent
+          );
+
+          // Ajout de la configuration pour centrer les slides
+          Object.assign(swiperConfig, {
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            watchSlidesProgress: true,
+            on: {
+              slideChange: function () {
+                updateCurrentSlide(this.activeIndex + 1);
+              },
+            },
+          });
+
+          const swiper = new Swiper(swiperEl, swiperConfig);
+
+          // Mise à jour de l'indicateur
+          function updateCurrentSlide(current) {
+            const currentSlideEl = document.querySelector(".current-slide");
+            if (currentSlideEl) {
+              currentSlideEl.textContent =
+                current > 5 ? current % 5 || 5 : current;
+            }
+          }
+
+          // Initialisation
+          updateCurrentSlide(1);
+        }
+      });
     </script>
   </body>
 </html>

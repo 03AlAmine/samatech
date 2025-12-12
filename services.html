@@ -1,170 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services - Samatech</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - Samatech</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/service.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <body class="services-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <h1 class="sitename">Samatech</h1>
+        </a>
 
-
-</head>
-
-<body class="services-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <h1 class="sitename">Samatech</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Accueil<br></a></li>
-          <li><a href="about.html">A propos</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="packs.html">Packs</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/services.png);">
-      <div class="container">
-        <h1>Services</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Services</li>
-          </ol>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html">Accueil<br /></a>
+            </li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="packs.html">Packs</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background"
+        data-aos="fade"
+        style="background-image: url(assets/img/services.png)"
+      >
+        <div class="container">
+          <h1>Services</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Services</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nos Services</h2>
-        <p>Des solutions numériques sur mesure pour accompagner votre transformation digitale.</p>
-      </div><!-- End Section Title -->
+      <!-- Service Details Section -->
+      <section class="service-details-section">
+        <div class="service-details-wrapper">
+          <!-- Titre de section -->
+          <div class="service-section-title">
+            <h2>Nos Services</h2>
+            <p class="service-section-subtitle">
+              Des solutions numériques sur mesure pour accompagner votre
+              transformation digitale.
+            </p>
+          </div>
 
-
-          <!-- Service Details Section -->
-    <section id="service-details" class="service-details">
-      <div class="container">
-        <div class="row">
-          <!-- Colonne gauche - Navigation des services -->
-          <div class="col-lg-4">
-            <div class="service-navigation">
+          <div class="service-grid-layout">
+            <!-- Colonne de navigation -->
+            <div class="service-nav-sidebar">
               <div class="service-nav-card">
-                <h3 class="section-subtitle">Explorez nos services</h3>
+                <div class="service-nav-header">
+                  <h3>Explorez nos services</h3>
+                </div>
 
-                <div class="service-nav-items">
-                  <a href="#service-web" class="service-nav-item active" data-service="web">
-                    <div class="service-nav-icon">
+                <div class="service-nav-list">
+                  <a
+                    href="#service-web"
+                    class="service-nav-link active"
+                    data-service="web"
+                  >
+                    <div class="service-nav-icon-box">
                       <i class="bi bi-code-slash"></i>
                     </div>
                     <div class="service-nav-content">
-                      <h4>Développement Web</h4>
-                      <p>Sites et applications sur mesure</p>
+                      <h4 class="service-nav-title">Développement Web</h4>
+                      <p class="service-nav-description">
+                        Sites et applications sur mesure
+                      </p>
                     </div>
                     <div class="service-nav-arrow">
                       <i class="bi bi-chevron-right"></i>
                     </div>
                   </a>
 
-                  <a href="#service-marketing" class="service-nav-item" data-service="marketing">
-                    <div class="service-nav-icon">
+                  <a
+                    href="#service-marketing"
+                    class="service-nav-link"
+                    data-service="marketing"
+                  >
+                    <div class="service-nav-icon-box">
                       <i class="bi bi-megaphone"></i>
                     </div>
                     <div class="service-nav-content">
-                      <h4>Marketing Digital</h4>
-                      <p>Stratégies de visibilité</p>
+                      <h4 class="service-nav-title">Marketing Digital</h4>
+                      <p class="service-nav-description">
+                        Stratégies de visibilité
+                      </p>
                     </div>
                     <div class="service-nav-arrow">
                       <i class="bi bi-chevron-right"></i>
                     </div>
                   </a>
 
-                  <a href="#service-securite" class="service-nav-item" data-service="security">
-                    <div class="service-nav-icon">
+                  <a
+                    href="#service-securite"
+                    class="service-nav-link"
+                    data-service="security"
+                  >
+                    <div class="service-nav-icon-box">
                       <i class="bi bi-shield-lock"></i>
                     </div>
                     <div class="service-nav-content">
-                      <h4>Cybersécurité</h4>
-                      <p>Protection de vos données</p>
+                      <h4 class="service-nav-title">Cybersécurité</h4>
+                      <p class="service-nav-description">
+                        Protection de vos données
+                      </p>
                     </div>
                     <div class="service-nav-arrow">
                       <i class="bi bi-chevron-right"></i>
                     </div>
                   </a>
 
-                  <a href="#service-formation" class="service-nav-item" data-service="training">
-                    <div class="service-nav-icon">
+                  <a
+                    href="#service-formation"
+                    class="service-nav-link"
+                    data-service="training"
+                  >
+                    <div class="service-nav-icon-box">
                       <i class="bi bi-mortarboard"></i>
                     </div>
                     <div class="service-nav-content">
-                      <h4>Formation</h4>
-                      <p>Ateliers pratiques</p>
+                      <h4 class="service-nav-title">Formation</h4>
+                      <p class="service-nav-description">Ateliers pratiques</p>
                     </div>
                     <div class="service-nav-arrow">
                       <i class="bi bi-chevron-right"></i>
                     </div>
                   </a>
 
-                  <a href="#service-design" class="service-nav-item" data-service="design">
-                    <div class="service-nav-icon">
+                  <a
+                    href="#service-design"
+                    class="service-nav-link"
+                    data-service="design"
+                  >
+                    <div class="service-nav-icon-box">
                       <i class="bi bi-palette"></i>
                     </div>
                     <div class="service-nav-content">
-                      <h4>Design & Identité</h4>
-                      <p>Création visuelle</p>
+                      <h4 class="service-nav-title">Design & Identité</h4>
+                      <p class="service-nav-description">Création visuelle</p>
                     </div>
                     <div class="service-nav-arrow">
                       <i class="bi bi-chevron-right"></i>
                     </div>
                   </a>
 
-                  <a href="#service-reseaux" class="service-nav-item" data-service="network">
-                    <div class="service-nav-icon">
+                  <a
+                    href="#service-reseaux"
+                    class="service-nav-link"
+                    data-service="network"
+                  >
+                    <div class="service-nav-icon-box">
                       <i class="bi bi-hdd-network"></i>
                     </div>
                     <div class="service-nav-content">
-                      <h4>Réseaux & Systèmes</h4>
-                      <p>Infrastructure IT</p>
+                      <h4 class="service-nav-title">Réseaux & Systèmes</h4>
+                      <p class="service-nav-description">Infrastructure IT</p>
                     </div>
                     <div class="service-nav-arrow">
                       <i class="bi bi-chevron-right"></i>
@@ -173,326 +217,397 @@
                 </div>
               </div>
 
-              <div class="service-help-card">
-                <div class="help-icon-circle">
+              <!-- Carte d'assistance -->
+              <div class="service-assist-card">
+                <div class="service-assist-icon">
                   <i class="bi bi-headset"></i>
                 </div>
                 <h4>Besoin d'aide ?</h4>
-                <p>Notre équipe est à votre disposition pour répondre à toutes vos questions.</p>
-                <a href="contact.html" class="help-contact-btn">
+                <p class="service-assist-text">
+                  Notre équipe est à votre disposition pour répondre à toutes
+                  vos questions.
+                </p>
+                <a href="contact.html" class="service-assist-button">
                   <i class="bi bi-envelope"></i> Nous contacter
                 </a>
               </div>
             </div>
-          </div>
 
-          <!-- Colonne droite - Détails du service -->
-          <div class="col-lg-8">
-            <div class="service-content-wrapper">
-              <div class="service-hero">
-                <div class="service-hero-image" id="service-hero-image">
-                  <img src="assets/img/services/web.png" alt="Développement Web" class="hero-img">
-                  <div class="image-overlay"></div>
+            <!-- Colonne de contenu -->
+            <div class="service-content-column">
+              <!-- Bannière du service -->
+              <div class="service-hero-banner">
+                <div class="service-hero-image">
+                  <img
+                    src="assets/img/services/web.png"
+                    alt="Développement Web"
+                    class="service-banner-img"
+                  />
+                  <div class="service-banner-overlay"></div>
                 </div>
                 <div class="service-hero-content">
-                  <h2 id="service-title">Développement Web</h2>
-                  <p id="service-intro" class="hero-intro">Des solutions digitales sur mesure pour propulser votre
-                    business</p>
+                  <h2 class="service-hero-title" id="service-title">
+                    Développement Web
+                  </h2>
+                  <p class="service-hero-subtitle" id="service-intro">
+                    Des solutions digitales sur mesure pour propulser votre
+                    business
+                  </p>
                 </div>
               </div>
 
-              <div class="service-detail-content">
+              <!-- Contenu détaillé -->
+              <div class="service-detail-wrapper">
                 <!-- Section Développement Web -->
-                <div id="service-web" class="service-detail-section active">
-                  <h3 class="detail-section-title">Créez votre présence en ligne</h3>
+                <div id="service-web" class="service-detail-panel active">
+                  <h3 class="service-panel-title">
+                    Créez votre présence en ligne
+                  </h3>
 
                   <div class="service-features-grid">
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-globe"></i>
                       </div>
-                      <h4>Sites Vitrines</h4>
-                      <p>Présentez votre entreprise avec un site élégant et performant</p>
+                      <h4 class="service-feature-name">Sites Vitrines</h4>
+                      <p class="service-feature-description">
+                        Présentez votre entreprise avec un site élégant et
+                        performant
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-cart"></i>
                       </div>
-                      <h4>E-commerce</h4>
-                      <p>Plateformes de vente en ligne sécurisées et intuitives</p>
+                      <h4 class="service-feature-name">E-commerce</h4>
+                      <p class="service-feature-description">
+                        Plateformes de vente en ligne sécurisées et intuitives
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-gear"></i>
                       </div>
-                      <h4>Applications Web</h4>
-                      <p>Solutions métiers développées sur mesure</p>
+                      <h4 class="service-feature-name">Applications Web</h4>
+                      <p class="service-feature-description">
+                        Solutions métiers développées sur mesure
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-phone"></i>
                       </div>
-                      <h4>Mobile First</h4>
-                      <p>Designs parfaitement adaptés aux mobiles</p>
+                      <h4 class="service-feature-name">Mobile First</h4>
+                      <p class="service-feature-description">
+                        Designs parfaitement adaptés aux mobiles
+                      </p>
                     </div>
                   </div>
 
-                  <div class="tech-stack-section">
-                    <h4>Technologies utilisées :</h4>
-                    <div class="tech-stack-badges">
-                      <span class="tech-badge">React</span>
-                      <span class="tech-badge">Node.js</span>
-                      <span class="tech-badge">Laravel</span>
-                      <span class="tech-badge">WordPress</span>
-                      <span class="tech-badge">Shopify</span>
+                  <div class="service-tech-section">
+                    <h4 class="service-tech-title">Technologies utilisées :</h4>
+                    <div class="service-tech-tags">
+                      <span class="service-tech-tag">React</span>
+                      <span class="service-tech-tag">Node.js</span>
+                      <span class="service-tech-tag">Laravel</span>
+                      <span class="service-tech-tag">WordPress</span>
+                      <span class="service-tech-tag">Shopify</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Section Marketing Digital -->
-                <div id="service-marketing" class="service-detail-section">
-                  <h3 class="detail-section-title">Boostez votre visibilité en ligne</h3>
+                <div id="service-marketing" class="service-detail-panel">
+                  <h3 class="service-panel-title">
+                    Boostez votre visibilité en ligne
+                  </h3>
 
                   <div class="service-features-grid">
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-search"></i>
                       </div>
-                      <h4>SEO</h4>
-                      <p>Optimisation pour les moteurs de recherche</p>
+                      <h4 class="service-feature-name">SEO</h4>
+                      <p class="service-feature-description">
+                        Optimisation pour les moteurs de recherche
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-megaphone"></i>
                       </div>
-                      <h4>Publicité</h4>
-                      <p>Campagnes ciblées sur les réseaux sociaux</p>
+                      <h4 class="service-feature-name">Publicité</h4>
+                      <p class="service-feature-description">
+                        Campagnes ciblées sur les réseaux sociaux
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-graph-up"></i>
                       </div>
-                      <h4>Analyse</h4>
-                      <p>Suivi et optimisation des performances</p>
+                      <h4 class="service-feature-name">Analyse</h4>
+                      <p class="service-feature-description">
+                        Suivi et optimisation des performances
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-people"></i>
                       </div>
-                      <h4>Réseaux Sociaux</h4>
-                      <p>Gestion professionnelle de votre présence</p>
+                      <h4 class="service-feature-name">Réseaux Sociaux</h4>
+                      <p class="service-feature-description">
+                        Gestion professionnelle de votre présence
+                      </p>
                     </div>
                   </div>
 
-                  <div class="tech-stack-section">
-                    <h4>Outils utilisés :</h4>
-                    <div class="tech-stack-badges">
-                      <span class="tech-badge">Google Ads</span>
-                      <span class="tech-badge">Facebook Ads</span>
-                      <span class="tech-badge">Google Analytics</span>
-                      <span class="tech-badge">Mailchimp</span>
+                  <div class="service-tech-section">
+                    <h4 class="service-tech-title">Outils utilisés :</h4>
+                    <div class="service-tech-tags">
+                      <span class="service-tech-tag">Google Ads</span>
+                      <span class="service-tech-tag">Facebook Ads</span>
+                      <span class="service-tech-tag">Google Analytics</span>
+                      <span class="service-tech-tag">Mailchimp</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Section Cybersécurité -->
-                <div id="service-securite" class="service-detail-section">
-                  <h3 class="detail-section-title">Protégez votre entreprise</h3>
+                <div id="service-securite" class="service-detail-panel">
+                  <h3 class="service-panel-title">Protégez votre entreprise</h3>
 
                   <div class="service-features-grid">
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-shield-check"></i>
                       </div>
-                      <h4>Audits</h4>
-                      <p>Évaluation complète de votre sécurité</p>
+                      <h4 class="service-feature-name">Audits</h4>
+                      <p class="service-feature-description">
+                        Évaluation complète de votre sécurité
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-lock"></i>
                       </div>
-                      <h4>Protection</h4>
-                      <p>Solutions anti-intrusion et antivirus</p>
+                      <h4 class="service-feature-name">Protection</h4>
+                      <p class="service-feature-description">
+                        Solutions anti-intrusion et antivirus
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-file-lock"></i>
                       </div>
-                      <h4>RGPD</h4>
-                      <p>Conformité à la protection des données</p>
+                      <h4 class="service-feature-name">RGPD</h4>
+                      <p class="service-feature-description">
+                        Conformité à la protection des données
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-person-check"></i>
                       </div>
-                      <h4>Formation</h4>
-                      <p>Sensibilisation de vos équipes</p>
+                      <h4 class="service-feature-name">Formation</h4>
+                      <p class="service-feature-description">
+                        Sensibilisation de vos équipes
+                      </p>
                     </div>
                   </div>
 
-                  <div class="tech-stack-section">
-                    <h4>Technologies utilisées :</h4>
-                    <div class="tech-stack-badges">
-                      <span class="tech-badge">Firewalls</span>
-                      <span class="tech-badge">VPN</span>
-                      <span class="tech-badge">Chiffrement</span>
-                      <span class="tech-badge">Authentification 2FA</span>
+                  <div class="service-tech-section">
+                    <h4 class="service-tech-title">Technologies utilisées :</h4>
+                    <div class="service-tech-tags">
+                      <span class="service-tech-tag">Firewalls</span>
+                      <span class="service-tech-tag">VPN</span>
+                      <span class="service-tech-tag">Chiffrement</span>
+                      <span class="service-tech-tag">Authentification 2FA</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Section Formation -->
-                <div id="service-formation" class="service-detail-section">
-                  <h3 class="detail-section-title">Formez-vous aux technologies digitales</h3>
+                <div id="service-formation" class="service-detail-panel">
+                  <h3 class="service-panel-title">
+                    Formez-vous aux technologies digitales
+                  </h3>
 
                   <div class="service-features-grid">
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-laptop"></i>
                       </div>
-                      <h4>Bureautique</h4>
-                      <p>Maîtrise des outils Office et collaboratifs</p>
+                      <h4 class="service-feature-name">Bureautique</h4>
+                      <p class="service-feature-description">
+                        Maîtrise des outils Office et collaboratifs
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-code-square"></i>
                       </div>
-                      <h4>Développement Web</h4>
-                      <p>Initiation aux langages HTML, CSS, JavaScript</p>
+                      <h4 class="service-feature-name">Développement Web</h4>
+                      <p class="service-feature-description">
+                        Initiation aux langages HTML, CSS, JavaScript
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-shield-lock"></i>
                       </div>
-                      <h4>Sécurité</h4>
-                      <p>Bonnes pratiques de cybersécurité</p>
+                      <h4 class="service-feature-name">Sécurité</h4>
+                      <p class="service-feature-description">
+                        Bonnes pratiques de cybersécurité
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-phone"></i>
                       </div>
-                      <h4>Mobile</h4>
-                      <p>Développement d'applications mobiles</p>
+                      <h4 class="service-feature-name">Mobile</h4>
+                      <p class="service-feature-description">
+                        Développement d'applications mobiles
+                      </p>
                     </div>
                   </div>
 
-                  <div class="tech-stack-section">
-                    <h4>Programmes proposés :</h4>
-                    <div class="tech-stack-badges">
-                      <span class="tech-badge">Initiation</span>
-                      <span class="tech-badge">Perfectionnement</span>
-                      <span class="tech-badge">Certification</span>
-                      <span class="tech-badge">Coaching</span>
+                  <div class="service-tech-section">
+                    <h4 class="service-tech-title">Programmes proposés :</h4>
+                    <div class="service-tech-tags">
+                      <span class="service-tech-tag">Initiation</span>
+                      <span class="service-tech-tag">Perfectionnement</span>
+                      <span class="service-tech-tag">Certification</span>
+                      <span class="service-tech-tag">Coaching</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Section Design -->
-                <div id="service-design" class="service-detail-section">
-                  <h3 class="detail-section-title">Créez une identité visuelle forte</h3>
+                <div id="service-design" class="service-detail-panel">
+                  <h3 class="service-panel-title">
+                    Créez une identité visuelle forte
+                  </h3>
 
                   <div class="service-features-grid">
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-palette"></i>
                       </div>
-                      <h4>Logo</h4>
-                      <p>Création d'un logo unique et mémorable</p>
+                      <h4 class="service-feature-name">Logo</h4>
+                      <p class="service-feature-description">
+                        Création d'un logo unique et mémorable
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-brush"></i>
                       </div>
-                      <h4>Charte Graphique</h4>
-                      <p>Identité visuelle cohérente pour votre marque</p>
+                      <h4 class="service-feature-name">Charte Graphique</h4>
+                      <p class="service-feature-description">
+                        Identité visuelle cohérente pour votre marque
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-images"></i>
                       </div>
-                      <h4>Supports Print</h4>
-                      <p>Cartes de visite, flyers, affiches</p>
+                      <h4 class="service-feature-name">Supports Print</h4>
+                      <p class="service-feature-description">
+                        Cartes de visite, flyers, affiches
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-camera-video"></i>
                       </div>
-                      <h4>Vidéo</h4>
-                      <p>Création de vidéos promotionnelles</p>
+                      <h4 class="service-feature-name">Vidéo</h4>
+                      <p class="service-feature-description">
+                        Créez une identité visuelle forte
+                      </p>
                     </div>
                   </div>
 
-                  <div class="tech-stack-section">
-                    <h4>Outils utilisés :</h4>
-                    <div class="tech-stack-badges">
-                      <span class="tech-badge">Adobe Photoshop</span>
-                      <span class="tech-badge">Illustrator</span>
-                      <span class="tech-badge">InDesign</span>
-                      <span class="tech-badge">Premiere Pro</span>
+                  <div class="service-tech-section">
+                    <h4 class="service-tech-title">Outils utilisés :</h4>
+                    <div class="service-tech-tags">
+                      <span class="service-tech-tag">Adobe Photoshop</span>
+                      <span class="service-tech-tag">Illustrator</span>
+                      <span class="service-tech-tag">InDesign</span>
+                      <span class="service-tech-tag">Premiere Pro</span>
                     </div>
                   </div>
                 </div>
 
                 <!-- Section Réseaux -->
-                <div id="service-reseaux" class="service-detail-section">
-                  <h3 class="detail-section-title">Optimisez votre infrastructure IT</h3>
+                <div id="service-reseaux" class="service-detail-panel">
+                  <h3 class="service-panel-title">
+                    Optimisez votre infrastructure IT
+                  </h3>
 
                   <div class="service-features-grid">
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-router"></i>
                       </div>
-                      <h4>Réseaux</h4>
-                      <p>Installation et configuration de réseaux</p>
+                      <h4 class="service-feature-name">Réseaux</h4>
+                      <p class="service-feature-description">
+                        Installation et configuration de réseaux
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-server"></i>
                       </div>
-                      <h4>Serveurs</h4>
-                      <p>Gestion et maintenance de serveurs</p>
+                      <h4 class="service-feature-name">Serveurs</h4>
+                      <p class="service-feature-description">
+                        Gestion et maintenance de serveurs
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-cloud"></i>
                       </div>
-                      <h4>Cloud</h4>
-                      <p>Migration et gestion d'infrastructures cloud</p>
+                      <h4 class="service-feature-name">Cloud</h4>
+                      <p class="service-feature-description">
+                        Migration et gestion d'infrastructures cloud
+                      </p>
                     </div>
 
-                    <div class="feature-card">
-                      <div class="feature-icon">
+                    <div class="service-feature-card">
+                      <div class="service-feature-icon">
                         <i class="bi bi-pc-display"></i>
                       </div>
-                      <h4>Postes de travail</h4>
-                      <p>Configuration et maintenance des postes</p>
+                      <h4 class="service-feature-name">Postes de travail</h4>
+                      <p class="service-feature-description">
+                        Configuration et maintenance des postes
+                      </p>
                     </div>
                   </div>
 
-                  <div class="tech-stack-section">
-                    <h4>Technologies utilisées :</h4>
-                    <div class="tech-stack-badges">
-                      <span class="tech-badge">Cisco</span>
-                      <span class="tech-badge">Windows Server</span>
-                      <span class="tech-badge">AWS</span>
-                      <span class="tech-badge">Azure</span>
+                  <div class="service-tech-section">
+                    <h4 class="service-tech-title">Technologies utilisées :</h4>
+                    <div class="service-tech-tags">
+                      <span class="service-tech-tag">Cisco</span>
+                      <span class="service-tech-tag">Windows Server</span>
+                      <span class="service-tech-tag">AWS</span>
+                      <span class="service-tech-tag">Azure</span>
                     </div>
                   </div>
                 </div>
@@ -500,9 +615,10 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-   <!-- <div class="container">
+      </section>
+      <!-- End Section Title -->
+
+      <!-- <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-4 col-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
@@ -574,467 +690,912 @@
         </div>
       </div>
 
-    </section>-->  
-    
-    <!-- /Services Section -->
+    </section>-->
 
-    <!-- Service Cards Section -->
-    <section id="service-cards" class="service-cards section">
-      <div class="container">
-        <div class="section-header text-center mb-5 section-title" data-aos="fade-up">
-          <h2>Nos Solutions</h2>
-          <p class="section-description">Des solutions complètes pour répondre à tous vos besoins digitaux</p>
+      <!-- /Services Section -->
+
+      <!-- Service Cards Section -->
+      <section id="service-cards" class="service-cards section">
+        <div class="container">
+          <div
+            class="section-header text-center mb-5 section-title"
+            data-aos="fade-up"
+          >
+            <h2>Nos Solutions</h2>
+            <p class="section-description">
+              Des solutions complètes pour répondre à tous vos besoins digitaux
+            </p>
+          </div>
+
+          <div class="row gy-4">
+            <!-- Carte 1 -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row g-0">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/cards-1.jpg"
+                        alt="Développement web"
+                      />
+                      <div class="card-overlay"></div>
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="bi bi-code-square"></i>
+                      </div>
+                      <h4 class="card-title">Un site web moderne et rapide</h4>
+                      <p class="card-text">
+                        Nous concevons des plateformes performantes, compatibles
+                        mobile, avec un design sur mesure et une optimisation
+                        SEO avancée.
+                      </p>
+                      <a href="#service-web" class="card-link"
+                        >En savoir plus <i class="bi bi-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-item">
+                <div class="row g-0">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/cards-5.jpg"
+                        alt="Sécurité informatique"
+                      />
+                      <div class="card-overlay"></div>
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="bi bi-shield-lock"></i>
+                      </div>
+                      <h4 class="card-title">Sécurisez votre entreprise</h4>
+                      <p class="card-text">
+                        Nous vous aidons à protéger vos données, à prévenir les
+                        cyberattaques et à mettre en place des politiques de
+                        sécurité fiables.
+                      </p>
+                      <a href="#service-securite" class="card-link"
+                        >En savoir plus <i class="bi bi-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-item">
+                <div class="row g-0">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/cards-3.jpg"
+                        alt="Marketing digital"
+                      />
+                      <div class="card-overlay"></div>
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="bi bi-bar-chart-line"></i>
+                      </div>
+                      <h4 class="card-title">Développez votre visibilité</h4>
+                      <p class="card-text">
+                        De la stratégie marketing au community management, nous
+                        assurons votre présence efficace sur le web et les
+                        réseaux sociaux.
+                      </p>
+                      <a href="#service-marketing" class="card-link"
+                        >En savoir plus <i class="bi bi-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-item">
+                <div class="row g-0">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/cards-4.jpg"
+                        alt="Formation digitale"
+                      />
+                      <div class="card-overlay"></div>
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <div class="card-icon">
+                        <i class="bi bi-mortarboard"></i>
+                      </div>
+                      <h4 class="card-title">Formez-vous avec des experts</h4>
+                      <p class="card-text">
+                        Nos programmes de formation sont adaptés à tous niveaux
+                        : initiation, perfectionnement et spécialisation en
+                        technologies numériques.
+                      </p>
+                      <a href="#service-formation" class="card-link"
+                        >En savoir plus <i class="bi bi-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="row gy-4">
-          <!-- Carte 1 -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row g-0">
-                <div class="col-xl-5">
-                  <div class="card-bg">
-                    <img src="assets/img/cards-1.jpg" alt="Développement web">
-                    <div class="card-overlay"></div>
-                  </div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <div class="card-icon">
-                      <i class="bi bi-code-square"></i>
-                    </div>
-                    <h4 class="card-title">Un site web moderne et rapide</h4>
-                    <p class="card-text">Nous concevons des plateformes performantes, compatibles mobile, avec un design
-                      sur mesure et une optimisation SEO avancée.</p>
-                    <a href="#service-web" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carte 2 -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row g-0">
-                <div class="col-xl-5">
-                  <div class="card-bg">
-                    <img src="assets/img/cards-5.jpg" alt="Sécurité informatique">
-                    <div class="card-overlay"></div>
-                  </div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <div class="card-icon">
-                      <i class="bi bi-shield-lock"></i>
-                    </div>
-                    <h4 class="card-title">Sécurisez votre entreprise</h4>
-                    <p class="card-text">Nous vous aidons à protéger vos données, à prévenir les cyberattaques et à
-                      mettre en place des politiques de sécurité fiables.</p>
-                    <a href="#service-securite" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carte 3 -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row g-0">
-                <div class="col-xl-5">
-                  <div class="card-bg">
-                    <img src="assets/img/cards-3.jpg" alt="Marketing digital">
-                    <div class="card-overlay"></div>
-                  </div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <div class="card-icon">
-                      <i class="bi bi-bar-chart-line"></i>
-                    </div>
-                    <h4 class="card-title">Développez votre visibilité</h4>
-                    <p class="card-text">De la stratégie marketing au community management, nous assurons votre présence
-                      efficace sur le web et les réseaux sociaux.</p>
-                    <a href="#service-marketing" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carte 4 -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row g-0">
-                <div class="col-xl-5">
-                  <div class="card-bg">
-                    <img src="assets/img/cards-4.jpg" alt="Formation digitale">
-                    <div class="card-overlay"></div>
-                  </div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <div class="card-icon">
-                      <i class="bi bi-mortarboard"></i>
-                    </div>
-                    <h4 class="card-title">Formez-vous avec des experts</h4>
-                    <p class="card-text">Nos programmes de formation sont adaptés à tous niveaux : initiation,
-                      perfectionnement et spécialisation en technologies numériques.</p>
-                    <a href="#service-formation" class="card-link">En savoir plus <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section">
-      <div class="container">
-        <div class=" section-title" data-aos="fade-up">
+      <!-- Testimonials Section -->
+      <section
+        id="testimonials"
+        class="testimonials testimonials-section section"
+      >
+        <!-- Section Title -->
+        <div class="container section-title-elegant" data-aos="fade-up">
           <h2>Avis...</h2>
           <p>Ce que disent nos clients</p>
         </div>
+        <!-- End Section Title -->
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="position-relative">
+            <!-- Navigation buttons -->
+            <button class="custom-navigation prev">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="custom-navigation next">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+
+            <!-- Swiper -->
+            <div class="swiper init-swiper testimonial-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 7000
+                  },
+                  "navigation": {
+                    "nextEl": ".custom-navigation.next",
+                    "prevEl": ".custom-navigation.prev"
+                  },
+                  "pagination": {
+                    "el": ".custom-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 30
+                    },
+                    "768": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 30
+                    }
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper">
+                <!-- Témoignage 1 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <span class="recommendation-badge">Recommandé</span>
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      Samatech nous a accompagnés dans la digitalisation
+                      complète de notre gestion interne. Les solutions proposées
+                      sont fiables, modernes et parfaitement adaptées à notre
+                      activité. Une équipe professionnelle et très réactive.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-1.jpg"
+                          alt="Mamadou Ndiaye"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Mamadou Ndiaye</h3>
+                        <h4>Directeur Général – Dakar</h4>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p class="testimonial-text">
-                  "SamaTech a transformé notre présence en ligne. Leur équipe a su comprendre nos besoins et livrer une
-                  solution parfaite dans les délais."
-                </p>
-                <div class="testimonial-author">
-                  <img src="assets/img/testimonials/client1.jpg" class="rounded-circle" alt="Client">
-                  <h3>M. Diop</h3>
-                  <p>Directeur, Entreprise XYZ</p>
+
+                <!-- Témoignage 2 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      Grâce à Samatech, notre image de marque a totalement
+                      changé. Le design, la gestion des réseaux sociaux et le
+                      site web ont considérablement amélioré notre visibilité et
+                      notre crédibilité auprès de nos clients.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-2.jpg"
+                          alt="Aïssatou Fall"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Aïssatou Fall</h3>
+                        <h4>Responsable Communication</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Témoignage 3 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <span class="recommendation-badge">Top Client</span>
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      La solution de gestion proposée par Samatech nous permet
+                      aujourd'hui de suivre nos stocks, nos ventes et nos
+                      factures en temps réel. C'est un véritable gain de temps
+                      et d'efficacité.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-3.jpg"
+                          alt="Ibrahima Diop"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Ibrahima Diop</h3>
+                        <h4>Gérant de PME</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Témoignage 4 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      J'ai suivi une formation en informatique et bureautique
+                      avec Samatech. Le contenu était clair, pratique et adapté
+                      au marché professionnel. Je recommande vivement leurs
+                      formations.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-4.jpg"
+                          alt="Fatou Sow"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Fatou Sow</h3>
+                        <h4>Étudiante & Jeune Professionnelle</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Témoignage 5 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <span class="recommendation-badge">Partenaire</span>
+                    <div class="stars-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="testimonial-content">
+                      Samatech nous a aidés à lancer notre startup avec un site
+                      web moderne, une identité visuelle forte et des conseils
+                      stratégiques très pertinents. Un partenaire digital de
+                      confiance au Sénégal.
+                    </p>
+                    <div class="testimonial-profile">
+                      <div class="avatar-container">
+                        <img
+                          src="assets/img/testimonials/testimonials-5.jpg"
+                          alt="Cheikh Mbaye"
+                        />
+                      </div>
+                      <div class="profile-info">
+                        <h3>Cheikh Mbaye</h3>
+                        <h4>Entrepreneur</h4>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                </div>
-                <p class="testimonial-text">
-                  "Un service exceptionnel et une réactivité rare. Nos applications mobiles ont gagné en performance
-                  grâce à leur expertise technique."
-                </p>
-                <div class="testimonial-author">
-                  <img src="assets/img/testimonials/client2.jpg" class="rounded-circle" alt="Client">
-                  <h3>Mme. Ndiaye</h3>
-                  <p>PDG, Startup ABC</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <p class="testimonial-text">
-                  "Leur approche sur mesure et leur accompagnement nous ont permis de digitaliser complètement notre
-                  activité en seulement 3 mois."
-                </p>
-                <div class="testimonial-author">
-                  <img src="assets/img/testimonials/client3.jpg" class="rounded-circle" alt="Client">
-                  <h3>M. Sow</h3>
-                  <p>Directeur Marketing, Groupe 123</p>
-                </div>
-              </div>
+              <!-- Pagination -->
+              <div class="custom-pagination swiper-pagination"></div>
             </div>
           </div>
+        </div>
+      </section>
+    </main>
 
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
+    <footer id="footer" class="footer light-background">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- À propos -->
+            <div class="col-lg-5 col-md-12 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Sama Tech</span>
+              </a>
+              <p>
+                Sama Tech est une entreprise spécialisée dans le développement
+                d'applications, la création de sites web, le marketing digital
+                et la formation informatique. Nous vous accompagnons dans votre
+                transformation numérique.
+              </p>
+              <div class="social-links d-flex mt-4">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
 
-          <!-- Navigation arrows (optionnel) -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+            <!-- Liens utiles -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Liens utiles</h4>
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+              </ul>
+            </div>
+
+            <!-- Nos services -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Nos services</h4>
+              <ul>
+                <li><a href="#service-web">Développement Web</a></li>
+                <li><a href="#service-marketing">Marketing Digital</a></li>
+                <li><a href="#service-securite">Cybersécurité</a></li>
+                <li><a href="#service-formation">Formation</a></li>
+                <li><a href="#service-design">Design</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contactez-nous</h4>
+              <p>Dakar, Sénégal</p>
+              <p>Zone de captage, Liberté 6</p>
+              <p>Sama Tech</p>
+              <p class="mt-4">
+                <strong>Téléphone :</strong> <span>+221 78 260 66 53</span>
+              </p>
+              <p><strong>Email :</strong> <span>contact@samatech.sn</span></p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-  </main>
-
-  <footer id="footer" class="footer light-background">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-
-          <!-- À propos -->
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Sama Tech</span>
-            </a>
-            <p>Sama Tech est une entreprise spécialisée dans le développement d'applications, la création de sites web,
-              le marketing digital et la formation informatique. Nous vous accompagnons dans votre transformation
-              numérique.</p>
-            <div class="social-links d-flex mt-4">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-
-          <!-- Liens utiles -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Liens utiles</h4>
-            <ul>
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="about.html">À propos</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="#">Conditions d'utilisation</a></li>
-              <li><a href="#">Politique de confidentialité</a></li>
-            </ul>
-          </div>
-
-          <!-- Nos services -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Nos services</h4>
-            <ul>
-              <li><a href="#service-web">Développement Web</a></li>
-              <li><a href="#service-marketing">Marketing Digital</a></li>
-              <li><a href="#service-securite">Cybersécurité</a></li>
-              <li><a href="#service-formation">Formation</a></li>
-              <li><a href="#service-design">Design</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact -->
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contactez-nous</h4>
-            <p>Dakar, Sénégal</p>
-            <p>Zone de captage, Liberté 6</p>
-            <p>Sama Tech</p>
-            <p class="mt-4"><strong>Téléphone :</strong> <span>+221 77 123 45 67</span></p>
-            <p><strong>Email :</strong> <span>contact@samatech.sn</span></p>
-          </div>
-
-        </div>
+      <!-- Bas de page -->
+      <div class="container copyright text-center">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Sama Tech</strong>
+          <span>- Tous droits réservés</span>
+        </p>
+        <div class="credits">Propulsé avec ❤️ par l'équipe Sama Tech</div>
       </div>
-    </div>
+    </footer>
 
-    <!-- Bas de page -->
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sama Tech</strong> <span>- Tous droits réservés</span>
-      </p>
-      <div class="credits">
-        Propulsé avec ❤️ par l'équipe Sama Tech
-      </div>
-    </div>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  </footer>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Gestion des clics sur les éléments de navigation
+        const navItems = document.querySelectorAll(".service-nav-item");
+        const serviceSections = document.querySelectorAll(
+          ".service-detail-section"
+        );
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        // Fonction pour activer une section de service
+        function activateServiceSection(sectionId) {
+          // Retirer la classe active de toutes les sections
+          serviceSections.forEach((section) => {
+            section.classList.remove("active");
+          });
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Gestion des clics sur les éléments de navigation
-      const navItems = document.querySelectorAll('.service-nav-item');
-      const serviceSections = document.querySelectorAll('.service-detail-section');
+          // Retirer la classe active de tous les éléments de navigation
+          navItems.forEach((item) => {
+            item.classList.remove("active");
+          });
 
-      // Fonction pour activer une section de service
-      function activateServiceSection(sectionId) {
-        // Retirer la classe active de toutes les sections
-        serviceSections.forEach(section => {
-          section.classList.remove('active');
-        });
-
-        // Retirer la classe active de tous les éléments de navigation
-        navItems.forEach(item => {
-          item.classList.remove('active');
-        });
-
-        // Activer la section correspondante
-        const targetSection = document.getElementById(sectionId);
-        if (targetSection) {
-          targetSection.classList.add('active');
-        }
-
-        // Activer l'élément de navigation correspondant
-        const targetNavItem = document.querySelector(`.service-nav-item[href="#${sectionId}"]`);
-        if (targetNavItem) {
-          targetNavItem.classList.add('active');
-        }
-
-        // Mettre à jour le contenu du hero
-        updateServiceHero(sectionId);
-      }
-
-      // Fonction pour mettre à jour le hero en fonction du service
-      function updateServiceHero(sectionId) {
-        const serviceData = {
-          'service-web': {
-            title: "Développement Web",
-            intro: "Des solutions digitales sur mesure pour propulser votre business",
-            image: "assets/img/services/web.png"
-          },
-          'service-marketing': {
-            title: "Marketing Digital",
-            intro: "Boostez votre visibilité et attirez plus de clients",
-            image: "assets/img/services/marketing.png"
-          },
-          'service-securite': {
-            title: "Cybersécurité",
-            intro: "Protégez votre entreprise contre les cybermenaces",
-            image: "assets/img/services/security.png"
-          },
-          'service-formation': {
-            title: "Formation Digitale",
-            intro: "Formez-vous aux technologies d'aujourd'hui et de demain",
-            image: "assets/img/services/digital.png"
-          },
-          'service-design': {
-            title: "Design & Identité Visuelle",
-            intro: "Créez une image de marque forte et mémorable",
-            image: "assets/img/services/design.png"
-          },
-          'service-reseaux': {
-            title: "Gestion des Systèmes & Réseaux",
-            intro: "Une infrastructure IT performante et sécurisée",
-            image: "assets/img/services/network.png"
+          // Activer la section correspondante
+          const targetSection = document.getElementById(sectionId);
+          if (targetSection) {
+            targetSection.classList.add("active");
           }
-        };
 
-        const service = serviceData[sectionId];
-        if (service) {
-          document.getElementById('service-title').textContent = service.title;
-          document.getElementById('service-intro').textContent = service.intro;
-          document.querySelector('.hero-img').src = service.image;
-          document.querySelector('.hero-img').alt = service.title;
+          // Activer l'élément de navigation correspondant
+          const targetNavItem = document.querySelector(
+            `.service-nav-item[href="#${sectionId}"]`
+          );
+          if (targetNavItem) {
+            targetNavItem.classList.add("active");
+          }
+
+          // Mettre à jour le contenu du hero
+          updateServiceHero(sectionId);
         }
-      }
 
-      // Gestion des clics sur les éléments de navigation
-      navItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-          e.preventDefault();
-          const sectionId = this.getAttribute('href').substring(1);
+        // Fonction pour mettre à jour le hero en fonction du service
+        function updateServiceHero(sectionId) {
+          const serviceData = {
+            "service-web": {
+              title: "Développement Web",
+              intro:
+                "Des solutions digitales sur mesure pour propulser votre business",
+              image: "assets/img/services/web.png",
+            },
+            "service-marketing": {
+              title: "Marketing Digital",
+              intro: "Boostez votre visibilité et attirez plus de clients",
+              image: "assets/img/services/marketing.png",
+            },
+            "service-securite": {
+              title: "Cybersécurité",
+              intro: "Protégez votre entreprise contre les cybermenaces",
+              image: "assets/img/services/security.png",
+            },
+            "service-formation": {
+              title: "Formation Digitale",
+              intro: "Formez-vous aux technologies d'aujourd'hui et de demain",
+              image: "assets/img/services/digital.png",
+            },
+            "service-design": {
+              title: "Design & Identité Visuelle",
+              intro: "Créez une image de marque forte et mémorable",
+              image: "assets/img/services/design.png",
+            },
+            "service-reseaux": {
+              title: "Gestion des Systèmes & Réseaux",
+              intro: "Une infrastructure IT performante et sécurisée",
+              image: "assets/img/services/network.png",
+            },
+          };
+
+          const service = serviceData[sectionId];
+          if (service) {
+            document.getElementById("service-title").textContent =
+              service.title;
+            document.getElementById("service-intro").textContent =
+              service.intro;
+            document.querySelector(".hero-img").src = service.image;
+            document.querySelector(".hero-img").alt = service.title;
+          }
+        }
+
+        // Gestion des clics sur les éléments de navigation
+        navItems.forEach((item) => {
+          item.addEventListener("click", function (e) {
+            e.preventDefault();
+            const sectionId = this.getAttribute("href").substring(1);
+            activateServiceSection(sectionId);
+
+            // Faire défiler jusqu'à la section si nécessaire
+            if (!document.getElementById(sectionId).scrollIntoViewIfNeeded) {
+              document
+                .getElementById(sectionId)
+                .scrollIntoView({ behavior: "smooth" });
+            } else {
+              document
+                .getElementById(sectionId)
+                .scrollIntoViewIfNeeded({ behavior: "smooth" });
+            }
+          });
+        });
+
+        // Gestion du hash dans l'URL au chargement de la page
+        if (window.location.hash) {
+          const sectionId = window.location.hash.substring(1);
           activateServiceSection(sectionId);
 
-          // Faire défiler jusqu'à la section si nécessaire
-          if (!document.getElementById(sectionId).scrollIntoViewIfNeeded) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-          } else {
-            document.getElementById(sectionId).scrollIntoViewIfNeeded({ behavior: 'smooth' });
-          }
-        });
-      });
-
-      // Gestion du hash dans l'URL au chargement de la page
-      if (window.location.hash) {
-        const sectionId = window.location.hash.substring(1);
-        activateServiceSection(sectionId);
-
-        // Défilement vers la section après un court délai pour permettre le chargement
-        setTimeout(() => {
-          document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
-
-      // Gestion des liens "En savoir plus" dans les cartes
-      // Gestion des liens "En savoir plus" dans les cartes
-      document.querySelectorAll('a[href^="#service-"]').forEach(link => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault();
-          const sectionId = this.getAttribute('href').substring(1);
-          activateServiceSection(sectionId);
-
-          // Défilement vers l'image hero
+          // Défilement vers la section après un court délai pour permettre le chargement
           setTimeout(() => {
-            document.querySelector('.service-hero').scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
+            document
+              .getElementById(sectionId)
+              .scrollIntoView({ behavior: "smooth" });
           }, 100);
+        }
+
+        // Gestion des liens "En savoir plus" dans les cartes
+        // Gestion des liens "En savoir plus" dans les cartes
+        document.querySelectorAll('a[href^="#service-"]').forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const sectionId = this.getAttribute("href").substring(1);
+            activateServiceSection(sectionId);
+
+            // Défilement vers l'image hero
+            setTimeout(() => {
+              document.querySelector(".service-hero").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }, 100);
+          });
         });
+        // Initialisation du slider Swiper
+        if (typeof Swiper !== "undefined") {
+          const testimonialSwiper = new Swiper(".testimonials-slider", {
+            // Configuration du slider
+            loop: true,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+              // Quand la largeur est >= 992px
+              992: {
+                slidesPerView: 2,
+              },
+            },
+          });
+
+          // Pause au survol
+          const sliderContainer = document.querySelector(
+            ".testimonials-slider"
+          );
+          if (sliderContainer) {
+            sliderContainer.addEventListener("mouseenter", () => {
+              testimonialSwiper.autoplay.stop();
+            });
+
+            sliderContainer.addEventListener("mouseleave", () => {
+              testimonialSwiper.autoplay.start();
+            });
+          }
+        } else {
+          console.error("Swiper JS n'est pas chargé");
+        }
       });
-      // Initialisation du slider Swiper
-      if (typeof Swiper !== 'undefined') {
-        const testimonialSwiper = new Swiper('.testimonials-slider', {
-          // Configuration du slider
-          loop: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          slidesPerView: 1,
-          spaceBetween: 30,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          breakpoints: {
-            // Quand la largeur est >= 992px
-            992: {
-              slidesPerView: 2,
+    </script>
+
+    <script>
+      // Initialisation du swiper avec configuration centrée
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiperEl = document.querySelector(".testimonial-swiper");
+        if (swiperEl) {
+          const swiperConfig = JSON.parse(
+            swiperEl.querySelector(".swiper-config").textContent
+          );
+
+          // Ajout de la configuration pour centrer les slides
+          Object.assign(swiperConfig, {
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            watchSlidesProgress: true,
+            on: {
+              slideChange: function () {
+                updateCurrentSlide(this.activeIndex + 1);
+              },
+            },
+          });
+
+          const swiper = new Swiper(swiperEl, swiperConfig);
+
+          // Mise à jour de l'indicateur
+          function updateCurrentSlide(current) {
+            const currentSlideEl = document.querySelector(".current-slide");
+            if (currentSlideEl) {
+              currentSlideEl.textContent =
+                current > 5 ? current % 5 || 5 : current;
             }
           }
-        });
 
-        // Pause au survol
-        const sliderContainer = document.querySelector('.testimonials-slider');
-        if (sliderContainer) {
-          sliderContainer.addEventListener('mouseenter', () => {
-            testimonialSwiper.autoplay.stop();
-          });
-
-          sliderContainer.addEventListener('mouseleave', () => {
-            testimonialSwiper.autoplay.start();
-          });
+          // Initialisation
+          updateCurrentSlide(1);
         }
-      } else {
-        console.error('Swiper JS n\'est pas chargé');
+      });
+    </script>
+
+    <script>
+      // Script pour la navigation des services
+document.addEventListener("DOMContentLoaded", function () {
+  // Sélection des éléments avec les nouvelles classes
+  const navLinks = document.querySelectorAll(".service-nav-link");
+  const servicePanels = document.querySelectorAll(".service-detail-panel");
+  
+  // Données des services pour le hero
+  const serviceData = {
+    "service-web": {
+      title: "Développement Web",
+      intro: "Des solutions digitales sur mesure pour propulser votre business",
+      image: "assets/img/services/web.png"
+    },
+    "service-marketing": {
+      title: "Marketing Digital",
+      intro: "Boostez votre visibilité et attirez plus de clients",
+      image: "assets/img/services/marketing.png"
+    },
+    "service-securite": {
+      title: "Cybersécurité",
+      intro: "Protégez votre entreprise contre les cybermenaces",
+      image: "assets/img/services/security.png"
+    },
+    "service-formation": {
+      title: "Formation Digitale",
+      intro: "Formez-vous aux technologies d'aujourd'hui et de demain",
+      image: "assets/img/services/digital.png"
+    },
+    "service-design": {
+      title: "Design & Identité Visuelle",
+      intro: "Créez une image de marque forte et mémorable",
+      image: "assets/img/services/design.png"
+    },
+    "service-reseaux": {
+      title: "Gestion des Systèmes & Réseaux",
+      intro: "Une infrastructure IT performante et sécurisée",
+      image: "assets/img/services/network.png"
+    }
+  };
+
+  // Fonction pour activer un service
+  function activateService(serviceId) {
+    console.log("Activation du service:", serviceId);
+    
+    // Masquer tous les panneaux
+    servicePanels.forEach(panel => {
+      panel.classList.remove("active");
+      panel.style.display = "none";
+    });
+    
+    // Retirer la classe active de tous les liens
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+    });
+    
+    // Activer le panneau correspondant
+    const targetPanel = document.getElementById(serviceId);
+    if (targetPanel) {
+      targetPanel.style.display = "block";
+      // Ajouter un délai pour l'animation
+      setTimeout(() => {
+        targetPanel.classList.add("active");
+      }, 10);
+    }
+    
+    // Activer le lien correspondant
+    const targetLink = document.querySelector(`.service-nav-link[href="#${serviceId}"]`);
+    if (targetLink) {
+      targetLink.classList.add("active");
+      
+      // Animation de l'icône
+      const iconBox = targetLink.querySelector(".service-nav-icon-box");
+      if (iconBox) {
+        iconBox.style.transform = "scale(1.2)";
+        setTimeout(() => {
+          iconBox.style.transform = "scale(1.1)";
+        }, 300);
+      }
+    }
+    
+    // Mettre à jour le hero
+    updateServiceHero(serviceId);
+    
+    // Ajouter le hash à l'URL
+    history.pushState(null, null, `#${serviceId}`);
+  }
+
+  // Fonction pour mettre à jour le hero
+  function updateServiceHero(serviceId) {
+    const service = serviceData[serviceId];
+    if (service) {
+      const heroTitle = document.getElementById("service-title");
+      const heroIntro = document.getElementById("service-intro");
+      const heroImage = document.querySelector(".service-banner-img");
+      
+      if (heroTitle) heroTitle.textContent = service.title;
+      if (heroIntro) heroIntro.textContent = service.intro;
+      if (heroImage) {
+        heroImage.style.opacity = "0";
+        setTimeout(() => {
+          heroImage.src = service.image;
+          heroImage.alt = service.title;
+          heroImage.style.opacity = "1";
+        }, 300);
+      }
+    }
+  }
+
+  // Gestion des clics sur les liens de navigation
+  navLinks.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const serviceId = this.getAttribute("href").substring(1);
+      console.log("Clic sur:", serviceId);
+      activateService(serviceId);
+      
+      // Scroll doux vers le haut sur mobile
+      if (window.innerWidth < 992) {
+        window.scrollTo({
+          top: document.querySelector(".service-hero-banner").offsetTop - 80,
+          behavior: "smooth"
+        });
       }
     });
-  </script>
-</body>
+  });
 
+  // Initialisation au chargement
+  function initializeServices() {
+    console.log("Initialisation des services...");
+    
+    // Masquer tous les panneaux sauf le premier
+    servicePanels.forEach((panel, index) => {
+      if (index === 0) {
+        panel.style.display = "block";
+        setTimeout(() => {
+          panel.classList.add("active");
+        }, 10);
+      } else {
+        panel.style.display = "none";
+        panel.classList.remove("active");
+      }
+    });
+    
+    // Activer le premier lien
+    if (navLinks.length > 0) {
+      navLinks[0].classList.add("active");
+    }
+    
+    // Vérifier si un service est spécifié dans l'URL
+    if (window.location.hash) {
+      const serviceId = window.location.hash.substring(1);
+      if (serviceData[serviceId]) {
+        setTimeout(() => {
+          activateService(serviceId);
+        }, 100);
+      }
+    }
+  }
+
+  // Gestion du bouton retour navigateur
+  window.addEventListener("popstate", function() {
+    if (window.location.hash) {
+      const serviceId = window.location.hash.substring(1);
+      if (serviceData[serviceId]) {
+        activateService(serviceId);
+      }
+    }
+  });
+
+  // Animation des cartes de fonctionnalités
+  const featureCards = document.querySelectorAll(".service-feature-card");
+  featureCards.forEach(card => {
+    card.addEventListener("mouseenter", function() {
+      const icon = this.querySelector(".service-feature-icon i");
+      if (icon) {
+        icon.style.transform = "rotate(10deg) scale(1.1)";
+      }
+    });
+    
+    card.addEventListener("mouseleave", function() {
+      const icon = this.querySelector(".service-feature-icon i");
+      if (icon) {
+        icon.style.transform = "rotate(0) scale(1)";
+      }
+    });
+  });
+
+  // Animation des tags technologiques
+  const techTags = document.querySelectorAll(".service-tech-tag");
+  techTags.forEach((tag, index) => {
+    tag.style.animationDelay = `${index * 0.1}s`;
+    
+    tag.addEventListener("mouseenter", function() {
+      this.style.transform = "translateY(-4px)";
+    });
+    
+    tag.addEventListener("mouseleave", function() {
+      this.style.transform = "translateY(0)";
+    });
+  });
+
+  // Initialiser les services
+  initializeServices();
+
+  // Log pour le débogage
+  console.log("Script des services chargé avec succès");
+  console.log("Nombre de liens:", navLinks.length);
+  console.log("Nombre de panneaux:", servicePanels.length);
+});
+    </script>
+  </body>
 </html>
