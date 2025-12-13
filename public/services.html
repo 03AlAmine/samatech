@@ -85,7 +85,6 @@
       </div>
       <!-- End Page Title -->
 
-      <!-- Section Title -->
       <!-- Service Details Section -->
       <section class="service-details-section">
         <div class="service-details-wrapper">
@@ -93,8 +92,7 @@
           <div class="service-section-title">
             <h2>Nos Services</h2>
             <p class="service-section-subtitle">
-              Des solutions numériques sur mesure pour accompagner votre
-              transformation digitale.
+              Des solutions complètes pour répondre à tous vos besoins digitaux
             </p>
           </div>
 
@@ -692,9 +690,107 @@
 
     </section>-->
 
-      <!-- /Services Section -->
+      <!-- Process Section -->
+      <section id="process" class="process-section">
+        <div class="process-container">
+          <div class="process-header">
+            <h2 class="process-title">Notre Processus</h2>
+            <p class="process-subtitle">
+              Comment nous travaillons pour garantir votre succès
+            </p>
+          </div>
 
-      <!-- Service Cards Section -->
+          <div class="process-steps-grid">
+            <!-- Étape 1 -->
+            <div class="process-step-card">
+              <div class="process-step-number">1</div>
+
+              <div class="process-step-content">
+                <h3>Écoute</h3>
+                <p>Analyse approfondie de vos besoins</p>
+              </div>
+
+              <div class="process-step-icon">
+                <i class="bi bi-ear"></i>
+              </div>
+
+              <div class="process-step-connector"></div>
+
+              <div class="process-progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+              </div>
+            </div>
+
+            <!-- Étape 2 -->
+            <div class="process-step-card">
+              <div class="process-step-number">2</div>
+
+              <div class="process-step-content">
+                <h3>Conception</h3>
+                <p>Création d'une solution sur mesure</p>
+              </div>
+
+              <div class="process-step-icon">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+
+              <div class="process-step-connector"></div>
+
+              <div class="process-progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+              </div>
+            </div>
+
+            <!-- Étape 3 -->
+            <div class="process-step-card">
+              <div class="process-step-number">3</div>
+
+              <div class="process-step-content">
+                <h3>Développement</h3>
+                <p>Implémentation technique rigoureuse</p>
+              </div>
+
+              <div class="process-step-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+
+              <div class="process-step-connector"></div>
+
+              <div class="process-progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+              </div>
+            </div>
+
+            <!-- Étape 4 -->
+            <div class="process-step-card">
+              <div class="process-step-number">4</div>
+
+              <div class="process-step-content">
+                <h3>Livraison</h3>
+                <p>Suivi et optimisation continue</p>
+              </div>
+
+              <div class="process-step-icon">
+                <i class="bi bi-check-circle"></i>
+              </div>
+
+              <div class="process-progress-indicator">
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Cards Section 
       <section id="service-cards" class="service-cards section">
         <div class="container">
           <div
@@ -708,7 +804,6 @@
           </div>
 
           <div class="row gy-4">
-            <!-- Carte 1 -->
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div class="card-item">
                 <div class="row g-0">
@@ -741,7 +836,6 @@
               </div>
             </div>
 
-            <!-- Carte 2 -->
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <div class="card-item">
                 <div class="row g-0">
@@ -774,7 +868,6 @@
               </div>
             </div>
 
-            <!-- Carte 3 -->
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
               <div class="card-item">
                 <div class="row g-0">
@@ -807,7 +900,6 @@
               </div>
             </div>
 
-            <!-- Carte 4 -->
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
               <div class="card-item">
                 <div class="row g-0">
@@ -842,6 +934,7 @@
           </div>
         </div>
       </section>
+-->
 
       <!-- Testimonials Section -->
       <section
@@ -1388,214 +1481,357 @@
 
     <script>
       // Script pour la navigation des services
-document.addEventListener("DOMContentLoaded", function () {
-  // Sélection des éléments avec les nouvelles classes
-  const navLinks = document.querySelectorAll(".service-nav-link");
-  const servicePanels = document.querySelectorAll(".service-detail-panel");
-  
-  // Données des services pour le hero
-  const serviceData = {
-    "service-web": {
-      title: "Développement Web",
-      intro: "Des solutions digitales sur mesure pour propulser votre business",
-      image: "assets/img/services/web.png"
-    },
-    "service-marketing": {
-      title: "Marketing Digital",
-      intro: "Boostez votre visibilité et attirez plus de clients",
-      image: "assets/img/services/marketing.png"
-    },
-    "service-securite": {
-      title: "Cybersécurité",
-      intro: "Protégez votre entreprise contre les cybermenaces",
-      image: "assets/img/services/security.png"
-    },
-    "service-formation": {
-      title: "Formation Digitale",
-      intro: "Formez-vous aux technologies d'aujourd'hui et de demain",
-      image: "assets/img/services/digital.png"
-    },
-    "service-design": {
-      title: "Design & Identité Visuelle",
-      intro: "Créez une image de marque forte et mémorable",
-      image: "assets/img/services/design.png"
-    },
-    "service-reseaux": {
-      title: "Gestion des Systèmes & Réseaux",
-      intro: "Une infrastructure IT performante et sécurisée",
-      image: "assets/img/services/network.png"
-    }
-  };
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sélection des éléments avec les nouvelles classes
+        const navLinks = document.querySelectorAll(".service-nav-link");
+        const servicePanels = document.querySelectorAll(
+          ".service-detail-panel"
+        );
 
-  // Fonction pour activer un service
-  function activateService(serviceId) {
-    console.log("Activation du service:", serviceId);
-    
-    // Masquer tous les panneaux
-    servicePanels.forEach(panel => {
-      panel.classList.remove("active");
-      panel.style.display = "none";
-    });
-    
-    // Retirer la classe active de tous les liens
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-    });
-    
-    // Activer le panneau correspondant
-    const targetPanel = document.getElementById(serviceId);
-    if (targetPanel) {
-      targetPanel.style.display = "block";
-      // Ajouter un délai pour l'animation
-      setTimeout(() => {
-        targetPanel.classList.add("active");
-      }, 10);
-    }
-    
-    // Activer le lien correspondant
-    const targetLink = document.querySelector(`.service-nav-link[href="#${serviceId}"]`);
-    if (targetLink) {
-      targetLink.classList.add("active");
-      
-      // Animation de l'icône
-      const iconBox = targetLink.querySelector(".service-nav-icon-box");
-      if (iconBox) {
-        iconBox.style.transform = "scale(1.2)";
-        setTimeout(() => {
-          iconBox.style.transform = "scale(1.1)";
-        }, 300);
-      }
-    }
-    
-    // Mettre à jour le hero
-    updateServiceHero(serviceId);
-    
-    // Ajouter le hash à l'URL
-    history.pushState(null, null, `#${serviceId}`);
-  }
+        // Données des services pour le hero
+        const serviceData = {
+          "service-web": {
+            title: "Développement Web",
+            intro:
+              "Des solutions digitales sur mesure pour propulser votre business",
+            image: "assets/img/services/web.png",
+          },
+          "service-marketing": {
+            title: "Marketing Digital",
+            intro: "Boostez votre visibilité et attirez plus de clients",
+            image: "assets/img/services/marketing.png",
+          },
+          "service-securite": {
+            title: "Cybersécurité",
+            intro: "Protégez votre entreprise contre les cybermenaces",
+            image: "assets/img/services/security.png",
+          },
+          "service-formation": {
+            title: "Formation Digitale",
+            intro: "Formez-vous aux technologies d'aujourd'hui et de demain",
+            image: "assets/img/services/digital.png",
+          },
+          "service-design": {
+            title: "Design & Identité Visuelle",
+            intro: "Créez une image de marque forte et mémorable",
+            image: "assets/img/services/design.png",
+          },
+          "service-reseaux": {
+            title: "Gestion des Systèmes & Réseaux",
+            intro: "Une infrastructure IT performante et sécurisée",
+            image: "assets/img/services/network.png",
+          },
+        };
 
-  // Fonction pour mettre à jour le hero
-  function updateServiceHero(serviceId) {
-    const service = serviceData[serviceId];
-    if (service) {
-      const heroTitle = document.getElementById("service-title");
-      const heroIntro = document.getElementById("service-intro");
-      const heroImage = document.querySelector(".service-banner-img");
-      
-      if (heroTitle) heroTitle.textContent = service.title;
-      if (heroIntro) heroIntro.textContent = service.intro;
-      if (heroImage) {
-        heroImage.style.opacity = "0";
-        setTimeout(() => {
-          heroImage.src = service.image;
-          heroImage.alt = service.title;
-          heroImage.style.opacity = "1";
-        }, 300);
-      }
-    }
-  }
+        // Fonction pour activer un service
+        function activateService(serviceId) {
+          console.log("Activation du service:", serviceId);
 
-  // Gestion des clics sur les liens de navigation
-  navLinks.forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-      const serviceId = this.getAttribute("href").substring(1);
-      console.log("Clic sur:", serviceId);
-      activateService(serviceId);
-      
-      // Scroll doux vers le haut sur mobile
-      if (window.innerWidth < 992) {
-        window.scrollTo({
-          top: document.querySelector(".service-hero-banner").offsetTop - 80,
-          behavior: "smooth"
+          // Masquer tous les panneaux
+          servicePanels.forEach((panel) => {
+            panel.classList.remove("active");
+            panel.style.display = "none";
+          });
+
+          // Retirer la classe active de tous les liens
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+          });
+
+          // Activer le panneau correspondant
+          const targetPanel = document.getElementById(serviceId);
+          if (targetPanel) {
+            targetPanel.style.display = "block";
+            // Ajouter un délai pour l'animation
+            setTimeout(() => {
+              targetPanel.classList.add("active");
+            }, 10);
+          }
+
+          // Activer le lien correspondant
+          const targetLink = document.querySelector(
+            `.service-nav-link[href="#${serviceId}"]`
+          );
+          if (targetLink) {
+            targetLink.classList.add("active");
+
+            // Animation de l'icône
+            const iconBox = targetLink.querySelector(".service-nav-icon-box");
+            if (iconBox) {
+              iconBox.style.transform = "scale(1.2)";
+              setTimeout(() => {
+                iconBox.style.transform = "scale(1.1)";
+              }, 300);
+            }
+          }
+
+          // Mettre à jour le hero
+          updateServiceHero(serviceId);
+
+          // Ajouter le hash à l'URL
+          history.pushState(null, null, `#${serviceId}`);
+        }
+
+        // Fonction pour mettre à jour le hero
+        function updateServiceHero(serviceId) {
+          const service = serviceData[serviceId];
+          if (service) {
+            const heroTitle = document.getElementById("service-title");
+            const heroIntro = document.getElementById("service-intro");
+            const heroImage = document.querySelector(".service-banner-img");
+
+            if (heroTitle) heroTitle.textContent = service.title;
+            if (heroIntro) heroIntro.textContent = service.intro;
+            if (heroImage) {
+              heroImage.style.opacity = "0";
+              setTimeout(() => {
+                heroImage.src = service.image;
+                heroImage.alt = service.title;
+                heroImage.style.opacity = "1";
+              }, 300);
+            }
+          }
+        }
+
+        // Gestion des clics sur les liens de navigation
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const serviceId = this.getAttribute("href").substring(1);
+            console.log("Clic sur:", serviceId);
+            activateService(serviceId);
+
+            // Scroll doux vers le haut sur mobile
+            if (window.innerWidth < 992) {
+              window.scrollTo({
+                top:
+                  document.querySelector(".service-hero-banner").offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
         });
-      }
-    });
-  });
 
-  // Initialisation au chargement
-  function initializeServices() {
-    console.log("Initialisation des services...");
-    
-    // Masquer tous les panneaux sauf le premier
-    servicePanels.forEach((panel, index) => {
-      if (index === 0) {
-        panel.style.display = "block";
-        setTimeout(() => {
-          panel.classList.add("active");
-        }, 10);
-      } else {
-        panel.style.display = "none";
-        panel.classList.remove("active");
-      }
-    });
-    
-    // Activer le premier lien
-    if (navLinks.length > 0) {
-      navLinks[0].classList.add("active");
-    }
-    
-    // Vérifier si un service est spécifié dans l'URL
-    if (window.location.hash) {
-      const serviceId = window.location.hash.substring(1);
-      if (serviceData[serviceId]) {
-        setTimeout(() => {
-          activateService(serviceId);
-        }, 100);
-      }
-    }
-  }
+        // Initialisation au chargement
+        function initializeServices() {
+          console.log("Initialisation des services...");
 
-  // Gestion du bouton retour navigateur
-  window.addEventListener("popstate", function() {
-    if (window.location.hash) {
-      const serviceId = window.location.hash.substring(1);
-      if (serviceData[serviceId]) {
-        activateService(serviceId);
-      }
-    }
-  });
+          // Masquer tous les panneaux sauf le premier
+          servicePanels.forEach((panel, index) => {
+            if (index === 0) {
+              panel.style.display = "block";
+              setTimeout(() => {
+                panel.classList.add("active");
+              }, 10);
+            } else {
+              panel.style.display = "none";
+              panel.classList.remove("active");
+            }
+          });
 
-  // Animation des cartes de fonctionnalités
-  const featureCards = document.querySelectorAll(".service-feature-card");
-  featureCards.forEach(card => {
-    card.addEventListener("mouseenter", function() {
-      const icon = this.querySelector(".service-feature-icon i");
-      if (icon) {
-        icon.style.transform = "rotate(10deg) scale(1.1)";
-      }
-    });
-    
-    card.addEventListener("mouseleave", function() {
-      const icon = this.querySelector(".service-feature-icon i");
-      if (icon) {
-        icon.style.transform = "rotate(0) scale(1)";
-      }
-    });
-  });
+          // Activer le premier lien
+          if (navLinks.length > 0) {
+            navLinks[0].classList.add("active");
+          }
 
-  // Animation des tags technologiques
-  const techTags = document.querySelectorAll(".service-tech-tag");
-  techTags.forEach((tag, index) => {
-    tag.style.animationDelay = `${index * 0.1}s`;
-    
-    tag.addEventListener("mouseenter", function() {
-      this.style.transform = "translateY(-4px)";
-    });
-    
-    tag.addEventListener("mouseleave", function() {
-      this.style.transform = "translateY(0)";
-    });
-  });
+          // Vérifier si un service est spécifié dans l'URL
+          if (window.location.hash) {
+            const serviceId = window.location.hash.substring(1);
+            if (serviceData[serviceId]) {
+              setTimeout(() => {
+                activateService(serviceId);
+              }, 100);
+            }
+          }
+        }
 
-  // Initialiser les services
-  initializeServices();
+        // Gestion du bouton retour navigateur
+        window.addEventListener("popstate", function () {
+          if (window.location.hash) {
+            const serviceId = window.location.hash.substring(1);
+            if (serviceData[serviceId]) {
+              activateService(serviceId);
+            }
+          }
+        });
 
-  // Log pour le débogage
-  console.log("Script des services chargé avec succès");
-  console.log("Nombre de liens:", navLinks.length);
-  console.log("Nombre de panneaux:", servicePanels.length);
-});
+        // Animation des cartes de fonctionnalités
+        const featureCards = document.querySelectorAll(".service-feature-card");
+        featureCards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            const icon = this.querySelector(".service-feature-icon i");
+            if (icon) {
+              icon.style.transform = "rotate(10deg) scale(1.1)";
+            }
+          });
+
+          card.addEventListener("mouseleave", function () {
+            const icon = this.querySelector(".service-feature-icon i");
+            if (icon) {
+              icon.style.transform = "rotate(0) scale(1)";
+            }
+          });
+        });
+
+        // Animation des tags technologiques
+        const techTags = document.querySelectorAll(".service-tech-tag");
+        techTags.forEach((tag, index) => {
+          tag.style.animationDelay = `${index * 0.1}s`;
+
+          tag.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-4px)";
+          });
+
+          tag.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+          });
+        });
+
+        // Initialiser les services
+        initializeServices();
+
+        // Log pour le débogage
+        console.log("Script des services chargé avec succès");
+        console.log("Nombre de liens:", navLinks.length);
+        console.log("Nombre de panneaux:", servicePanels.length);
+      });
+    </script>
+    <script>
+      // Animation interactive pour les étapes du processus
+      document.addEventListener("DOMContentLoaded", function () {
+        const processCards = document.querySelectorAll(".process-step-card");
+
+        // Animation au survol
+        processCards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            // Animation du numéro
+            const number = this.querySelector(".process-step-number");
+            if (number) {
+              number.style.transform = "scale(1.15) rotate(15deg)";
+            }
+
+            // Animation des indicateurs de progression
+            const dots = this.querySelectorAll(".progress-dot");
+            dots.forEach((dot, index) => {
+              setTimeout(() => {
+                dot.style.animation = "progressPulse 0.6s ease-in-out";
+                setTimeout(() => {
+                  dot.style.animation = "";
+                }, 600);
+              }, index * 100);
+            });
+          });
+
+          card.addEventListener("mouseleave", function () {
+            // Réinitialiser l'animation du numéro
+            const number = this.querySelector(".process-step-number");
+            if (number) {
+              number.style.transform = "scale(1.1) rotate(10deg)";
+            }
+          });
+        });
+
+        // Animation automatique des indicateurs
+        let currentStep = 0;
+        const steps = processCards.length;
+
+        function animateProcessSteps() {
+          processCards.forEach((card, index) => {
+            const dots = card.querySelectorAll(".progress-dot");
+            dots.forEach((dot) => {
+              dot.style.animation = "none";
+            });
+          });
+
+          if (currentStep < steps) {
+            const currentCard = processCards[currentStep];
+            const dots = currentCard.querySelectorAll(".progress-dot");
+
+            dots.forEach((dot) => {
+              dot.style.animation = "progressPulse 0.6s ease-in-out";
+              setTimeout(() => {
+                dot.style.animation = "";
+              }, 600);
+            });
+
+            currentStep = (currentStep + 1) % steps;
+          }
+
+          setTimeout(animateProcessSteps, 2000);
+        }
+
+        // Démarrer l'animation automatique
+        setTimeout(animateProcessSteps, 1000);
+      });
+    </script>
+
+    <script>
+      // Animation interactive pour les étapes du processus
+      document.addEventListener("DOMContentLoaded", function () {
+        const processCards = document.querySelectorAll(".process-step-card");
+
+        // Animation au survol
+        processCards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            // Animation du numéro
+            const number = this.querySelector(".process-step-number");
+            if (number) {
+              number.style.transform = "scale(1.15) rotate(15deg)";
+            }
+
+            // Animation des indicateurs de progression
+            const dots = this.querySelectorAll(".progress-dot");
+            dots.forEach((dot, index) => {
+              setTimeout(() => {
+                dot.style.animation = "progressPulse 0.6s ease-in-out";
+                setTimeout(() => {
+                  dot.style.animation = "";
+                }, 600);
+              }, index * 100);
+            });
+          });
+
+          card.addEventListener("mouseleave", function () {
+            // Réinitialiser l'animation du numéro
+            const number = this.querySelector(".process-step-number");
+            if (number) {
+              number.style.transform = "scale(1.1) rotate(10deg)";
+            }
+          });
+        });
+
+        // Animation automatique des indicateurs
+        let currentStep = 0;
+        const steps = processCards.length;
+
+        function animateProcessSteps() {
+          processCards.forEach((card, index) => {
+            const dots = card.querySelectorAll(".progress-dot");
+            dots.forEach((dot) => {
+              dot.style.animation = "none";
+            });
+          });
+
+          if (currentStep < steps) {
+            const currentCard = processCards[currentStep];
+            const dots = currentCard.querySelectorAll(".progress-dot");
+
+            dots.forEach((dot) => {
+              dot.style.animation = "progressPulse 0.6s ease-in-out";
+              setTimeout(() => {
+                dot.style.animation = "";
+              }, 600);
+            });
+
+            currentStep = (currentStep + 1) % steps;
+          }
+
+          setTimeout(animateProcessSteps, 2000);
+        }
+
+        // Démarrer l'animation automatique
+        setTimeout(animateProcessSteps, 1000);
+      });
     </script>
   </body>
 </html>

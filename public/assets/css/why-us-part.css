@@ -2,13 +2,14 @@
    SECTION WHY US - STYLES ISOLES CORRIGES
 ============================================= */
 
-/* Reset spécifique pour la section */
+/* 1. RESET DE BASE */
 .sama-why-us * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .sama-why-us {
-  padding: 120px 0;
   background: linear-gradient(
     135deg,
     rgba(248, 250, 252, 0.95) 0%,
@@ -16,8 +17,9 @@
     rgba(226, 232, 240, 0.85) 100%
   );
   position: relative;
-  overflow: visible; /* Changé de hidden à visible */
+  overflow: hidden !important; /* Force hidden */
   width: 100%;
+  padding: 60px 0; /* Réduit sur mobile */
 }
 
 .sama-why-us::before {
@@ -41,20 +43,18 @@
 }
 
 .sama-why-us__container {
-  max-width: 1400px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px; /* Padding réduit sur mobile */
   position: relative;
   z-index: 1;
-  width: 100%;
-  overflow: visible;
 }
 
 /* Header - corrigé */
 .sama-why-us__header {
   text-align: center;
-  margin-bottom: 80px;
-  position: relative;
+  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .sama-why-us__title {
-  font-size: 3rem; /* Réduit pour mobile */
+  font-size: 2rem; /* Mobile first */
   font-weight: 900;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
@@ -91,7 +91,7 @@
 
 .sama-why-us__title-excl {
   color: var(--sama-accent);
-  font-size: 3.5rem; /* Réduit proportionnellement */
+  font-size: 2.5rem;
   animation: sama-pulse 2s ease-in-out infinite;
   display: inline-block;
 }
@@ -135,13 +135,13 @@
 }
 
 .sama-why-us__subtitle {
-  font-size: 1.25rem; /* Réduit */
+  font-size: 1.rem; /* Réduit */
   color: var(--sama-text-light);
   max-width: 600px;
   margin: 0 auto;
-  line-height: 1.6; /* Réduit */
+  line-height: 1.5; /* Réduit */
   width: 100%;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .sama-why-us__highlight {
@@ -189,27 +189,16 @@
 
 /* Contenu principal - corrigé */
 .sama-why-us__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px; /* Réduit */
-  margin-bottom: 80px; /* Réduit */
+  display: block; /* Mobile : une colonne */
   width: 100%;
-  overflow: visible;
+  margin-bottom: 50px;
 }
 
-@media (max-width: 992px) {
-  .sama-why-us__content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
 
 /* Côté image - corrigé */
 .sama-why-us__image-side {
-  position: relative;
   width: 100%;
-  height: auto;
-  overflow: visible;
+  margin-bottom: 30px;
 }
 
 .sama-why-us__image-container {
@@ -223,11 +212,12 @@
 }
 
 .sama-why-us__image-wrapper {
-  position: relative;
   width: 100%;
-  height: 500px; /* Réduit */
-  border-radius: 20px;
+  height: 300px; /* Hauteur fixe mobile */
+  border-radius: 16px;
   overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .sama-why-us__main-img {
@@ -235,8 +225,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
 }
 
 .sama-why-us__image-wrapper:hover .sama-why-us__main-img {
@@ -305,24 +293,22 @@
 /* Badge - corrigé */
 .sama-why-us__badge {
   position: absolute;
-  bottom: 20px; /* Réduit */
-  left: 20px; /* Réduit */
+  bottom: 15px;
+  right: 15px;
   background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 12px 20px; /* Réduit */
-  border-radius: 12px; /* Réduit */
+  padding: 10px 15px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 10px; /* Réduit */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Réduit */
+  gap: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;
-  animation: sama-slideUp 0.6s ease-out;
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 30px);
 }
 
 .sama-why-us__badge-icon {
   color: var(--sama-accent);
-  font-size: 1.25rem; /* Réduit */
+  font-size: 0.85rem;
 }
 
 .sama-why-us__badge-text {
@@ -785,214 +771,244 @@
   }
 }
 
-/* RESPONSIVE CORRIGÉ */
-@media (max-width: 1200px) {
-  .sama-why-us__content {
-    gap: 50px;
-  }
+/* 9. MEDIA QUERIES - APPROCHE MOBILE FIRST */
 
-  .sama-why-us__title {
-    font-size: 2.75rem;
-  }
-
-  .sama-why-us__title-excl {
-    font-size: 3.25rem;
-  }
-
-  .sama-why-us__image-wrapper {
-    height: 450px;
-  }
-
-  .sama-why-us__stat-number {
-    font-size: 2.25rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .sama-why-us__content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .sama-why-us__image-wrapper {
-    height: 400px;
-  }
-
-  .sama-why-us__stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  .sama-why-us__title {
-    font-size: 2.5rem;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .sama-why-us__title-excl {
-    font-size: 3rem;
-  }
-
-  .sama-why-us__subtitle {
-    font-size: 1.15rem;
-  }
-
-  .sama-why-us__card {
-    min-height: 350px;
-  }
-}
-
-@media (max-width: 768px) {
+/* Tablettes */
+@media (min-width: 768px) {
   .sama-why-us {
     padding: 80px 0;
   }
-
-  .sama-why-us__header {
-    margin-bottom: 50px;
+  
+  .sama-why-us__container {
+    padding: 0 30px;
   }
-
+  
   .sama-why-us__title {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
-
+  
   .sama-why-us__title-excl {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
-
+  
   .sama-why-us__subtitle {
     font-size: 1.1rem;
-    padding: 0 10px;
   }
-
+  
+  .sama-why-us__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .sama-why-us__image-side {
+    margin-bottom: 0;
+  }
+  
+  .sama-why-us__image-wrapper {
+    height: 400px;
+  }
+  
   .sama-why-us__card {
-    padding: 25px 20px;
-    min-height: 300px;
+    padding: 30px 25px;
+    min-height: 350px;
   }
-
+  
   .sama-why-us__card-title {
     font-size: 1.5rem;
   }
-
+  
   .sama-why-us__card-subtitle {
     font-size: 1rem;
   }
-
+  
   .sama-why-us__navigation {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row; /* Desktop : ligne */
+    justify-content: space-between;
   }
-
+  
   .sama-why-us__nav-btn {
-    width: 100%;
-    justify-content: center;
+    width: auto;
+    justify-content: flex-start;
   }
-
-  .sama-why-us__image-wrapper {
-    height: 350px;
+  
+  .sama-why-us__card-hint {
+    display: flex; /* Affiche sur desktop */
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: auto;
   }
 }
 
-@media (max-width: 576px) {
+/* Desktop */
+@media (min-width: 992px) {
+  .sama-why-us__container {
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+  
   .sama-why-us__title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
-
+  
   .sama-why-us__title-excl {
-    font-size: 2.5rem;
-  }
-
-  .sama-why-us__subtitle {
-    font-size: 1rem;
-  }
-
-  .sama-why-us__image-wrapper {
-    height: 300px;
-  }
-
-  .sama-why-us__stats-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .sama-why-us__card-icon-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .sama-why-us__card-number {
-    align-self: flex-end;
     font-size: 3.5rem;
   }
-
+  
+  .sama-why-us__subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .sama-why-us__content {
+    gap: 60px;
+  }
+  
+  .sama-why-us__image-wrapper {
+    height: 500px;
+  }
+  
+  .sama-why-us__card {
+    padding: 35px 30px;
+    min-height: 400px;
+  }
+  
   .sama-why-us__badge {
-    bottom: 15px;
-    left: 15px;
-    padding: 10px 15px;
-    max-width: calc(100% - 30px);
+    padding: 12px 20px;
   }
-
-  .sama-why-us__badge-icon {
-    font-size: 1.1rem;
-  }
-
+  
   .sama-why-us__badge-text {
-    font-size: 0.85rem;
-  }
-
-  .sama-why-us__shape--1 {
-    width: 80px;
-    height: 80px;
-  }
-
-  .sama-why-us__shape--2 {
-    width: 50px;
-    height: 50px;
-  }
-
-  .sama-why-us__shape--3 {
-    width: 100px;
-    height: 100px;
+    font-size: 0.9rem;
   }
 }
 
-/* Correction des débordements Swiper */
+/* Grand écrans */
+@media (min-width: 1200px) {
+  .sama-why-us__container {
+    max-width: 1400px;
+  }
+}
+
+/* 10. CORRECTIONS SPÉCIFIQUES */
+
+/* Fix pour le débordement Swiper */
 .sama-why-us .swiper-container {
-  overflow: visible !important;
+  width: 100% !important;
+  padding: 0 !important;
 }
 
-.sama-why-us .swiper-wrapper {
-  box-sizing: content-box !important;
+/* Correction pour les très petits écrans (iPhone 5/SE) */
+@media (max-width: 360px) {
+  .sama-why-us__title {
+    font-size: 1.75rem;
+    flex-direction: column;
+  }
+  
+  .sama-why-us__title-excl {
+    font-size: 2rem;
+  }
+  
+  .sama-why-us__image-wrapper {
+    height: 250px;
+  }
+  
+  .sama-why-us__card {
+    padding: 20px 15px;
+  }
+  
+  .sama-why-us__card-icon {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .sama-why-us__card-number {
+    font-size: 2rem;
+  }
 }
 
-/* Force l'affichage correct des images */
-.sama-why-us img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* Correction pour le mode paysage mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .sama-why-us__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .sama-why-us__image-wrapper {
+    height: 250px;
+  }
+  
+  .sama-why-us__card {
+    min-height: 300px;
+  }
 }
 
-/* Correction pour les images de fond manquantes */
-.sama-why-us__main-img {
-  background-color: #f5f5f5; /* Couleur de secours */
-  min-height: 200px;
+/* 11. ANIMATIONS SIMPLIFIÉES */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
 }
 
-/* Style de secours si l'image ne charge pas */
-.sama-why-us__main-img:before {
-  content: "Image non disponible";
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #999;
-  font-size: 0.9rem;
+/* 12. CORRECTION DES FORMES FLOTTANTES */
+.sama-why-us__floating-shapes {
+  display: none; /* Cache sur mobile pour performance */
 }
 
-.sama-why-us__main-img[src=""]:before {
-  display: block;
+@media (min-width: 768px) {
+  .sama-why-us__floating-shapes {
+    display: block; /* Affiche sur desktop */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .sama-why-us__shape {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6d28d9, #a855f7);
+    opacity: 0.1;
+    filter: blur(20px);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-20px) translateX(15px); }
+  }
 }
+
+/* 13. RESET FORCÉ POUR MOBILE */
+@media (max-width: 767px) {
+  .sama-why-us * {
+    max-width: 100% !important;
+  }
+  
+  .sama-why-us img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  .sama-why-us .swiper-slide {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+
 
 /* ============================================
    SECTION PARTENAIRES - DESIGN PREMIUM

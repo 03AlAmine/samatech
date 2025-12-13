@@ -69,54 +69,93 @@
     </header>
 
     <main class="main">
-      <!-- Hero Section with Slider Background -->
-      <section id="hero" class="hero section dark-background">
+      <section id="hero" class="hero-section">
         <!-- Slider Background -->
-        <div class="hero-slider">
-          <div class="slider-track">
+        <div class="hero-slider-wrapper">
+          <div class="hero-slider-track">
             <div
-              class="slide active"
+              class="hero-slider-slide active"
               style="background-image: url('assets/img/hero-bg.jpg')"
             ></div>
             <div
-              class="slide"
+              class="hero-slider-slide"
               style="background-image: url('assets/img/favicon.png')"
             ></div>
             <div
-              class="slide"
+              class="hero-slider-slide"
               style="background-image: url('assets/img/hero-bg.jpg')"
             ></div>
           </div>
-          <div class="slider-overlay"></div>
+          <div class="hero-slider-overlay"></div>
         </div>
 
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xl-5 col-lg-7">
-              <h1 data-aos="fade-up" data-aos-delay="100">
-                Révolutionner la Tech au Sénégal et au-delà
-              </h1>
-              <div
-                class="hero-subtitle"
-                data-aos="fade-up"
-                data-aos-delay="150"
+        <div class="hero-content-container">
+          <div class="hero-content-wrapper">
+            <h1 class="hero-main-title" data-aos="fade-up" data-aos-delay="100">
+              Révolutionner la Tech au Sénégal et au-delà
+            </h1>
+
+            <div
+              class="hero-subtitle-container"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <p class="hero-subtitle">
+                Découvrez l'espace où l'innovation rencontre l'efficacité. Des
+                solutions digitales sur mesure pour faire grandir votre
+                entreprise.
+              </p>
+            </div>
+
+            <div
+              class="hero-actions-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="#about" class="hero-primary-button">
+                <span>Commencer</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                class="hero-video-button glightbox"
               >
-                <p>
-                  Découvrez l'espace où l'innovation rencontre l'efficacité. Des
-                  solutions digitales sur mesure pour faire grandir votre
-                  entreprise.
-                </p>
+                <i class="bi bi-play-circle"></i>
+                <span>Voir la vidéo</span>
+              </a>
+            </div>
+
+            <!-- Stats optionnelles -->
+            <div
+              class="hero-stats-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">50+</span>
+                <span class="hero-stat-label">Projets réalisés</span>
               </div>
-              <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
-                <a href="#about" class="btn-get-started">Commencer</a>
-                <a
-                  href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                  class="glightbox btn-watch-video"
-                >
-                  <i class="bi bi-play-circle"></i> <span>Voir la vidéo</span>
-                </a>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">30+</span>
+                <span class="hero-stat-label">Clients satisfaits</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">5+</span>
+                <span class="hero-stat-label">Ans d'expérience</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">98%</span>
+                <span class="hero-stat-label">Satisfaction client</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll-indicator">
+          <div class="hero-scroll-text">Découvrir plus</div>
+          <div class="hero-scroll-icon">
+            <i class="bi bi-chevron-down"></i>
           </div>
         </div>
       </section>
@@ -1723,63 +1762,6 @@
         </div>
       </section>
 
-      <!-- Process Section -->
-      <section id="process" class="process section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Notre Processus</h2>
-          <p>Comment nous travaillons pour garantir votre succès</p>
-        </div>
-
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-md-6" data-aos="fade-up">
-              <div class="process-step">
-                <div class="step-number">1</div>
-                <h3>Écoute</h3>
-                <p>Analyse approfondie de vos besoins</p>
-                <div class="step-icon"><i class="bi bi-ear"></i></div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="process-step">
-                <div class="step-number">2</div>
-                <h3>Conception</h3>
-                <p>Création d'une solution sur mesure</p>
-                <div class="step-icon"><i class="bi bi-pencil-square"></i></div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="process-step">
-                <div class="step-number">3</div>
-                <h3>Développement</h3>
-                <p>Implémentation technique rigoureuse</p>
-                <div class="step-icon"><i class="bi bi-code-slash"></i></div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="process-step">
-                <div class="step-number">4</div>
-                <h3>Livraison</h3>
-                <p>Suivi et optimisation continue</p>
-                <div class="step-icon"><i class="bi bi-check-circle"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Team Section
       <section class="section">
         <div class="container">
@@ -2472,6 +2454,138 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      // Animation interactive pour le Hero
+      document.addEventListener("DOMContentLoaded", function () {
+        // Gestion du slider
+        const sliderSlides = document.querySelectorAll(".hero-slider-slide");
+        let currentSlide = 0;
+
+        function nextSlide() {
+          // Retirer la classe active de la slide actuelle
+          sliderSlides[currentSlide].classList.remove("active");
+
+          // Passer à la slide suivante
+          currentSlide = (currentSlide + 1) % sliderSlides.length;
+
+          // Ajouter la classe active à la nouvelle slide
+          sliderSlides[currentSlide].classList.add("active");
+        }
+
+        // Changer de slide toutes les 8 secondes
+        setInterval(nextSlide, 8000);
+
+        // Animation des particules
+        function createHeroParticles() {
+          const particlesContainer = document.createElement("div");
+          particlesContainer.className = "hero-particles";
+          document
+            .querySelector(".hero-section")
+            .appendChild(particlesContainer);
+
+          for (let i = 0; i < 20; i++) {
+            const particle = document.createElement("div");
+            particle.className = "hero-particle";
+
+            // Position aléatoire
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+
+            // Animation delay aléatoire
+            particle.style.animationDelay = `${Math.random() * 15}s`;
+
+            // Taille aléatoire
+            const size = 1 + Math.random() * 3;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            particlesContainer.appendChild(particle);
+          }
+        }
+
+        createHeroParticles();
+
+        // Animation des stats
+        const statNumbers = document.querySelectorAll(".hero-stat-number");
+
+        function animateStats() {
+          statNumbers.forEach((stat) => {
+            const finalValue = parseInt(stat.textContent);
+            let currentValue = 0;
+            const increment = finalValue / 50;
+            const duration = 2000; // 2 secondes
+            const stepTime = duration / 50;
+
+            const timer = setInterval(() => {
+              currentValue += increment;
+              if (currentValue >= finalValue) {
+                currentValue = finalValue;
+                clearInterval(timer);
+                stat.textContent =
+                  finalValue + (stat.textContent.includes("+") ? "+" : "%");
+              } else {
+                stat.textContent =
+                  Math.floor(currentValue) +
+                  (stat.textContent.includes("+") ? "+" : "%");
+              }
+            }, stepTime);
+          });
+        }
+
+        // Animer les stats quand la section est visible
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animateStats();
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        const heroSection = document.querySelector(".hero-section");
+        if (heroSection) {
+          observer.observe(heroSection);
+        }
+
+        // Smooth scroll pour le bouton "Commencer"
+        const startButton = document.querySelector(".hero-primary-button");
+        if (startButton) {
+          startButton.addEventListener("click", function (e) {
+            if (this.getAttribute("href").startsWith("#")) {
+              e.preventDefault();
+              const targetId = this.getAttribute("href").substring(1);
+              const targetElement = document.getElementById(targetId);
+
+              if (targetElement) {
+                window.scrollTo({
+                  top: targetElement.offsetTop - 80,
+                  behavior: "smooth",
+                });
+              }
+            }
+          });
+        }
+
+        // Animation du scroll indicator
+        const scrollIndicator = document.querySelector(
+          ".hero-scroll-indicator"
+        );
+        if (scrollIndicator) {
+          scrollIndicator.addEventListener("click", function () {
+            const aboutSection = document.getElementById("about");
+            if (aboutSection) {
+              window.scrollTo({
+                top: aboutSection.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        }
+      });
+    </script>
     <!-- PureCounter JS -->
     <script>
       // Animation des compteurs
@@ -3236,6 +3350,85 @@
           // Initialisation
           updateCurrentSlide(1);
         }
+      });
+    </script>
+
+    <script>
+      // Initialisation Swiper avec responsive
+      document.addEventListener("DOMContentLoaded", function () {
+        const whyUsSwiper = new Swiper(".sama-why-us__swiper", {
+          // Configuration de base
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          speed: 500,
+          centeredSlides: true,
+
+          // Configuration responsive
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 15,
+              centeredSlides: true,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              centeredSlides: false,
+            },
+            1024: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+              centeredSlides: false,
+            },
+          },
+
+          // Navigation personnalisée
+          navigation: {
+            nextEl: ".sama-why-us__nav-next",
+            prevEl: ".sama-why-us__nav-prev",
+          },
+
+          // Pagination
+          pagination: {
+            el: ".sama-why-us__pagination-dots",
+            type: "bullets",
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '"></span>';
+            },
+          },
+
+          // Touch pour mobile
+          touchEventsTarget: "container",
+          touchRatio: 1,
+          touchAngle: 45,
+          grabCursor: true,
+          simulateTouch: true,
+          shortSwipes: true,
+          longSwipes: false,
+          followFinger: true,
+
+          // Ajustements mobiles
+          resistance: true,
+          resistanceRatio: 0.85,
+          slideToClickedSlide: false,
+
+          // Events
+          on: {
+            init: function () {
+              console.log("Swiper initialized for Why Us section");
+            },
+            resize: function () {
+              this.update(); // Met à jour Swiper au redimensionnement
+            },
+          },
+        });
+
+        // Réinitialisation au redimensionnement
+        window.addEventListener("resize", function () {
+          whyUsSwiper.update();
+        });
       });
     </script>
   </body>
