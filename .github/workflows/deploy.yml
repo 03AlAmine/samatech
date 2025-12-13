@@ -21,11 +21,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
 
-          # 📌 RACINE WEB DU SOUS-DOMAINE
-          server-dir: /samatech.tech/htdocs/test.samatech.tech/
+          # 🔥 RACINE FTP (déjà /test.samatech.tech côté LWS)
+          server-dir: /
 
-          # 📌 CONTENU DU SITE
+          # 🔥 CONTENU WEB UNIQUEMENT
           local-dir: ./public/
 
-          # 🔥 NETTOYAGE COMPLET AVANT DEPLOY
+          # 🔥 NETTOYAGE COMPLET
           dangerous-clean-slate: true
