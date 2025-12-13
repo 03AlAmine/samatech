@@ -1,4 +1,4 @@
-name: Deploy test.samatech.tech (LWS)
+name: Deploy samatech.tech (LWS)
 
 on:
   push:
@@ -13,17 +13,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy via FTP
+      - name: Deploy via FTP (main site)
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.FTP_USERNAME_MAIN }}
+          password: ${{ secrets.FTP_PASSWORD_MAIN }}
           port: 21
 
-          # 🔥 RACINE FTP (déjà /test.samatech.tech côté LWS)
+          # 🔥 RACINE WEB DU SITE PRINCIPAL (FTP CHROOT)
           server-dir: /
 
-          # 🔥 CONTENU WEB UNIQUEMENT
+          # 🔥 CONTENU DU SITE
           local-dir: ./public/
+
 
