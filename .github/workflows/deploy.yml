@@ -27,5 +27,3 @@ jobs:
           # 🔥 CONTENU WEB UNIQUEMENT
           local-dir: ./public/
 
-          # 🔥 NETTOYAGE COMPLET
-          dangerous-clean-slate: true
