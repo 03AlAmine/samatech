@@ -1,4 +1,4 @@
-name: Deploy to LWS - test subdomain
+name: Deploy test.samatech.tech (LWS)
 
 on:
   push:
@@ -11,9 +11,9 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: FTP Deploy
+      - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -21,8 +21,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
 
-          # ✅ DOSSIER PUBLIC EXACT DU SOUS-DOMAINE
+          # 📌 RACINE WEB DU SOUS-DOMAINE
           server-dir: /samatech.tech/htdocs/test.samatech.tech/
 
-          # ✅ SITE À LA RACINE DU REPO
-          local-dir: ./
+          # 📌 CONTENU DU SITE (SANS DOSSIER EN PLUS)
+          local-dir: ./public/
+
+          # (optionnel mais conseillé)
+          dangerous-clean-slate: false
