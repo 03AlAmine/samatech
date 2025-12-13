@@ -1,4 +1,4 @@
-name: Deploy to LWS subdomain
+name: Deploy to LWS - test subdomain
 
 on:
   push:
@@ -19,8 +19,10 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
+          port: 21
 
-          # 🔴 TRÈS IMPORTANT
-          server-dir: /home/samatech.tech/htdocs/test.samatech.tech/
+          # ✅ DOSSIER PUBLIC EXACT DU SOUS-DOMAINE
+          server-dir: /samatech.tech/htdocs/test.samatech.tech/
+
+          # ✅ SITE À LA RACINE DU REPO
           local-dir: ./
