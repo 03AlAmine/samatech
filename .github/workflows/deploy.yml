@@ -24,8 +24,8 @@ jobs:
           # 📌 RACINE WEB DU SOUS-DOMAINE
           server-dir: /samatech.tech/htdocs/test.samatech.tech/
 
-          # 📌 CONTENU DU SITE (SANS DOSSIER EN PLUS)
+          # 📌 CONTENU DU SITE
           local-dir: ./public/
 
-          # (optionnel mais conseillé)
-          dangerous-clean-slate: false
+          # 🔥 NETTOYAGE COMPLET AVANT DEPLOY
+          dangerous-clean-slate: true
