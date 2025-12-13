@@ -3,7 +3,7 @@ name: Deploy to LWS via FTP
 on:
   push:
     branches:
-      - main   # change si ta branche est master
+      - main
 
 jobs:
   ftp-deploy:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: FTP Deploy
+      - name: FTP Deploy to LWS
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -21,4 +21,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
           server-dir: ${{ secrets.FTP_PATH }}
-          local-dir: ./     # déploie toute la racine du repo
+          local-dir: ./
