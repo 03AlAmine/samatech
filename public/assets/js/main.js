@@ -1,12 +1,5 @@
-/**
-* Template Name: Nova
-* Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -15,9 +8,20 @@
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+
+    if (!selectHeader) return; // ✅ correction clé
+
+    if (
+      !selectHeader.classList.contains('scroll-up-sticky') &&
+      !selectHeader.classList.contains('sticky-top') &&
+      !selectHeader.classList.contains('fixed-top')
+    ) return;
+
+    window.scrollY > 100
+      ? selectBody.classList.add('scrolled')
+      : selectBody.classList.remove('scrolled');
   }
+
 
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
@@ -50,7 +54,7 @@
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+    navmenu.addEventListener('click', function (e) {
       e.preventDefault();
       this.parentNode.classList.toggle('active');
       this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
@@ -113,7 +117,7 @@
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+    document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
@@ -131,13 +135,13 @@
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+  document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
         itemSelector: '.isotope-item',
         layoutMode: layout,
@@ -146,8 +150,8 @@
       });
     });
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+      filters.addEventListener('click', function () {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
         this.classList.add('filter-active');
         initIsotope.arrange({
@@ -162,3 +166,147 @@
   });
 
 })();
+// Navigation interactive
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.site-header');
+  const mobileToggle = document.querySelector('.mobile-nav-toggle');
+  const mobileNav = document.querySelector('.site-navigation');
+  const mobileOverlay = document.querySelector('.mobile-nav-overlay');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // 1. Détection automatique de la page active
+  function setActiveNav() {
+    // Récupérer le nom de la page actuelle
+    const currentPage = getCurrentPageName();
+
+    // Retirer toutes les classes active
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+
+    // Trouver et activer le lien correspondant
+    navLinks.forEach(link => {
+      const pageName = link.getAttribute('data-page');
+      if (pageName === currentPage) {
+        link.classList.add('active');
+      }
+    });
+
+    // Fallback si aucune correspondance
+    if (!document.querySelector('.nav-link.active') && currentPage === 'index') {
+      const homeLink = document.querySelector('[data-page="index"]');
+      if (homeLink) homeLink.classList.add('active');
+    }
+  }
+
+  // 2. Fonction pour extraire le nom de la page
+  function getCurrentPageName() {
+    const path = window.location.pathname;
+    const page = path.split("/").pop();
+
+    // Cas spéciaux
+    if (!page || page === '' || page === 'index.html' || page === 'index.htm' || page === 'index.php') {
+      return 'index';
+    }
+
+    // Extraire le nom sans extension
+    const pageName = page.replace('.html', '')
+      .replace('.htm', '')
+      .replace('.php', '')
+      .toLowerCase();
+
+    return pageName;
+  }
+
+  // 3. Gestion du scroll pour l'effet de header
+  function handleScroll() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }
+
+  // 4. Gestion du toggle mobile
+  function setupMobileNav() {
+    mobileToggle.addEventListener('click', function () {
+      mobileNav.classList.toggle('active');
+      mobileOverlay.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+
+      // Animation de l'icône
+      const icon = this.querySelector('i');
+      if (mobileNav.classList.contains('active')) {
+        icon.classList.remove('bi-list');
+        icon.classList.add('bi-x');
+      } else {
+        icon.classList.remove('bi-x');
+        icon.classList.add('bi-list');
+      }
+    });
+
+    // Fermer le menu mobile en cliquant sur l'overlay
+    mobileOverlay.addEventListener('click', function () {
+      mobileNav.classList.remove('active');
+      this.classList.remove('active');
+      document.body.style.overflow = '';
+
+      const icon = mobileToggle.querySelector('i');
+      icon.classList.remove('bi-x');
+      icon.classList.add('bi-list');
+    });
+
+    // Fermer le menu mobile en cliquant sur un lien
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        if (window.innerWidth < 1200) {
+          mobileNav.classList.remove('active');
+          mobileOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+
+          const icon = mobileToggle.querySelector('i');
+          icon.classList.remove('bi-x');
+          icon.classList.add('bi-list');
+        }
+      });
+    });
+  }
+
+  // 5. Animation au survol des liens (desktop seulement)
+  function setupHoverEffects() {
+    navLinks.forEach(link => {
+      link.addEventListener('mouseenter', function () {
+        if (window.innerWidth >= 1200) {
+          this.style.transform = 'translateY(-5px)';
+        }
+      });
+
+      link.addEventListener('mouseleave', function () {
+        if (window.innerWidth >= 1200) {
+          this.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  }
+
+  // 6. Initialisation
+  function initNavigation() {
+    // Définir la page active
+    setActiveNav();
+
+    // Configurer les événements de scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Appliquer l'état initial
+    handleScroll();
+
+    // Configurer la navigation mobile
+    setupMobileNav();
+
+    // Configurer les effets de survol
+    setupHoverEffects();
+  }
+
+  // Démarrer l'initialisation
+  initNavigation();
+});

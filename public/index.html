@@ -42,30 +42,58 @@
   </head>
 
   <body class="index-page">
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-      >
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="" />
-          <h1 class="sitename">Samatech</h1>
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="index.html" class="site-logo">
+          <img src="assets/img/logo.png" alt="Samatech" class="logo-image" />
+          <h1 class="site-name">Samatech</h1>
         </a>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li>
-              <a href="index.html" class="active">Accueil<br /></a>
+        <!-- Navigation Desktop -->
+        <nav class="site-navigation">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" data-page="index">
+                <span>Accueil</span>
+              </a>
             </li>
-            <li><a href="about.html">A propos</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="packs.html">Packs</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" data-page="about">
+                <span>A propos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link" data-page="services">
+                <span>Services</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="packs.html" class="nav-link" data-page="packs">
+                <span>Packs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link" data-page="portfolio">
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" data-page="contact">
+                <span>Contact</span>
+              </a>
+            </li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="mobile-nav-toggle">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
+
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav-overlay"></div>
     </header>
 
     <main class="main">
@@ -74,16 +102,16 @@
         <div class="hero-slider-wrapper">
           <div class="hero-slider-track">
             <div
-              class="hero-slider-slide active"
-              style="background-image: url('assets/img/hero-bg.jpg')"
+              class="hero-slider-slide"
+              style="background-image: url('assets/img/bg-fond/bg-fond_3.png')"
             ></div>
             <div
               class="hero-slider-slide"
-              style="background-image: url('assets/img/favicon.png')"
+              style="background-image: url('assets/img/bg-fond/bg-fond.png')"
             ></div>
             <div
               class="hero-slider-slide"
-              style="background-image: url('assets/img/hero-bg.jpg')"
+              style="background-image: url('assets/img/bg-fond/bg-fond_1.jpg')"
             ></div>
           </div>
           <div class="hero-slider-overlay"></div>
@@ -125,7 +153,7 @@
               </a>
             </div>
 
-            <!-- Stats optionnelles -->
+            <!-- Stats optionnelles 
             <div
               class="hero-stats-container"
               data-aos="fade-up"
@@ -148,6 +176,7 @@
                 <span class="hero-stat-label">Satisfaction client</span>
               </div>
             </div>
+            -->
           </div>
         </div>
 
@@ -161,236 +190,331 @@
       </section>
 
       <!-- Services Section -->
-      <section id="services" class="services section">
+      <section id="services" class="services-cards-section">
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Nos Services</h2>
-          <p>
-            Des solutions technologiques sur mesure pour propulser votre
-            entreprise vers le succès digital.
-          </p>
-        </div>
-        <!-- End Section Title -->
+        <div class="services-cards-container">
+          <div class="services-cards-header" data-aos="fade-up">
+            <h2 class="services-cards-title">Nos Services</h2>
+            <p class="services-cards-subtitle">
+              Des solutions technologiques sur mesure pour propulser votre
+              entreprise vers le succès digital.
+            </p>
+          </div>
 
-        <div class="container">
-          <div class="row gy-5 gx-4">
+          <div class="services-cards-grid">
             <!-- Développement sur mesure -->
             <div
-              class="col-lg-4 col-md-6 service-item"
+              class="service-card-item"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div class="service-card">
-                <div class="service-icon-wrapper">
-                  <div
-                    class="icon-background"
-                    style="background-color: rgba(245, 120, 19, 0.1)"
-                  ></div>
-                  <i class="bi bi-laptop" style="color: #f57813"></i>
+              <div class="service-icon-container">
+                <div
+                  class="icon-background-circle"
+                  style="background-color: rgba(245, 120, 19, 0.1)"
+                ></div>
+                <div class="icon-foreground" style="color: #f57813">
+                  <i class="bi bi-laptop"></i>
                 </div>
-                <div class="service-content">
-                  <h4 class="title">Développement Web & Logiciels</h4>
-                  <p class="description">
-                    Création de sites web modernes, d'applications web, mobiles
-                    et de logiciels métiers adaptés à vos besoins spécifiques.
-                  </p>
-                  <div class="service-footer">
-                    <a href="#service-web" class="readmore stretched-link">
-                      <span>En savoir plus</span>
-                      <i class="bi bi-arrow-right-circle-fill"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="service-hover-effect"></div>
               </div>
+
+              <div class="service-card-content">
+                <h4 class="service-card-title">
+                  Développement Web & Logiciels
+                </h4>
+                <p class="service-card-description">
+                  Création de sites web modernes, d'applications web, mobiles et
+                  de logiciels métiers adaptés à vos besoins spécifiques.
+                </p>
+              </div>
+
+              <div class="service-card-footer">
+                <a href="#service-web" class="readmore-link">
+                  <span>En savoir plus</span>
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+              </div>
+
+              <div class="service-hover-effect"></div>
             </div>
 
+            <!-- Design -->
             <div
-              class="col-lg-4 col-md-6 service-item"
+              class="service-card-item"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div class="service-card">
-                <div class="service-icon-wrapper">
-                  <div
-                    class="icon-background"
-                    style="background-color: rgba(21, 160, 74, 0.1)"
-                  ></div>
-                  <i class="bi bi-palette" style="color: #15a04a"></i>
+              <div class="service-icon-container">
+                <div
+                  class="icon-background-circle"
+                  style="background-color: rgba(21, 160, 74, 0.1)"
+                ></div>
+                <div class="icon-foreground" style="color: #15a04a">
+                  <i class="bi bi-palette"></i>
                 </div>
-                <div class="service-content">
-                  <h4 class="title">Identité Visuelle & Design</h4>
-                  <p class="description">
-                    Création de logos, chartes graphiques, supports
-                    publicitaires et vidéos promotionnelles pour votre marque.
-                  </p>
-                  <div class="service-footer">
-                    <a href="#service-design" class="readmore stretched-link">
-                      <span>En savoir plus</span>
-                      <i class="bi bi-arrow-right-circle-fill"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="service-hover-effect"></div>
               </div>
+
+              <div class="service-card-content">
+                <h4 class="service-card-title">Identité Visuelle & Design</h4>
+                <p class="service-card-description">
+                  Création de logos, chartes graphiques, supports publicitaires
+                  et vidéos promotionnelles pour votre marque.
+                </p>
+              </div>
+
+              <div class="service-card-footer">
+                <a href="#service-design" class="readmore-link">
+                  <span>En savoir plus</span>
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+              </div>
+
+              <div class="service-hover-effect"></div>
             </div>
 
             <!-- Cybersécurité -->
             <div
-              class="col-lg-4 col-md-6 service-item"
+              class="service-card-item"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div class="service-card">
-                <div class="service-icon-wrapper">
-                  <div
-                    class="icon-background"
-                    style="background-color: rgba(217, 7, 105, 0.1)"
-                  ></div>
-                  <i class="bi bi-shield-lock" style="color: #d90769"></i>
+              <div class="service-icon-container">
+                <div
+                  class="icon-background-circle"
+                  style="background-color: rgba(217, 7, 105, 0.1)"
+                ></div>
+                <div class="icon-foreground" style="color: #d90769">
+                  <i class="bi bi-shield-lock"></i>
                 </div>
-                <div class="service-content">
-                  <h4 class="title">Cybersécurité & Protection des Données</h4>
-                  <p class="description">
-                    Mise en place de solutions de sécurité pour protéger vos
-                    systèmes, vos données et garantir la continuité de votre
-                    activité.
-                  </p>
-                  <div class="service-footer">
-                    <a href="#service-securite" class="readmore stretched-link">
-                      <span>En savoir plus</span>
-                      <i class="bi bi-arrow-right-circle-fill"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="service-hover-effect"></div>
               </div>
+
+              <div class="service-card-content">
+                <h4 class="service-card-title">
+                  Cybersécurité & Protection des Données
+                </h4>
+                <p class="service-card-description">
+                  Mise en place de solutions de sécurité pour protéger vos
+                  systèmes, vos données et garantir la continuité de votre
+                  activité.
+                </p>
+              </div>
+
+              <div class="service-card-footer">
+                <a href="#service-securite" class="readmore-link">
+                  <span>En savoir plus</span>
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+              </div>
+
+              <div class="service-hover-effect"></div>
             </div>
 
             <!-- Communication -->
             <div
-              class="col-lg-4 col-md-6 service-item"
+              class="service-card-item"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <div class="service-card">
-                <div class="service-icon-wrapper">
-                  <div
-                    class="icon-background"
-                    style="background-color: rgba(21, 191, 188, 0.1)"
-                  ></div>
-                  <i class="bi bi-megaphone" style="color: #15bfbc"></i>
+              <div class="service-icon-container">
+                <div
+                  class="icon-background-circle"
+                  style="background-color: rgba(21, 191, 188, 0.1)"
+                ></div>
+                <div class="icon-foreground" style="color: #15bfbc">
+                  <i class="bi bi-megaphone"></i>
                 </div>
-                <div class="service-content">
-                  <h4 class="title">Gestion de Communication</h4>
-                  <p class="description">
-                    Prise en charge de vos canaux de communication, animation
-                    des communautés, amélioration de l'image de marque.
-                  </p>
-                  <div class="service-footer">
-                    <a href="#" class="readmore stretched-link">
-                      <span>En savoir plus</span>
-                      <i class="bi bi-arrow-right-circle-fill"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="service-hover-effect"></div>
               </div>
+
+              <div class="service-card-content">
+                <h4 class="service-card-title">Gestion de Communication</h4>
+                <p class="service-card-description">
+                  Prise en charge de vos canaux de communication, animation des
+                  communautés, amélioration de l'image de marque.
+                </p>
+              </div>
+
+              <div class="service-card-footer">
+                <a href="#service-communication" class="readmore-link">
+                  <span>En savoir plus</span>
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+              </div>
+
+              <div class="service-hover-effect"></div>
             </div>
 
             <!-- Formation -->
             <div
-              class="col-lg-4 col-md-6 service-item"
+              class="service-card-item"
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <div class="service-card">
-                <div class="service-icon-wrapper">
-                  <div
-                    class="icon-background"
-                    style="background-color: rgba(245, 207, 19, 0.1)"
-                  ></div>
-                  <i class="bi bi-mortarboard" style="color: #f5cf13"></i>
+              <div class="service-icon-container">
+                <div
+                  class="icon-background-circle"
+                  style="background-color: rgba(245, 207, 19, 0.1)"
+                ></div>
+                <div class="icon-foreground" style="color: #f5cf13">
+                  <i class="bi bi-mortarboard"></i>
                 </div>
-                <div class="service-content">
-                  <h4 class="title">Formations IT & Bureautique</h4>
-                  <p class="description">
-                    Cours en développement web, bureautique, cybersécurité et
-                    bien plus, pour débutants et professionnels.
-                  </p>
-                  <div class="service-footer">
-                    <a href="#" class="readmore stretched-link">
-                      <span>En savoir plus</span>
-                      <i class="bi bi-arrow-right-circle-fill"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="service-hover-effect"></div>
               </div>
+
+              <div class="service-card-content">
+                <h4 class="service-card-title">Formations IT & Bureautique</h4>
+                <p class="service-card-description">
+                  Cours en développement web, bureautique, cybersécurité et bien
+                  plus, pour débutants et professionnels.
+                </p>
+              </div>
+
+              <div class="service-card-footer">
+                <a href="#service-formation" class="readmore-link">
+                  <span>En savoir plus</span>
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+              </div>
+
+              <div class="service-hover-effect"></div>
             </div>
 
             <!-- Conseil -->
             <div
-              class="col-lg-4 col-md-6 service-item"
+              class="service-card-item"
               data-aos="fade-up"
               data-aos-delay="600"
             >
-              <div class="service-card">
-                <div class="service-icon-wrapper">
-                  <div
-                    class="icon-background"
-                    style="background-color: rgba(19, 53, 245, 0.1)"
-                  ></div>
-                  <i class="bi bi-lightbulb" style="color: #1335f5"></i>
+              <div class="service-icon-container">
+                <div
+                  class="icon-background-circle"
+                  style="background-color: rgba(19, 53, 245, 0.1)"
+                ></div>
+                <div class="icon-foreground" style="color: #1335f5">
+                  <i class="bi bi-lightbulb"></i>
                 </div>
-                <div class="service-content">
-                  <h4 class="title">Conseil & Stratégie IT</h4>
-                  <p class="description">
-                    Accompagnement des entreprises dans la mise en place de
-                    solutions informatiques innovantes et efficaces.
-                  </p>
-                  <div class="service-footer">
-                    <a href="#" class="readmore stretched-link">
-                      <span>En savoir plus</span>
-                      <i class="bi bi-arrow-right-circle-fill"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="service-hover-effect"></div>
               </div>
+
+              <div class="service-card-content">
+                <h4 class="service-card-title">Conseil & Stratégie IT</h4>
+                <p class="service-card-description">
+                  Accompagnement des entreprises dans la mise en place de
+                  solutions informatiques innovantes et efficaces.
+                </p>
+              </div>
+
+              <div class="service-card-footer">
+                <a href="#service-conseil" class="readmore-link">
+                  <span>En savoir plus</span>
+                  <i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+              </div>
+
+              <div class="service-hover-effect"></div>
             </div>
           </div>
         </div>
 
-        <!-- Système orbital -->
-        <div class="orbital-system">
-          <div class="sun"></div>
-          <div class="orbit orbit-1"></div>
-          <div class="orbit orbit-2"></div>
-          <div class="orbit orbit-3"></div>
-          <div class="planet planet-1"></div>
-          <div class="planet planet-2"></div>
-          <div class="planet planet-3"></div>
-          <div class="planet planet-4"></div>
+        <!-- Éléments d'arrière-plan -->
+        <div class="orbital-system-bg">
+          <div class="orbital-sun"></div>
+          <div class="orbital-path orbital-path-1"></div>
+          <div class="orbital-path orbital-path-2"></div>
+          <div class="orbital-path orbital-path-3"></div>
+          <div class="orbital-planet orbital-planet-1"></div>
+          <div class="orbital-planet orbital-planet-2"></div>
+          <div class="orbital-planet orbital-planet-3"></div>
+          <div class="orbital-planet orbital-planet-4"></div>
         </div>
 
-        <!-- Particules flottantes -->
-        <div class="floating-particles">
-          <div class="particle"></div>
-          <div class="particle"></div>
-          <div class="particle"></div>
-          <div class="particle"></div>
-          <div class="particle"></div>
-          <div class="particle"></div>
+        <div class="floating-particles-bg">
+          <div class="floating-particle"></div>
+          <div class="floating-particle"></div>
+          <div class="floating-particle"></div>
+          <div class="floating-particle"></div>
+          <div class="floating-particle"></div>
+          <div class="floating-particle"></div>
         </div>
 
-        <!-- Anneaux concentriques -->
-        <div class="concentric-rings">
-          <div class="ring"></div>
-          <div class="ring"></div>
-          <div class="ring"></div>
+        <div class="concentric-rings-bg">
+          <div class="concentric-ring"></div>
+          <div class="concentric-ring"></div>
+          <div class="concentric-ring"></div>
         </div>
       </section>
+
+      <script>
+        // Animation interactive pour les cartes de services
+        document.addEventListener("DOMContentLoaded", function () {
+          const serviceCards = document.querySelectorAll(".service-card-item");
+
+          // Animation au survol des cartes
+          serviceCards.forEach((card) => {
+            card.addEventListener("mouseenter", function () {
+              // Animation de l'icône
+              const icon = this.querySelector(".icon-foreground i");
+              if (icon) {
+                icon.style.transform = "scale(1.2)";
+                setTimeout(() => {
+                  icon.style.transform = "scale(1)";
+                }, 300);
+              }
+
+              // Animation du titre
+              const title = this.querySelector(".service-card-title");
+              if (title) {
+                title.style.animation = "titlePulse 0.5s ease";
+                setTimeout(() => {
+                  title.style.animation = "";
+                }, 500);
+              }
+            });
+
+            // Animation du lien "En savoir plus"
+            const readmoreLink = card.querySelector(".readmore-link");
+            if (readmoreLink) {
+              readmoreLink.addEventListener("mouseenter", function () {
+                const icon = this.querySelector("i");
+                if (icon) {
+                  icon.style.transform = "translateX(8px) scale(1.2)";
+                }
+              });
+
+              readmoreLink.addEventListener("mouseleave", function () {
+                const icon = this.querySelector("i");
+                if (icon) {
+                  icon.style.transform = "translateX(5px) scale(1)";
+                }
+              });
+
+              // Navigation vers la section correspondante
+              if (readmoreLink.getAttribute("href").startsWith("#")) {
+                readmoreLink.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  const targetId = this.getAttribute("href").substring(1);
+                  const targetElement = document.getElementById(targetId);
+
+                  if (targetElement) {
+                    window.scrollTo({
+                      top: targetElement.offsetTop - 80,
+                      behavior: "smooth",
+                    });
+                  }
+                });
+              }
+            }
+          });
+
+          // Animation pour le titre
+          const style = document.createElement("style");
+          style.textContent = `
+    @keyframes titlePulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  `;
+          document.head.appendChild(style);
+        });
+      </script>
 
       <!-- Why Section -->
       <section id="why-us" class="sama-why-us">
@@ -743,34 +867,70 @@
       </section>
 
       <!-- Call To Action Section -->
-      <section
-        id="call-to-action"
-        class="call-to-action section dark-background"
-      >
-        <img src="assets/img/cta-bg.jpg" alt="Image de fond Appel à l'action" />
+      <section id="call-to-action" class="cta-section">
+        <!-- Background avec overlay -->
+        <div class="cta-background">
+          <img
+            src="assets/img/cta-bg.jpg"
+            alt="Image de fond Appel à l'action"
+            class="cta-background-img"
+          />
+          <div class="cta-overlay"></div>
+        </div>
 
-        <div class="container">
-          <div
-            class="row justify-content-center"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div class="col-xl-10">
-              <div class="text-center text-white">
-                <h3>Prêt à digitaliser votre entreprise ?</h3>
-                <p>
-                  Confiez vos projets à Sama Tech et bénéficiez de solutions
-                  modernes, sécurisées et parfaitement adaptées à vos besoins.
-                  Sites web, applications, marketing digital ou formations —
-                  nous sommes à vos côtés.
-                </p>
-                <a class="cta-btn" href="#contact">Demandez un devis gratuit</a>
+        <div class="cta-container">
+          <div class="cta-content-wrapper">
+            <h3 class="cta-title" data-aos="fade-up" data-aos-delay="100">
+              Prêt à digitaliser votre entreprise ?
+            </h3>
+
+            <p class="cta-description" data-aos="fade-up" data-aos-delay="200">
+              Confiez vos projets à Sama Tech et bénéficiez de solutions
+              modernes, sécurisées et parfaitement adaptées à vos besoins. Sites
+              web, applications, marketing digital ou formations — nous sommes à
+              vos côtés.
+            </p>
+
+            <div
+              class="cta-button-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <a href="#contact" class="cta-primary-button">
+                <span>Demandez un devis gratuit</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- Statistiques optionnelles -->
+            <div
+              class="cta-stats-container"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="cta-stat-item">
+                <span class="cta-stat-number">24h</span>
+                <span class="cta-stat-label">Réponse garantie</span>
+              </div>
+              <div class="cta-stat-item">
+                <span class="cta-stat-number">100%</span>
+                <span class="cta-stat-label">Personnalisé</span>
+              </div>
+              <div class="cta-stat-item">
+                <span class="cta-stat-number">Gratuit</span>
+                <span class="cta-stat-label">Premier devis</span>
+              </div>
+              <div class="cta-stat-item">
+                <span class="cta-stat-number">30j</span>
+                <span class="cta-stat-label">Support inclus</span>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Particules animées -->
+        <div class="cta-particles" id="ctaParticles"></div>
       </section>
-      <!-- /Call To Action Section -->
 
       <!-- Features Section -->
       <section id="features" class="features features-section section">
@@ -955,6 +1115,7 @@
           </div>
         </div>
       </section>
+
       <!-- Partners Section - Version Premium -->
       <section id="partenaires" class="sama-partenaires">
         <div class="sama-partenaires__container">
@@ -1153,7 +1314,7 @@
             </div>
           </div>
 
-          <!-- Stats des partenariats -->
+          <!-- Stats des partenariats 
           <div
             class="sama-partenaires__stats"
             data-aos="fade-up"
@@ -1195,7 +1356,7 @@
               </div>
             </div>
           </div>
-
+-->
           <!-- CTA -->
           <div
             class="sama-partenaires__cta"
@@ -1230,10 +1391,6 @@
             data-aos="fade-up"
           >
             <h2>Chiffres clés</h2>
-            <p>
-              Quelques statistiques qui témoignent de notre expertise et de
-              notre engagement
-            </p>
           </div>
 
           <!-- Statistiques -->
@@ -2454,6 +2611,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
     <script>
       // Animation interactive pour le Hero
       document.addEventListener("DOMContentLoaded", function () {
@@ -2677,6 +2835,7 @@
         });
       });
     </script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Hero Slider Functionality
@@ -3353,6 +3512,7 @@
       });
     </script>
 
+    <!-- For the part of samatech !!!-->
     <script>
       // Initialisation Swiper avec responsive
       document.addEventListener("DOMContentLoaded", function () {
@@ -3429,6 +3589,110 @@
         window.addEventListener("resize", function () {
           whyUsSwiper.update();
         });
+      });
+    </script>
+
+    <!--Call to  action-->
+    <script>
+      // Animation pour la section Call To Action
+      document.addEventListener("DOMContentLoaded", function () {
+        // Création des particules
+        function createCTAParticles() {
+          const particlesContainer = document.getElementById("ctaParticles");
+          if (!particlesContainer) return;
+
+          for (let i = 0; i < 25; i++) {
+            const particle = document.createElement("div");
+            particle.className = "cta-particle";
+
+            // Position aléatoire
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+
+            // Animation delay aléatoire
+            particle.style.animationDelay = `${Math.random() * 20}s`;
+
+            // Taille aléatoire
+            const size = 2 + Math.random() * 4;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            // Opacité aléatoire
+            particle.style.opacity = 0.3 + Math.random() * 0.5;
+
+            particlesContainer.appendChild(particle);
+          }
+        }
+
+        createCTAParticles();
+
+        // Animation du bouton au scroll
+        const ctaButton = document.querySelector(".cta-primary-button");
+        if (ctaButton) {
+          // Smooth scroll pour le bouton
+          if (ctaButton.getAttribute("href").startsWith("#")) {
+            ctaButton.addEventListener("click", function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute("href").substring(1);
+              const targetElement = document.getElementById(targetId);
+
+              if (targetElement) {
+                window.scrollTo({
+                  top: targetElement.offsetTop - 80,
+                  behavior: "smooth",
+                });
+              }
+            });
+          }
+
+          // Animation au survol
+          ctaButton.addEventListener("mouseenter", function () {
+            const icon = this.querySelector("i");
+            if (icon) {
+              icon.style.transform = "translateX(8px) scale(1.2)";
+            }
+          });
+
+          ctaButton.addEventListener("mouseleave", function () {
+            const icon = this.querySelector("i");
+            if (icon) {
+              icon.style.transform = "translateX(5px) scale(1)";
+            }
+          });
+        }
+
+        // Animation des statistiques
+        const statItems = document.querySelectorAll(".cta-stat-item");
+        statItems.forEach((item, index) => {
+          item.style.animationDelay = `${index * 0.2}s`;
+
+          // Animation au survol
+          item.addEventListener("mouseenter", function () {
+            const number = this.querySelector(".cta-stat-number");
+            if (number) {
+              number.style.transform = "scale(1.1)";
+              number.style.transition = "transform 0.3s ease";
+            }
+          });
+
+          item.addEventListener("mouseleave", function () {
+            const number = this.querySelector(".cta-stat-number");
+            if (number) {
+              number.style.transform = "scale(1)";
+            }
+          });
+        });
+
+        // Animation de l'image de fond
+        const ctaBgImg = document.querySelector(".cta-background-img");
+        if (ctaBgImg) {
+          // Effet de parallaxe au scroll
+          window.addEventListener("scroll", function () {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * 0.3;
+            ctaBgImg.style.transform = `translateY(${rate}px) scale(1.1)`;
+          });
+        }
       });
     </script>
   </body>

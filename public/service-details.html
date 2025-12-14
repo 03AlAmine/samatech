@@ -40,30 +40,58 @@
   </head>
 
   <body class="service-details-page">
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-      >
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="" />
-          <h1 class="sitename">Samatech</h1>
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="index.html" class="site-logo">
+          <img src="assets/img/logo.png" alt="Samatech" class="logo-image" />
+          <h1 class="site-name">Samatech</h1>
         </a>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li>
-              <a href="index.html">Accueil<br /></a>
+        <!-- Navigation Desktop -->
+        <nav class="site-navigation">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" data-page="index">
+                <span>Accueil</span>
+              </a>
             </li>
-            <li><a href="about.html">A propos</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="packs.html">Packs</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" data-page="about">
+                <span>A propos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link" data-page="services">
+                <span>Services</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="packs.html" class="nav-link" data-page="packs">
+                <span>Packs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link" data-page="portfolio">
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" data-page="contact">
+                <span>Contact</span>
+              </a>
+            </li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="mobile-nav-toggle">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
+
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav-overlay"></div>
     </header>
 
     <main class="main">

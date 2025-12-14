@@ -53,30 +53,58 @@
   </head>
 
   <body class="contact-page">
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-      >
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="" />
-          <h1 class="sitename">Samatech</h1>
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="index.html" class="site-logo">
+          <img src="assets/img/logo.png" alt="Samatech" class="logo-image" />
+          <h1 class="site-name">Samatech</h1>
         </a>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li>
-              <a href="index.html">Accueil<br /></a>
+        <!-- Navigation Desktop -->
+        <nav class="site-navigation">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" data-page="index">
+                <span>Accueil</span>
+              </a>
             </li>
-            <li><a href="about.html">A propos</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="packs.html">Packs</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" data-page="about">
+                <span>A propos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link" data-page="services">
+                <span>Services</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="packs.html" class="nav-link" data-page="packs">
+                <span>Packs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link" data-page="portfolio">
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" data-page="contact">
+                <span>Contact</span>
+              </a>
+            </li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="mobile-nav-toggle">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
+
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav-overlay"></div>
     </header>
 
     <main class="main">
@@ -112,49 +140,75 @@
       <!-- End Page Title -->
 
       <!-- Contact Info Section -->
-      <section class="section">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="contact-card text-center">
-                <div class="contact-icon mx-auto">
+      <section class="contact-info-section">
+        <div class="contact-info-container">
+          <div class="contact-cards-grid">
+            <!-- Carte Adresse -->
+            <div
+              class="contact-info-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="contact-icon-container">
+                <div class="contact-icon-circle">
                   <i class="bi bi-geo-alt"></i>
                 </div>
+              </div>
+
+              <div class="contact-card-content">
                 <h3>Notre adresse</h3>
                 <p>HLM Grand Yoff, Dakar<br />Sénégal</p>
-                <a href="#map" class="btn btn-sm btn-outline-primary mt-2"
-                  >Voir sur la carte</a
-                >
+                <a href="#map" class="contact-action-button">
+                  <i class="bi bi-map"></i>
+                  <span>Voir sur la carte</span>
+                </a>
               </div>
             </div>
 
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="contact-card text-center">
-                <div class="contact-icon mx-auto">
+            <!-- Carte Email -->
+            <div
+              class="contact-info-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="contact-icon-container">
+                <div class="contact-icon-circle">
                   <i class="bi bi-envelope"></i>
                 </div>
+              </div>
+
+              <div class="contact-card-content">
                 <h3>Email</h3>
                 <p>contact@samatech.sn<br />support@samatech.sn</p>
                 <a
                   href="mailto:contact@samatech.sn"
-                  class="btn btn-sm btn-outline-primary mt-2"
-                  >Envoyer un email</a
+                  class="contact-action-button"
                 >
+                  <i class="bi bi-send"></i>
+                  <span>Envoyer un email</span>
+                </a>
               </div>
             </div>
 
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="contact-card text-center">
-                <div class="contact-icon mx-auto">
+            <!-- Carte Téléphone -->
+            <div
+              class="contact-info-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="contact-icon-container">
+                <div class="contact-icon-circle">
                   <i class="bi bi-telephone"></i>
                 </div>
+              </div>
+
+              <div class="contact-card-content">
                 <h3>Téléphone</h3>
                 <p>+221 78 260 66 53<br />+221 77 979 97 35</p>
-                <a
-                  href="tel:+221771234567"
-                  class="btn btn-sm btn-outline-primary mt-2"
-                  >Appeler maintenant</a
-                >
+                <a href="tel:+221782606653" class="contact-action-button">
+                  <i class="bi bi-phone"></i>
+                  <span>Appeler maintenant</span>
+                </a>
               </div>
             </div>
           </div>
@@ -162,94 +216,86 @@
       </section>
 
       <!-- Contact Form & Map Section -->
-      <section id="contact-form" class="section bg-light">
-        <div class="container">
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-6" data-aos="fade-right">
-              <div class="contact-form-container p-4 p-lg-5">
-                <h2 class="mb-4">Envoyez-nous un message</h2>
-                <p class="mb-5">
+      <section class="contact-form-section">
+        <div class="contact-form-container">
+          <div class="contact-form-layout">
+            <!-- Formulaire -->
+            <div class="contact-form-wrapper">
+              <div class="contact-form-header">
+                <h2 class="contact-form-title">Envoyez-nous un message</h2>
+                <p class="contact-form-description">
                   Remplissez le formulaire ci-dessous et notre équipe vous
                   répondra dans les plus brefs délais.
                 </p>
-
-                <form
-                  action="forms/contact.php"
-                  method="post"
-                  class="php-email-form"
-                >
-                  <div class="row gy-3">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="name" class="form-label">Votre nom</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          name="name"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="email" class="form-label"
-                          >Votre email</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          name="email"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label for="subject" class="form-label">Sujet</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          name="subject"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea
-                          class="form-control"
-                          id="message"
-                          name="message"
-                          rows="5"
-                          required
-                        ></textarea>
-                      </div>
-                    </div>
-
-                    <div class="col-12 text-center mt-4">
-                      <button type="submit" class="btn-contact w-100">
-                        <i class="bi bi-send me-2"></i>Envoyer le message
-                      </button>
-                    </div>
-                  </div>
-                </form>
               </div>
+
+              <form
+                action="forms/contact.php"
+                method="post"
+                class="contact-form"
+              >
+                <div class="form-group-wrapper">
+                  <label for="name" class="form-label">Votre nom</label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group-wrapper">
+                  <label for="email" class="form-label">Votre email</label>
+                  <input
+                    type="email"
+                    class="form-input"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group-wrapper">
+                  <label for="subject" class="form-label">Sujet</label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="subject"
+                    name="subject"
+                    required
+                  />
+                </div>
+
+                <div class="form-group-wrapper">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-input form-textarea"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-button">
+                  <i class="bi bi-send"></i>
+                  <span>Envoyer le message</span>
+                </button>
+              </form>
             </div>
 
-            <div class="col-lg-6" data-aos="fade-left" id="map">
-              <div class="map-container">
+            <!-- Carte -->
+            <div class="contact-map-wrapper" id="map">
+              <div class="contact-map-container">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.527774141959!2d-17.45678792469095!3d14.7173710857871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1725a8b8e0a91%3A0x8a5a3e5b7e5b3e5b!2sHLM%20Grand%20Yoff%2C%20Dakar!5e0!3m2!1sfr!2ssn!4v1620000000000!5m2!1sfr!2ssn"
+                  class="contact-map"
                   allowfullscreen=""
                   loading="lazy"
-                ></iframe>
+                  title="Localisation SamaTech"
+                >
+                </iframe>
               </div>
             </div>
           </div>
@@ -257,101 +303,55 @@
       </section>
 
       <!-- FAQ Section -->
-      <section class="section bg-light">
-        <div class="container">
-          <div class="section-header text-center mb-5">
-            <h2 data-aos="fade-up">Questions fréquentes</h2>
-            <p data-aos="fade-up" data-aos-delay="100">
+      <section class="faq-section">
+        <div class="faq-container">
+          <div class="faq-header">
+            <h2 class="faq-title">Questions fréquentes</h2>
+            <p class="faq-subtitle">
               Trouvez rapidement des réponses à vos questions
             </p>
           </div>
 
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="accordion" id="faqAccordion">
-                <div
-                  class="accordion-item mb-3 border-0 rounded-3 overflow-hidden"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#faq1"
-                    >
-                      Quels sont vos horaires d'ouverture ?
-                    </button>
-                  </h3>
-                  <div
-                    id="faq1"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Notre équipe est disponible du lundi au vendredi de 8h à
-                      18h et le samedi de 9h à 13h. Vous pouvez nous contacter
-                      par téléphone, email ou via notre formulaire de contact à
-                      tout moment, nous vous répondrons dès la réouverture.
-                    </div>
-                  </div>
+          <div class="faq-accordion">
+            <!-- Question 1 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                Quels sont vos horaires d'ouverture ?
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Notre équipe est disponible du lundi au vendredi de 8h à 18h
+                  et le samedi de 9h à 13h. Vous pouvez nous contacter par
+                  téléphone, email ou via notre formulaire de contact à tout
+                  moment, nous vous répondrons dès la réouverture.
                 </div>
+              </div>
+            </div>
 
-                <div
-                  class="accordion-item mb-3 border-0 rounded-3 overflow-hidden"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#faq2"
-                    >
-                      Quel est le délai moyen de réponse ?
-                    </button>
-                  </h3>
-                  <div
-                    id="faq2"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Nous nous engageons à répondre à toutes les demandes dans
-                      un délai maximum de 24 heures ouvrées. Pour les demandes
-                      urgentes, privilégiez l'appel téléphonique.
-                    </div>
-                  </div>
+            <!-- Question 2 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                Quel est le délai moyen de réponse ?
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Nous nous engageons à répondre à toutes les demandes dans un
+                  délai maximum de 24 heures ouvrées. Pour les demandes
+                  urgentes, privilégiez l'appel téléphonique.
                 </div>
+              </div>
+            </div>
 
-                <div
-                  class="accordion-item mb-3 border-0 rounded-3 overflow-hidden"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#faq3"
-                    >
-                      Proposez-vous des consultations gratuites ?
-                    </button>
-                  </h3>
-                  <div
-                    id="faq3"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      Oui, nous offrons une première consultation gratuite de 30
-                      minutes pour discuter de votre projet et évaluer vos
-                      besoins. Contactez-nous pour prendre rendez-vous.
-                    </div>
-                  </div>
+            <!-- Question 3 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                Proposez-vous des consultations gratuites ?
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Oui, nous offrons une première consultation gratuite de 30
+                  minutes pour discuter de votre projet et évaluer vos besoins.
+                  Contactez-nous pour prendre rendez-vous.
                 </div>
               </div>
             </div>
@@ -457,5 +457,324 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      // Animation interactive pour les cartes de contact
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactCards = document.querySelectorAll(".contact-info-card");
+
+        // Animation au survol
+        contactCards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            // Animation de l'icône
+            const icon = this.querySelector(".contact-icon-circle i");
+            if (icon) {
+              icon.style.transform = "scale(1.2)";
+            }
+
+            // Animation du bouton
+            const button = this.querySelector(".contact-action-button");
+            if (button) {
+              button.style.transform = "translateY(-5px)";
+            }
+          });
+
+          card.addEventListener("mouseleave", function () {
+            // Réinitialiser l'animation de l'icône
+            const icon = this.querySelector(".contact-icon-circle i");
+            if (icon) {
+              icon.style.transform = "scale(1)";
+            }
+
+            // Réinitialiser l'animation du bouton
+            const button = this.querySelector(".contact-action-button");
+            if (button) {
+              button.style.transform = "translateY(0)";
+            }
+          });
+        });
+
+        // Animation des boutons au clic
+        const contactButtons = document.querySelectorAll(
+          ".contact-action-button"
+        );
+        contactButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            // Animation de feedback
+            this.style.transform = "scale(0.95)";
+            setTimeout(() => {
+              this.style.transform = "";
+            }, 200);
+
+            // Pour les liens internes (carte)
+            if (this.getAttribute("href") === "#map") {
+              e.preventDefault();
+              const mapSection = document.getElementById("map");
+              if (mapSection) {
+                window.scrollTo({
+                  top: mapSection.offsetTop - 80,
+                  behavior: "smooth",
+                });
+              }
+            }
+          });
+        });
+
+        // Création de particules animées (optionnel)
+        function createContactParticles() {
+          const particlesContainer = document.createElement("div");
+          particlesContainer.className = "contact-particles";
+          document
+            .querySelector(".contact-info-section")
+            .appendChild(particlesContainer);
+
+          for (let i = 0; i < 15; i++) {
+            const particle = document.createElement("div");
+            particle.className = "contact-particle";
+
+            // Position aléatoire
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+
+            // Animation delay aléatoire
+            particle.style.animationDelay = `${Math.random() * 15}s`;
+
+            // Taille aléatoire
+            const size = 2 + Math.random() * 3;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            particlesContainer.appendChild(particle);
+          }
+        }
+
+        createContactParticles();
+
+        // Animation automatique des icônes
+        let currentIcon = 0;
+
+        function animateContactIcons() {
+          contactCards.forEach((card, index) => {
+            const icon = card.querySelector(".contact-icon-circle i");
+            if (icon && index === currentIcon) {
+              icon.style.animation = "iconBounce 0.6s ease";
+              setTimeout(() => {
+                icon.style.animation = "";
+              }, 600);
+            }
+          });
+
+          currentIcon = (currentIcon + 1) % contactCards.length;
+          setTimeout(animateContactIcons, 3000);
+        }
+
+        // Démarrer l'animation automatique
+        setTimeout(animateContactIcons, 2000);
+      });
+    </script>
+
+    <script>
+      // Validation et interaction du formulaire de contact
+      document.addEventListener("DOMContentLoaded", function () {
+        // Validation du formulaire
+        const contactForm = document.querySelector(".contact-form");
+        const formInputs = document.querySelectorAll(".form-input");
+
+        if (contactForm) {
+          // Validation en temps réel
+          formInputs.forEach((input) => {
+            input.addEventListener("blur", function () {
+              validateField(this);
+            });
+
+            input.addEventListener("input", function () {
+              clearValidation(this);
+            });
+          });
+
+          // Soumission du formulaire
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let isValid = true;
+            formInputs.forEach((input) => {
+              if (!validateField(input)) {
+                isValid = false;
+              }
+            });
+
+            if (isValid) {
+              simulateFormSubmission();
+            }
+          });
+        }
+
+        function validateField(field) {
+          let isValid = true;
+
+          // Supprimer les anciens messages d'erreur
+          clearValidation(field);
+
+          // Validation selon le type de champ
+          if (field.id === "name") {
+            if (field.value.trim().length < 2) {
+              showError(field, "Le nom doit contenir au moins 2 caractères");
+              isValid = false;
+            }
+          }
+
+          if (field.id === "email") {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(field.value.trim())) {
+              showError(field, "Veuillez entrer une adresse email valide");
+              isValid = false;
+            }
+          }
+
+          if (field.id === "subject") {
+            if (field.value.trim().length < 5) {
+              showError(field, "Le sujet doit contenir au moins 5 caractères");
+              isValid = false;
+            }
+          }
+
+          if (field.id === "message") {
+            if (field.value.trim().length < 10) {
+              showError(
+                field,
+                "Le message doit contenir au moins 10 caractères"
+              );
+              isValid = false;
+            }
+          }
+
+          // Ajouter la classe de validation
+          if (isValid) {
+            field.classList.add("valid");
+          } else {
+            field.classList.add("invalid");
+          }
+
+          return isValid;
+        }
+
+        function showError(field, message) {
+          field.classList.add("invalid");
+
+          const errorElement = document.createElement("div");
+          errorElement.className = "form-error-message";
+          errorElement.textContent = message;
+
+          field.parentNode.appendChild(errorElement);
+        }
+
+        function clearValidation(field) {
+          field.classList.remove("valid", "invalid");
+
+          const errorElement = field.parentNode.querySelector(
+            ".form-error-message"
+          );
+          if (errorElement) {
+            errorElement.remove();
+          }
+        }
+
+        function simulateFormSubmission() {
+          const submitButton = contactForm.querySelector(".form-submit-button");
+          const originalText = submitButton.innerHTML;
+
+          // Simulation d'envoi
+          submitButton.disabled = true;
+          submitButton.innerHTML =
+            '<i class="bi bi-hourglass-split"></i> Envoi en cours...';
+
+          // Simuler un délai d'envoi
+          setTimeout(() => {
+            // Message de succès
+            const successMessage = document.createElement("div");
+            successMessage.className = "form-success-message";
+            successMessage.style.cssText = `
+        background: linear-gradient(135deg, #48bb78, #38a169);
+        color: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+        text-align: center;
+        animation: fadeIn 0.5s ease-out;
+      `;
+            successMessage.innerHTML = `
+        <i class="bi bi-check-circle-fill" style="font-size: 2rem; margin-bottom: 10px;"></i>
+        <h3 style="margin-bottom: 10px;">Message envoyé avec succès !</h3>
+        <p>Nous vous répondrons dans les plus brefs délais.</p>
+      `;
+
+            contactForm.appendChild(successMessage);
+
+            // Réinitialiser le formulaire
+            contactForm.reset();
+            formInputs.forEach((input) => clearValidation(input));
+
+            // Réinitialiser le bouton
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalText;
+
+            // Supprimer le message après 5 secondes
+            setTimeout(() => {
+              successMessage.remove();
+            }, 5000);
+          }, 2000);
+        }
+
+        // Animation de l'accordéon FAQ
+        const faqQuestions = document.querySelectorAll(".faq-question");
+
+        faqQuestions.forEach((question) => {
+          question.addEventListener("click", function () {
+            const answer = this.nextElementSibling;
+            const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+            // Fermer toutes les réponses
+            faqQuestions.forEach((q) => {
+              q.setAttribute("aria-expanded", "false");
+              q.nextElementSibling.classList.remove("show");
+            });
+
+            // Ouvrir la réponse cliquée si elle était fermée
+            if (!isExpanded) {
+              this.setAttribute("aria-expanded", "true");
+              answer.classList.add("show");
+
+              // Animation fluide
+              answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+          });
+        });
+
+        // Animation de la carte au survol
+        const mapContainer = document.querySelector(".contact-map-container");
+        if (mapContainer) {
+          mapContainer.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-10px)";
+            this.style.transition = "transform 0.3s ease";
+          });
+
+          mapContainer.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+          });
+        }
+
+        // Animation des champs du formulaire au focus
+        formInputs.forEach((input) => {
+          input.addEventListener("focus", function () {
+            this.parentNode.style.transform = "translateY(-5px)";
+            this.parentNode.style.transition = "transform 0.3s ease";
+          });
+
+          input.addEventListener("blur", function () {
+            this.parentNode.style.transform = "translateY(0)";
+          });
+        });
+      });
+    </script>
   </body>
 </html>
