@@ -1554,7 +1554,6 @@
 
         // Fonction pour activer un service
         function activateService(serviceId) {
-          console.log("Activation du service:", serviceId);
 
           // Masquer tous les panneaux
           servicePanels.forEach((panel) => {
@@ -1627,7 +1626,6 @@
           link.addEventListener("click", function (e) {
             e.preventDefault();
             const serviceId = this.getAttribute("href").substring(1);
-            console.log("Clic sur:", serviceId);
             activateService(serviceId);
 
             // Scroll doux vers le haut sur mobile
@@ -1643,7 +1641,6 @@
 
         // Initialisation au chargement
         function initializeServices() {
-          console.log("Initialisation des services...");
 
           // Masquer tous les panneaux sauf le premier
           servicePanels.forEach((panel, index) => {
@@ -1719,10 +1716,6 @@
         // Initialiser les services
         initializeServices();
 
-        // Log pour le débogage
-        console.log("Script des services chargé avec succès");
-        console.log("Nombre de liens:", navLinks.length);
-        console.log("Nombre de panneaux:", servicePanels.length);
       });
     </script>
     <script>
