@@ -2838,18 +2838,34 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Hero Slider Functionality
-        const slides = document.querySelectorAll(".slide");
+        // Hero Slider Functionality - CORRECTION : utiliser le bon sélecteur
+        const slides = document.querySelectorAll(".hero-slider-slide"); // Changé de ".slide" à ".hero-slider-slide"
+
+        // Vérifier s'il y a des slides
+        if (slides.length === 0) {
+          console.warn("Aucun slide trouvé pour le Hero Slider");
+          return;
+        }
+
         let currentSlide = 0;
 
+        // Fonction pour passer à la slide suivante
         function nextSlide() {
+          // Retirer la classe active de la slide actuelle
           slides[currentSlide].classList.remove("active");
+
+          // Passer à la slide suivante
           currentSlide = (currentSlide + 1) % slides.length;
+
+          // Ajouter la classe active à la nouvelle slide
           slides[currentSlide].classList.add("active");
         }
 
-        // Change slide every 5 seconds
-        setInterval(nextSlide, 5000);
+        // Activer la première slide au démarrage
+        slides[currentSlide].classList.add("active");
+
+        // Change slide every 8 seconds (comme dans l'autre script)
+        setInterval(nextSlide, 8000); // Changé de 5000 à 8000 pour être cohérent
 
         // Initialize AOS animations
         if (typeof AOS !== "undefined") {
@@ -2978,9 +2994,9 @@
 
             const samaSwiper = new Swiper(".sama-why-us__swiper", {
               loop: true,
-              speed: 600, // Réduit
+              speed: 600,
               autoplay: {
-                delay: 5000, // Réduit
+                delay: 5000,
                 disableOnInteraction: false,
               },
               effect: "fade",
@@ -3026,24 +3042,33 @@
               }
             }
 
-            // Pause au survol
+            // CORRECTION : Vérifier que samaSwiper et samaSwiper.autoplay existent
             const sliderContainer = document.querySelector(
               ".sama-why-us__slider-container"
             );
-            if (sliderContainer) {
+            if (sliderContainer && samaSwiper && samaSwiper.autoplay) {
               sliderContainer.addEventListener("mouseenter", () => {
-                samaSwiper.autoplay.stop();
+                if (
+                  samaSwiper.autoplay &&
+                  typeof samaSwiper.autoplay.stop === "function"
+                ) {
+                  samaSwiper.autoplay.stop();
+                }
               });
 
               sliderContainer.addEventListener("mouseleave", () => {
-                samaSwiper.autoplay.start();
+                if (
+                  samaSwiper.autoplay &&
+                  typeof samaSwiper.autoplay.start === "function"
+                ) {
+                  samaSwiper.autoplay.start();
+                }
               });
             }
           } catch (error) {
             console.error("Erreur Swiper:", error);
           }
         }
-
         function initSamaCounters() {
           const samaStats = document.querySelectorAll(
             ".sama-why-us__stat-number"
@@ -3576,9 +3601,7 @@
 
           // Events
           on: {
-            init: function () {
-              console.log("Swiper initialized for Why Us section");
-            },
+            init: function () {},
             resize: function () {
               this.update(); // Met à jour Swiper au redimensionnement
             },
